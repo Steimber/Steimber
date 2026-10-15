@@ -1,76 +1,110 @@
 <div align="center">
 
-# 👋 Steimber
+<!-- LANGUAGE SWITCHER BAR -->
+[![Español](https://img.shields.io/badge/🇪🇸_IDIOMA-ESPAÑOL_(ACTIVO)-0ea5e9?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/Steimber/blob/main/README.md)
+[![English](https://img.shields.io/badge/🇺🇸_LANGUAGE-ENGLISH-334155?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
+[![College_Projects](https://img.shields.io/badge/🏛️_UNIVERSIDAD-COLLEGE__PROJECTS-8b5cf6?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/College_Projects)
 
-### Academic Projects, Simulations & Personal Software Repository
+</div>
 
-[![Español](https://img.shields.io/badge/🇪🇸_Idioma-Español_(Activo)-0ea5e9?style=for-the-badge)](https://github.com/Steimber/Steimber/blob/main/README.md)
-[![English](https://img.shields.io/badge/🇺🇸_Language-English-334155?style=for-the-badge)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
+<br/>
 
+<details open>
+<summary><b>🇪🇸 ESPAÑOL — Panel Principal Interactivo (Clic para contraer / desplegar)</b></summary>
+<br/>
+
+<div align="center">
+  <img src="./assets/hero-es.svg" width="100%" alt="Steimber Banner" />
+</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3200&pause=1000&color=38BDF8&center=true&vCenter=true&width=780&lines=🎓+Repositorio+de+Tareas+y+Laboratorios+Universitarios;⚛️+Simulaciones+Cient%C3%ADficas+con+C%2B%2B%2C+Geant4+y+Docker;💻+Ingenier%C3%ADa+de+Software+y+Proyectos+Personales" alt="Typing SVG" />
 </div>
 
 ---
 
-> 💡 **Selector de idioma / Language Switcher:** Puedes usar los botones superiores para abrir la versión dedicada en cada idioma, o desplegar directamente la sección de tu preferencia aquí abajo.
+### 🚀 Proyectos Universitarios Destacados (`College_Projects`)
 
-<details open>
-<summary><b>🇪🇸 Español — Ver perfil en Español (clic para plegar/desplegar)</b></summary>
-<br>
+> 💡 *Haz clic en cualquiera de las tarjetas para ir directamente al repositorio o al código fuente del proyecto:*
 
-## 🎓 Sobre este perfil
-
-¡Bienvenido a mi perfil de GitHub! Este espacio reúne mis **tareas universitarias, laboratorios, simulaciones científicas y proyectos personales de desarrollo de software**.
-
-### 📂 Repositorio Principal de Universidad
-
-Todos mis trabajos, prácticas y proyectos académicos están organizados dentro de un único repositorio centralizado:
-
-| Repositorio | Descripción | Proyectos destacados |
-| :--- | :--- | :--- |
-| 🏛️ [**College_Projects**](https://github.com/Steimber/College_Projects) | Monorepo con mis tareas, laboratorios y proyectos de la universidad. | • [`proyecto-geant4`](https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4) — Simulación de lluvias de partículas atmosféricas (rayos cósmicos) en C++ y Docker con Geant4. |
-
-### 🛠️ Tecnologías y Herramientas
-
-<p>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+<p align="center">
+  <a href="https://github.com/Steimber/College_Projects">
+    <img src="./assets/card-college-es.svg" width="49%" alt="College_Projects Monorepo" />
+  </a>
+  <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
+    <img src="./assets/card-geant4-es.svg" width="49%" alt="Proyecto Geant4" />
+  </a>
 </p>
-
-</details>
 
 ---
 
+### 🖥️ Explorador del Repositorio Universitario
+
+<div align="center">
+  <a href="https://github.com/Steimber/College_Projects">
+    <img src="./assets/terminal-es.svg" width="92%" alt="Terminal College_Projects" />
+  </a>
+</div>
+
+---
+
+### 🛠️ Stack Tecnológico y Herramientas
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=6" alt="Tech Stack" />
+</div>
+
+</details>
+
+<br/>
+
 <details>
-<summary><b>🇺🇸 English — View profile in English (click to expand/collapse)</b></summary>
-<br>
+<summary><b>🇺🇸 ENGLISH — Interactive English Dashboard (Click to expand / Switch to English inline)</b></summary>
+<br/>
 
-## 🎓 About This Profile
+<div align="center">
+  <img src="./assets/hero-en.svg" width="100%" alt="Steimber Banner EN" />
+</div>
 
-Welcome to my GitHub profile! This space hosts my **university assignments, lab work, scientific simulations, and personal software engineering projects**.
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3200&pause=1000&color=38BDF8&center=true&vCenter=true&width=780&lines=🎓+University+Coursework+%26+Academic+Labs+Hub;⚛️+Scientific+Simulations+with+C%2B%2B%2C+Geant4+%26+Docker;💻+Software+Engineering+%26+Personal+Projects" alt="Typing SVG EN" />
+</div>
 
-### 📂 Main University Repository
+---
 
-All of my coursework, lab assignments, and academic projects are organized inside a single centralized repository:
+### 🚀 Featured University Projects (`College_Projects`)
 
-| Repository | Description | Featured Projects |
-| :--- | :--- | :--- |
-| 🏛️ [**College_Projects**](https://github.com/Steimber/College_Projects) | Centralized monorepo containing my university coursework, labs, and academic projects. | • [`proyecto-geant4`](https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4) — Atmospheric particle shower (cosmic ray) simulation built with C++, Geant4, CMake, and Docker. |
+> 💡 *Click on any card below to open the centralized university monorepo or inspect the simulation source code:*
+
+<p align="center">
+  <a href="https://github.com/Steimber/College_Projects">
+    <img src="./assets/card-college-en.svg" width="49%" alt="College_Projects Monorepo" />
+  </a>
+  <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
+    <img src="./assets/card-geant4-en.svg" width="49%" alt="Proyecto Geant4" />
+  </a>
+</p>
+
+---
+
+### 🖥️ University Repository Explorer
+
+<div align="center">
+  <a href="https://github.com/Steimber/College_Projects">
+    <img src="./assets/terminal-en.svg" width="92%" alt="Terminal College_Projects" />
+  </a>
+</div>
+
+---
 
 ### 🛠️ Tech Stack & Tools
 
-<p>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-</p>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=6" alt="Tech Stack" />
+</div>
 
 </details>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:6366f1,100:a855f7&height=110&section=footer" width="100%" alt="Footer Wave" />
+</div>

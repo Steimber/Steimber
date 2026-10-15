@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="576" height="226" rx="16" fill="url(#cardBg)" stroke="url(#borderGlow)" stroke-width="2"/>
+  <g transform="translate(28, 34)" font-family="'Segoe UI', -apple-system, sans-serif">
+    <rect x="0" y="0" width="145" height="24" rx="12" fill="#0c4a6e"/>
+    <text x="72.5" y="16" fill="#38bdf8" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UNIVERSITY MONOREPO</text>
+
+    <text x="0" y="56" fill="#f8fafc" font-size="22" font-weight="800">🏛️ Steimber / College_Projects</text>
+    <text x="0" y="86" fill="#94a3b8" font-size="13.5">Centralized repository hosting all my university coursework,</text>
+    <text x="0" y="106" fill="#94a3b8" font-size="13.5">laboratory assignments, and academic projects organized by folder.</text>
+
+    <g transform="translate(0, 134)" font-size="12" font-weight="600">
+      <circle cx="8" cy="10" r="5" fill="#38bdf8"/>
+      <text x="20" y="14" fill="#e2e8f0">C++ / CMake</text>
+      <circle cx="125" cy="10" r="5" fill="#a855f7"/>
+      <text x="137" y="14" fill="#e2e8f0">Geant4 / Docker</text>
+      <circle cx="268" cy="10" r="5" fill="#10b981"/>
+      <text x="280" y="14" fill="#e2e8f0">ES &amp; EN Docs</text>
+      <text x="524" y="14" fill="#38bdf8" text-anchor="end">Open Repo →</text>
+    </g>
+  </g>
+</svg>

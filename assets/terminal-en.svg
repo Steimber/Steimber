@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Frame -->
+  <rect width="1000" height="310" rx="14" fill="url(#termBg)" stroke="#1e293b" stroke-width="2"/>
+  <path d="M 0 14 Q 0 0 14 0 L 986 0 Q 1000 0 1000 14 L 1000 42 L 0 42 Z" fill="url(#headerBg)"/>
+  <line x1="0" y1="42" x2="1000" y2="42" stroke="#334155" stroke-width="1"/>
+
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6.5" fill="#ef4444"/>
+  <circle cx="46" cy="21" r="6.5" fill="#f59e0b"/>
+  <circle cx="68" cy="21" r="6.5" fill="#10b981"/>
+  <text x="500" y="26" fill="#94a3b8" font-family="'Fira Code', 'Consolas', monospace" font-size="13" font-weight="600" text-anchor="middle">steimber@workstation: ~/College_Projects (zsh)</text>
+
+  <!-- Terminal Body -->
+  <g transform="translate(28, 72)" font-family="'Fira Code', 'Consolas', monospace" font-size="14">
+    <!-- Prompt 1 -->
+    <text x="0" y="0">
+      <tspan fill="#10b981" font-weight="700">➜</tspan>
+      <tspan fill="#38bdf8" font-weight="700"> ~/College_Projects</tspan>
+      <tspan fill="#a855f7"> git:(</tspan><tspan fill="#f43f5e" font-weight="700">main</tspan><tspan fill="#a855f7">)</tspan>
+      <tspan fill="#e2e8f0"> tree -L 2 --dirsfirst</tspan>
+    </text>
+
+    <!-- Tree Output -->
+    <text x="0" y="30" fill="#38bdf8" font-weight="700">📦 Steimber/College_Projects</text>
+    <text x="0" y="56" fill="#cbd5e1">├── 📂 <tspan fill="#38bdf8" font-weight="700">proyecto-geant4/</tspan>           <tspan fill="#64748b"># Cosmic Ray Atmospheric Shower Simulation (C++ / Geant4)</tspan></text>
+    <text x="0" y="80" fill="#cbd5e1">│   ├── 🐳 <tspan fill="#e2e8f0">Dockerfile</tspan>                 <tspan fill="#64748b"># Reproducible container with Geant4 + X11 GUI</tspan></text>
+    <text x="0" y="104" fill="#cbd5e1">│   ├── ⚙️ <tspan fill="#e2e8f0">geant4make.sh</tspan>              <tspan fill="#64748b"># Automated CMake build script</tspan></text>
+    <text x="0" y="128" fill="#cbd5e1">│   └── ⚛️ <tspan fill="#a855f7" font-weight="700">proyecto_lluvias_cosmicas/</tspan> <tspan fill="#64748b"># Sensitive detector, physics list &amp; primary generator</tspan></text>
+    <text x="0" y="154" fill="#cbd5e1">├── 📄 <tspan fill="#34d399">README.md</tspan>                      <tspan fill="#64748b"># Spanish documentation &amp; coursework index</tspan></text>
+    <text x="0" y="178" fill="#cbd5e1">└── 📄 <tspan fill="#34d399">README.en.md</tspan>                   <tspan fill="#64748b"># English documentation &amp; coursework index</tspan></text>
+
+    <!-- Prompt 2 with blinking cursor -->
+    <text x="0" y="214">
+      <tspan fill="#10b981" font-weight="700">➜</tspan>
+      <tspan fill="#38bdf8" font-weight="700"> ~/College_Projects</tspan>
+      <tspan fill="#a855f7"> git:(</tspan><tspan fill="#f43f5e" font-weight="700">main</tspan><tspan fill="#a855f7">)</tspan>
+      <tspan fill="#94a3b8"> ./run_simulation --beamOn 10 </tspan>
+    </text>
+    <rect x="492" y="200" width="9" height="17" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

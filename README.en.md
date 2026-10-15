@@ -1,36 +1,55 @@
 <div align="center">
 
-# 👋 Steimber
+<!-- LANGUAGE SWITCHER BAR -->
+[![Español](https://img.shields.io/badge/🇪🇸_IDIOMA-ESPAÑOL-334155?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/Steimber/blob/main/README.md)
+[![English](https://img.shields.io/badge/🇺🇸_LANGUAGE-ENGLISH_(ACTIVE)-0ea5e9?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
+[![College_Projects](https://img.shields.io/badge/🏛️_UNIVERSITY-COLLEGE__PROJECTS-8b5cf6?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/College_Projects)
 
-### Academic Projects, Simulations & Personal Software Repository
+</div>
 
-[![Español](https://img.shields.io/badge/🇪🇸_Idioma-Español-334155?style=for-the-badge)](https://github.com/Steimber/Steimber/blob/main/README.md)
-[![English](https://img.shields.io/badge/🇺🇸_Language-English_(Active)-0ea5e9?style=for-the-badge)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
+<br/>
 
+<div align="center">
+  <img src="./assets/hero-en.svg" width="100%" alt="Steimber Banner EN" />
+</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3200&pause=1000&color=38BDF8&center=true&vCenter=true&width=780&lines=🎓+University+Coursework+%26+Academic+Labs+Hub;⚛️+Scientific+Simulations+with+C%2B%2B%2C+Geant4+%26+Docker;💻+Software+Engineering+%26+Personal+Projects" alt="Typing SVG EN" />
 </div>
 
 ---
 
-## 🎓 About This Profile
+### 🚀 Featured University Projects (`College_Projects`)
 
-Welcome to my GitHub profile! This space hosts my **university assignments, lab work, scientific simulations, and personal software engineering projects**.
+> 💡 *Click on any card below to open the centralized university monorepo or inspect the simulation source code:*
 
-### 📂 Main University Repository
+<p align="center">
+  <a href="https://github.com/Steimber/College_Projects">
+    <img src="./assets/card-college-en.svg" width="49%" alt="College_Projects Monorepo" />
+  </a>
+  <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
+    <img src="./assets/card-geant4-en.svg" width="49%" alt="Proyecto Geant4" />
+  </a>
+</p>
 
-All of my coursework, lab assignments, and academic projects are organized inside a single centralized repository:
+---
 
-| Repository | Description | Featured Projects |
-| :--- | :--- | :--- |
-| 🏛️ [**College_Projects**](https://github.com/Steimber/College_Projects) | Centralized monorepo containing my university coursework, labs, and academic projects. | • [`proyecto-geant4`](https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4) — Atmospheric particle shower (cosmic ray) simulation built with C++, Geant4, CMake, and Docker. |
+### 🖥️ University Repository Explorer
+
+<div align="center">
+  <a href="https://github.com/Steimber/College_Projects">
+    <img src="./assets/terminal-en.svg" width="92%" alt="Terminal College_Projects" />
+  </a>
+</div>
+
+---
 
 ### 🛠️ Tech Stack & Tools
 
-<p>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-</p>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=6" alt="Tech Stack" />
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:6366f1,100:a855f7&height=110&section=footer" width="100%" alt="Footer Wave" />
+</div>
