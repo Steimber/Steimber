@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
+  <defs>
+    <!-- Sunrise over Emerald Forest Sky Gradient -->
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05160e"/>
+      <stop offset="42%" stop-color="#0f3320"/>
+      <stop offset="75%" stop-color="#255840"/>
+      <stop offset="93%" stop-color="#b58328"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Sun & Atmospheric Glow -->
+    <radialGradient id="sunHalo" cx="50%" cy="62%" r="45%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.88"/>
+      <stop offset="30%" stop-color="#fbbf24" stop-opacity="0.48"/>
+      <stop offset="65%" stop-color="#22c55e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#05160e" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="sunCore" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0d2818" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#030d07" flood-opacity="0.9"/>
+    </filter>
+
+    <clipPath id="bannerClip">
+      <rect width="1200" height="350" rx="18"/>
+    </clipPath>
+    <clipPath id="ecFlag">
+      <rect width="22" height="15" rx="2.5"/>
+    </clipPath>
+
+    <!-- Reusable Pine Tree Shapes (Anchored at 0,0 bottom center) -->
+    <path id="pineM1" d="M 0 -95 L -14 -58 L -7 -60 L -22 -25 L -12 -28 L -28 6 L 28 6 L 12 -28 L 22 -25 L 7 -60 L 14 -58 Z"/>
+    <path id="pineM2" d="M 0 -78 L -12 -46 L -6 -48 L -19 -18 L -10 -20 L -24 6 L 24 6 L 10 -20 L 19 -18 L 6 -48 L 12 -46 Z"/>
+    <path id="pineF1" d="M 0 -105 L -16 -65 L -8 -67 L -25 -30 L -14 -32 L -32 6 L 32 6 L 14 -32 L 25 -30 L 8 -67 L 16 -65 Z"/>
+    <path id="pineF2" d="M 0 -86 L -14 -52 L -7 -54 L -21 -22 L -11 -24 L -27 6 L 27 6 L 11 -24 L 21 -22 L 7 -54 L 14 -52 Z"/>
+    <path id="pineF3" d="M 0 -68 L -12 -40 L -6 -42 L -18 -15 L -9 -17 L -23 6 L 23 6 L 9 -17 L 18 -15 L 6 -42 L 12 -40 Z"/>
+  </defs>
+
+  <style>
+    .sway1, .sway2, .sway3, .sway4 {
+      transform-origin: 0px 0px;
+    }
+    .sway1 { animation: windA 2.8s ease-in-out infinite alternate; }
+    .sway2 { animation: windB 3.4s ease-in-out infinite alternate; }
+    .sway3 { animation: windC 3.1s ease-in-out infinite alternate; }
+    .sway4 { animation: windD 3.8s ease-in-out infinite alternate; }
+
+    .d1 { animation-delay: -0.3s; }
+    .d2 { animation-delay: -0.8s; }
+    .d3 { animation-delay: -1.3s; }
+    .d4 { animation-delay: -1.9s; }
+    .d5 { animation-delay: -2.4s; }
+    .d6 { animation-delay: -3.0s; }
+    .d7 { animation-delay: -3.6s; }
+    .d8 { animation-delay: -4.2s; }
+
+    @keyframes windA {
+      0% { transform: rotate(-3.4deg) skewX(-1.8deg); }
+      100% { transform: rotate(3.8deg) skewX(2.2deg); }
+    }
+    @keyframes windB {
+      0% { transform: rotate(3.2deg) skewX(1.8deg); }
+      100% { transform: rotate(-3.8deg) skewX(-2.2deg); }
+    }
+    @keyframes windC {
+      0% { transform: rotate(-4.0deg) skewX(-2.2deg); }
+      100% { transform: rotate(3.2deg) skewX(1.8deg); }
+    }
+    @keyframes windD {
+      0% { transform: rotate(3.6deg) skewX(2.0deg); }
+      100% { transform: rotate(-3.2deg) skewX(-1.8deg); }
+    }
+
+    .mist-drift {
+      animation: mistMove 8s ease-in-out infinite alternate;
+    }
+    @keyframes mistMove {
+      0% { transform: translateX(-22px); opacity: 0.72; }
+      100% { transform: translateX(22px); opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- Sky Background -->
+    <rect width="1200" height="350" fill="url(#sky)"/>
+    <rect width="1200" height="350" fill="url(#sunHalo)"/>
+
+    <!-- Rising Golden Sun (Breathing) -->
+    <circle cx="600" cy="215" r="102" fill="#fde047" opacity="0.14">
+      <animate attributeName="r" values="96;114;96" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.24;0.12" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="215" r="82" fill="#fde047" opacity="0.24">
+      <animate attributeName="r" values="78;92;78" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="215" r="62" fill="url(#sunCore)">
+      <animate attributeName="cy" values="216;211;216" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Distant Sunlit Mountain Range (Layer 1) -->
+    <path d="M -20 258 L 90 192 L 195 228 L 325 168 L 445 222 L 560 195 L 650 220 L 775 166 L 900 220 L 1035 172 L 1145 215 L 1220 185 L 1220 350 L -20 350 Z" fill="#1b4630" opacity="0.9"/>
+
+    <!-- Mid-Distant Forest Ridge (Layer 2) -->
+    <path d="M -20 274 L 65 232 L 160 260 L 285 208 L 410 258 L 520 232 L 680 235 L 815 202 L 945 252 L 1080 214 L 1220 250 L 1220 350 L -20 350 Z" fill="#133523"/>
+
+    <!-- Golden Morning Mist in the Valley (Drifting) -->
+    <rect class="mist-drift" x="-40" y="214" width="1280" height="56" fill="url(#mist)"/>
+
+    <!-- LIVING BIRDS IN THE SKY (Flapping Wings + Gliding Motion) -->
+    <g stroke="#061910" stroke-width="2.3" fill="none" stroke-linecap="round" opacity="0.85">
+      <!-- Bird 1: Left Flock Leader (Gliding & Bobbing) -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="435,148; 462,137; 486,145; 460,154; 435,148" dur="6.5s" repeatCount="indefinite"/>
+        <path d="M -14 2 Q -7 -7 0 0 Q 7 -7 14 2">
+          <animate attributeName="d" values="M -14 2 Q -7 -7 0 0 Q 7 -7 14 2; M -14 -5 Q -7 0 0 3.5 Q 7 0 14 -5; M -14 2 Q -7 -7 0 0 Q 7 -7 14 2" dur="0.62s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Bird 2: Left Flock Wingman -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="482,134; 508,124; 528,131; 502,141; 482,134" dur="7.2s" repeatCount="indefinite"/>
+        <path d="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1">
+          <animate attributeName="d" values="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1; M -11 -4 Q -5.5 0 0 3 Q 5.5 0 11 -4; M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1" dur="0.54s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Bird 3: Left Flock High -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="408,162; 434,152; 452,159; 428,168; 408,162" dur="5.8s" repeatCount="indefinite"/>
+        <path d="M -10 1 Q -5 -5 0 0 Q 5 -5 10 1">
+          <animate attributeName="d" values="M -10 1 Q -5 -5 0 0 Q 5 -5 10 1; M -10 -3.5 Q -5 0 0 2.5 Q 5 0 10 -3.5; M -10 1 Q -5 -5 0 0 Q 5 -5 10 1" dur="0.58s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Bird 4: Right Sun Soarer -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="715,142; 688,131; 668,139; 695,150; 715,142" dur="6.8s" repeatCount="indefinite"/>
+        <path d="M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2">
+          <animate attributeName="d" values="M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2; M -13 -4.5 Q -6.5 0 0 3 Q 6.5 0 13 -4.5; M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2" dur="0.66s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Bird 5: Right Flock Companion -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="756,129; 732,119; 714,127; 738,136; 756,129" dur="7.5s" repeatCount="indefinite"/>
+        <path d="M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1">
+          <animate attributeName="d" values="M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1; M -10 -3.5 Q -5 0 0 2.5 Q 5 0 10 -3.5; M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1" dur="0.56s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Bird 6: Long-Distance Traveler Across the Valley (Left to Right) -->
+      <g opacity="0.72">
+        <animateTransform attributeName="transform" type="translate" values="90,175; 420,148; 780,156; 1110,138" dur="18s" repeatCount="indefinite"/>
+        <path d="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1">
+          <animate attributeName="d" values="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1; M -11 -4 Q -5.5 0 0 2.8 Q 5.5 0 11 -4; M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1" dur="0.60s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Bird 7: High Distant Flyer (Right to Left) -->
+      <g opacity="0.68">
+        <animateTransform attributeName="transform" type="translate" values="1080,158; 740,142; 460,154; 120,136" dur="20s" repeatCount="indefinite"/>
+        <path d="M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1">
+          <animate attributeName="d" values="M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1; M -9 -3.2 Q -4.5 0 0 2.2 Q 4.5 0 9 -3.2; M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1" dur="0.52s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+
+    <!-- LAYER 3: MIDGROUND LIVING PINE FOREST (Every tree sways individually) -->
+    <rect x="0" y="286" width="1200" height="64" fill="#0b2416"/>
+    <g fill="#0b2416">
+      <g transform="translate(18, 296)"><use href="#pineM1" class="sway1 d1"/></g>
+      <g transform="translate(52, 294)"><use href="#pineM2" class="sway2 d2"/></g>
+      <g transform="translate(86, 298)"><use href="#pineM1" class="sway3 d3"/></g>
+      <g transform="translate(122, 295)"><use href="#pineM2" class="sway4 d4"/></g>
+      <g transform="translate(156, 292)"><use href="#pineM1" class="sway1 d5"/></g>
+      <g transform="translate(192, 298)"><use href="#pineM2" class="sway2 d6"/></g>
+      <g transform="translate(228, 296)"><use href="#pineM1" class="sway3 d7"/></g>
+      <g transform="translate(266, 294)"><use href="#pineM1" class="sway4 d8"/></g>
+      <g transform="translate(304, 300)"><use href="#pineM2" class="sway1 d2"/></g>
+      <g transform="translate(342, 298)"><use href="#pineM1" class="sway2 d4"/></g>
+      <g transform="translate(382, 296)"><use href="#pineM1" class="sway3 d6"/></g>
+      <g transform="translate(420, 302)"><use href="#pineM2" class="sway4 d1"/></g>
+      <g transform="translate(458, 304)"><use href="#pineM2" class="sway1 d3"/></g>
+      <g transform="translate(496, 308)"><use href="#pineM2" class="sway2 d5"/></g>
+      <g transform="translate(536, 312)"><use href="#pineM2" class="sway3 d7"/></g>
+      <g transform="translate(664, 312)"><use href="#pineM2" class="sway4 d2"/></g>
+      <g transform="translate(704, 308)"><use href="#pineM2" class="sway1 d4"/></g>
+      <g transform="translate(742, 304)"><use href="#pineM2" class="sway2 d6"/></g>
+      <g transform="translate(780, 302)"><use href="#pineM2" class="sway3 d8"/></g>
+      <g transform="translate(818, 296)"><use href="#pineM1" class="sway4 d1"/></g>
+      <g transform="translate(856, 298)"><use href="#pineM1" class="sway1 d3"/></g>
+      <g transform="translate(896, 300)"><use href="#pineM2" class="sway2 d5"/></g>
+      <g transform="translate(934, 294)"><use href="#pineM1" class="sway3 d7"/></g>
+      <g transform="translate(972, 296)"><use href="#pineM1" class="sway4 d2"/></g>
+      <g transform="translate(1010, 298)"><use href="#pineM2" class="sway1 d4"/></g>
+      <g transform="translate(1046, 292)"><use href="#pineM1" class="sway2 d6"/></g>
+      <g transform="translate(1082, 295)"><use href="#pineM2" class="sway3 d8"/></g>
+      <g transform="translate(1118, 298)"><use href="#pineM1" class="sway4 d1"/></g>
+      <g transform="translate(1152, 294)"><use href="#pineM2" class="sway1 d3"/></g>
+      <g transform="translate(1184, 296)"><use href="#pineM1" class="sway2 d5"/></g>
+    </g>
+
+    <!-- LAYER 4: FOREGROUND DARK PINE FOREST SILHOUETTE (Every tree sways individually) -->
+    <rect x="0" y="302" width="1200" height="48" fill="#05130b"/>
+    <g fill="#05130b">
+      <g transform="translate(24, 314)"><use href="#pineF1" class="sway3 d2"/></g>
+      <g transform="translate(68, 308)"><use href="#pineF1" class="sway1 d4"/></g>
+      <g transform="translate(114, 316)"><use href="#pineF2" class="sway4 d6"/></g>
+      <g transform="translate(162, 310)"><use href="#pineF1" class="sway2 d8"/></g>
+      <g transform="translate(210, 318)"><use href="#pineF2" class="sway3 d1"/></g>
+      <g transform="translate(258, 320)"><use href="#pineF2" class="sway1 d3"/></g>
+      <g transform="translate(308, 322)"><use href="#pineF2" class="sway4 d5"/></g>
+      <g transform="translate(356, 324)"><use href="#pineF3" class="sway2 d7"/></g>
+      <g transform="translate(408, 326)"><use href="#pineF3" class="sway3 d2"/></g>
+      <g transform="translate(460, 328)"><use href="#pineF3" class="sway1 d4"/></g>
+      <g transform="translate(515, 332)"><use href="#pineF3" class="sway4 d6"/></g>
+      <g transform="translate(568, 336)"><use href="#pineF3" class="sway2 d8"/></g>
+      <g transform="translate(632, 336)"><use href="#pineF3" class="sway3 d1"/></g>
+      <g transform="translate(685, 332)"><use href="#pineF3" class="sway1 d3"/></g>
+      <g transform="translate(740, 328)"><use href="#pineF3" class="sway4 d5"/></g>
+      <g transform="translate(792, 326)"><use href="#pineF3" class="sway2 d7"/></g>
+      <g transform="translate(844, 324)"><use href="#pineF3" class="sway3 d2"/></g>
+      <g transform="translate(892, 322)"><use href="#pineF2" class="sway1 d4"/></g>
+      <g transform="translate(942, 320)"><use href="#pineF2" class="sway4 d6"/></g>
+      <g transform="translate(990, 318)"><use href="#pineF2" class="sway2 d8"/></g>
+      <g transform="translate(1038, 310)"><use href="#pineF1" class="sway3 d1"/></g>
+      <g transform="translate(1086, 316)"><use href="#pineF2" class="sway1 d3"/></g>
+      <g transform="translate(1132, 308)"><use href="#pineF1" class="sway4 d5"/></g>
+      <g transform="translate(1176, 314)"><use href="#pineF1" class="sway2 d7"/></g>
+    </g>
+
+    <!-- Subtle Floating Forest Fireflies / Sun Spores -->
+    <g fill="#fef08a">
+      <circle cx="240" cy="240" r="1.8" opacity="0.6">
+        <animate attributeName="cy" values="245;215;245" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.75;0.15" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="390" cy="230" r="1.5" opacity="0.5">
+        <animate attributeName="cy" values="235;205;235" dur="6.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="820" cy="235" r="1.8" opacity="0.6">
+        <animate attributeName="cy" values="240;208;240" dur="5.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="5.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="960" cy="242" r="1.6" opacity="0.5">
+        <animate attributeName="cy" values="248;218;248" dur="4.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.65;0.15" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Main Title Only (Clean over the Forest Sky) -->
+    <g filter="url(#textShadow)">
+      <text x="600" y="116" fill="#fefce8" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Georgia, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="8">STEIMBER</text>
+    </g>
+
+    <!-- Bottom Pills with the Clean Dark Translucent Capsule Style -->
+    <g transform="translate(105, 286)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="700">
+      <g transform="translate(0, 0)">
+        <rect width="240" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="120" y="24" fill="#ecfdf5" text-anchor="middle">💎 Mineral Studio (Co-Founder)</text>
+      </g>
+      <g transform="translate(256, 0)">
+        <rect width="235" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="117.5" y="24" fill="#ecfdf5" text-anchor="middle">🏛️ Estudiante de la UTM</text>
+      </g>
+      <g transform="translate(507, 0)">
+        <rect width="230" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="115" y="24" fill="#ecfdf5" text-anchor="middle">💻 Proyectos Personales</text>
+      </g>
+      <g transform="translate(753, 0)">
+        <rect width="235" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <g transform="translate(32, 11.5)" clip-path="url(#ecFlag)">
+          <rect x="0" y="0" width="22" height="7.5" fill="#FFD100"/>
+          <rect x="0" y="7.5" width="22" height="3.75" fill="#0033A0"/>
+          <rect x="0" y="11.25" width="22" height="3.75" fill="#EF3340"/>
+          <circle cx="11" cy="7.5" r="2" fill="#d97706"/>
+        </g>
+        <text x="136" y="24" fill="#ecfdf5" text-anchor="middle">Manabí, Ecuador</text>
+      </g>
+    </g>
+  </g>
+
+  <rect width="1200" height="350" rx="18" fill="none" stroke="#1e462d" stroke-width="2"/>
+</svg>
