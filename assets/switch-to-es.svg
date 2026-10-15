@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 42" width="270" height="42">
+  <defs>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#091e12"/>
+      <stop offset="100%" stop-color="#133823"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="267" height="39" rx="20" fill="url(#btnGrad)" stroke="#fbbf24" stroke-width="1.8"/>
+  <text x="135" y="26" fill="#fef08a" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" letter-spacing="0.4">🌐 Cambiar a Español →</text>
+</svg>

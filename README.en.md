@@ -1,14 +1,17 @@
 <div align="center">
-
-[![Español](https://img.shields.io/badge/Idioma-Español-14532d?style=for-the-badge&labelColor=07170e)](https://github.com/Steimber/Steimber/blob/main/README.md)
-[![English](https://img.shields.io/badge/Language-English-16a34a?style=for-the-badge&labelColor=07170e)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
-
+  <a href="https://github.com/Steimber/Steimber/blob/main/README.md">
+    <img src="./assets/switch-to-es.svg" height="40" alt="Cambiar a Español" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Steimber/Steimber/blob/main/README.en.md">
+    <img src="./assets/switch-en-active.svg" height="40" alt="English (Current)" />
+  </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./assets/forest-sunrise-en.svg" width="100%" alt="Steimber Banner EN" />
+  <img src="./assets/banner-bosque-en.svg" width="100%" alt="Steimber Banner EN" />
 </div>
 
 <br/>
@@ -29,7 +32,7 @@
   </tr>
 </table>
 
-### 🌲 University Coursework (UTM) & Projects
+### 🌲 University Coursework (UTM) & Personal Projects
 
 <p align="center">
   <a href="https://github.com/Steimber/College_Projects">
