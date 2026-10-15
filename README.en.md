@@ -11,7 +11,7 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/hero-forest-v3-en.svg" width="100%" alt="Steimber Banner EN" />
+  <img src="./assets/hero-forest-v4-en.svg" width="100%" alt="Steimber Banner EN" />
 </div>
 
 <br/>

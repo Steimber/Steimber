@@ -28,6 +28,16 @@
       <stop offset="100%" stop-color="#0d2818" stop-opacity="0"/>
     </linearGradient>
 
+    <!-- Pro UI Pill Gradients -->
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#092216" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#04110a" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="pillStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#14532d" stop-opacity="0.35"/>
+    </linearGradient>
+
     <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
       <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#030d07" flood-opacity="0.9"/>
     </filter>
@@ -36,7 +46,7 @@
       <rect width="1200" height="350" rx="18"/>
     </clipPath>
     <clipPath id="ecFlag">
-      <rect width="22" height="15" rx="2.5"/>
+      <rect width="20" height="14" rx="2.5"/>
     </clipPath>
 
     <!-- Reusable Pine Tree Shapes (Anchored at 0,0 bottom center) -->
@@ -119,55 +129,42 @@
 
     <!-- LIVING BIRDS IN THE SKY (Flapping Wings + Gliding Motion) -->
     <g stroke="#061910" stroke-width="2.3" fill="none" stroke-linecap="round" opacity="0.85">
-      <!-- Bird 1: Left Flock Leader -->
       <g>
         <animateTransform attributeName="transform" type="translate" values="435,148; 462,137; 486,145; 460,154; 435,148" dur="6.5s" repeatCount="indefinite"/>
         <path d="M -14 2 Q -7 -7 0 0 Q 7 -7 14 2">
           <animate attributeName="d" values="M -14 2 Q -7 -7 0 0 Q 7 -7 14 2; M -14 -5 Q -7 0 0 3.5 Q 7 0 14 -5; M -14 2 Q -7 -7 0 0 Q 7 -7 14 2" dur="0.62s" repeatCount="indefinite"/>
         </path>
       </g>
-
-      <!-- Bird 2: Left Flock Wingman -->
       <g>
         <animateTransform attributeName="transform" type="translate" values="482,134; 508,124; 528,131; 502,141; 482,134" dur="7.2s" repeatCount="indefinite"/>
         <path d="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1">
           <animate attributeName="d" values="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1; M -11 -4 Q -5.5 0 0 3 Q 5.5 0 11 -4; M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1" dur="0.54s" repeatCount="indefinite"/>
         </path>
       </g>
-
-      <!-- Bird 3: Left Flock High -->
       <g>
         <animateTransform attributeName="transform" type="translate" values="408,162; 434,152; 452,159; 428,168; 408,162" dur="5.8s" repeatCount="indefinite"/>
         <path d="M -10 1 Q -5 -5 0 0 Q 5 -5 10 1">
           <animate attributeName="d" values="M -10 1 Q -5 -5 0 0 Q 5 -5 10 1; M -10 -3.5 Q -5 0 0 2.5 Q 5 0 10 -3.5; M -10 1 Q -5 -5 0 0 Q 5 -5 10 1" dur="0.58s" repeatCount="indefinite"/>
         </path>
       </g>
-
-      <!-- Bird 4: Right Sun Soarer -->
       <g>
         <animateTransform attributeName="transform" type="translate" values="715,142; 688,131; 668,139; 695,150; 715,142" dur="6.8s" repeatCount="indefinite"/>
         <path d="M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2">
           <animate attributeName="d" values="M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2; M -13 -4.5 Q -6.5 0 0 3 Q 6.5 0 13 -4.5; M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2" dur="0.66s" repeatCount="indefinite"/>
         </path>
       </g>
-
-      <!-- Bird 5: Right Flock Companion -->
       <g>
         <animateTransform attributeName="transform" type="translate" values="756,129; 732,119; 714,127; 738,136; 756,129" dur="7.5s" repeatCount="indefinite"/>
         <path d="M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1">
           <animate attributeName="d" values="M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1; M -10 -3.5 Q -5 0 0 2.5 Q 5 0 10 -3.5; M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1" dur="0.56s" repeatCount="indefinite"/>
         </path>
       </g>
-
-      <!-- Bird 6: Long-Distance Traveler Across the Valley (Left to Right) -->
       <g opacity="0.72">
         <animateTransform attributeName="transform" type="translate" values="90,175; 420,148; 780,156; 1110,138" dur="18s" repeatCount="indefinite"/>
         <path d="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1">
           <animate attributeName="d" values="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1; M -11 -4 Q -5.5 0 0 2.8 Q 5.5 0 11 -4; M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1" dur="0.60s" repeatCount="indefinite"/>
         </path>
       </g>
-
-      <!-- Bird 7: High Distant Flyer (Right to Left) -->
       <g opacity="0.68">
         <animateTransform attributeName="transform" type="translate" values="1080,158; 740,142; 460,154; 120,136" dur="20s" repeatCount="indefinite"/>
         <path d="M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1">
@@ -176,7 +173,7 @@
       </g>
     </g>
 
-    <!-- LAYER 3: MIDGROUND LIVING PINE FOREST (Every tree sways individually) -->
+    <!-- LAYER 3: MIDGROUND LIVING PINE FOREST -->
     <rect x="0" y="286" width="1200" height="64" fill="#0b2416"/>
     <g fill="#0b2416">
       <g transform="translate(18, 296)"><use href="#pineM1" class="sway1 d1"/></g>
@@ -211,7 +208,7 @@
       <g transform="translate(1184, 296)"><use href="#pineM1" class="sway2 d5"/></g>
     </g>
 
-    <!-- LAYER 4: FOREGROUND DARK PINE FOREST SILHOUETTE (Every tree sways individually) -->
+    <!-- LAYER 4: FOREGROUND DARK PINE FOREST SILHOUETTE -->
     <rect x="0" y="302" width="1200" height="48" fill="#05130b"/>
     <g fill="#05130b">
       <g transform="translate(24, 314)"><use href="#pineF1" class="sway3 d2"/></g>
@@ -260,35 +257,66 @@
       </circle>
     </g>
 
-    <!-- Main Title Only (Clean over the Forest Sky) -->
+    <!-- Main Title (Clean over the Forest Sky) -->
     <g filter="url(#textShadow)">
       <text x="600" y="116" fill="#fefce8" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Georgia, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="8">STEIMBER</text>
     </g>
 
-    <!-- Bottom Pills with the Clean Dark Translucent Capsule Style -->
-    <g transform="translate(105, 286)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="700">
+    <!-- PRO VECTOR BADGE PILLS (No system emojis — 100% custom vector icons) -->
+    <g transform="translate(86, 285)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" letter-spacing="0.2">
+
+      <!-- Pill 1: Mineral Studio (Co-Founder) with Custom Vector Terracotta Crystal Prism -->
       <g transform="translate(0, 0)">
-        <rect width="240" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
-        <text x="120" y="24" fill="#ecfdf5" text-anchor="middle">💎 Mineral Studio (Co-Founder)</text>
-      </g>
-      <g transform="translate(256, 0)">
-        <rect width="235" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
-        <text x="117.5" y="24" fill="#ecfdf5" text-anchor="middle">🏛️ Student at UTM</text>
-      </g>
-      <g transform="translate(507, 0)">
-        <rect width="230" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
-        <text x="115" y="24" fill="#ecfdf5" text-anchor="middle">💻 Personal Projects</text>
-      </g>
-      <g transform="translate(753, 0)">
-        <rect width="235" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
-        <g transform="translate(32, 11.5)" clip-path="url(#ecFlag)">
-          <rect x="0" y="0" width="22" height="7.5" fill="#FFD100"/>
-          <rect x="0" y="7.5" width="22" height="3.75" fill="#0033A0"/>
-          <rect x="0" y="11.25" width="22" height="3.75" fill="#EF3340"/>
-          <circle cx="11" cy="7.5" r="2" fill="#d97706"/>
+        <rect width="256" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#1c1410" stroke="#b3613d" stroke-width="1" stroke-opacity="0.6"/>
+        <g transform="translate(24, 20)">
+          <polygon points="0,-8 -4.5,-2 -2.5,7 2.5,7 4.5,-2" fill="#d97757"/>
+          <polygon points="0,-8 4.5,-2 2.5,7 0,7" fill="#b3613d"/>
+          <polygon points="-6.5,-1 -3.5,-4.5 -1.5,6 -5,6" fill="#e08a6b" opacity="0.9"/>
+          <polygon points="6.5,0 3.5,-4 2,6 5,6" fill="#9c4f2f"/>
+          <polygon points="0,-8 -4.5,-2 0,-0.5 4.5,-2" fill="#f4b196" opacity="0.85"/>
         </g>
-        <text x="136" y="24" fill="#ecfdf5" text-anchor="middle">Manabí, Ecuador</text>
+        <text x="142" y="24.5" fill="#ecfdf5" text-anchor="middle">Mineral Studio (Co-Founder)</text>
       </g>
+
+      <!-- Pill 2: Student at UTM with Custom Vector Academic Cap Icon -->
+      <g transform="translate(270, 0)">
+        <rect width="242" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#0b2919" stroke="#4ade80" stroke-width="1" stroke-opacity="0.45"/>
+        <g transform="translate(15, 11)" fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="9,2 1.5,6 9,10 16.5,6" fill="#4ade80" fill-opacity="0.22"/>
+          <path d="M 4.5 7.8 V 12.5 C 4.5 14 6.5 15.2 9 15.2 C 11.5 15.2 13.5 14 13.5 12.5 V 7.8"/>
+          <path d="M 16.2 6.2 V 12" stroke="#fde047" stroke-width="1.5"/>
+          <circle cx="16.2" cy="12.5" r="0.9" fill="#fde047" stroke="none"/>
+        </g>
+        <text x="138" y="24.5" fill="#ecfdf5" text-anchor="middle">Student at UTM</text>
+      </g>
+
+      <!-- Pill 3: Personal Projects with Custom Vector Code / Terminal Icon -->
+      <g transform="translate(526, 0)">
+        <rect width="246" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#0b2919" stroke="#4ade80" stroke-width="1" stroke-opacity="0.45"/>
+        <g transform="translate(15, 11)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="5.5,5 1.8,9 5.5,13" stroke="#4ade80" stroke-width="1.8"/>
+          <polyline points="12.5,5 16.2,9 12.5,13" stroke="#4ade80" stroke-width="1.8"/>
+          <line x1="10.2" y1="3.8" x2="7.8" y2="14.2" stroke="#fde047" stroke-width="1.6"/>
+        </g>
+        <text x="140" y="24.5" fill="#ecfdf5" text-anchor="middle">Personal Projects</text>
+      </g>
+
+      <!-- Pill 4: Manabí, Ecuador with Vector Flag Inside Circular Badge -->
+      <g transform="translate(786, 0)">
+        <rect width="242" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#0b2919" stroke="#4ade80" stroke-width="1" stroke-opacity="0.45"/>
+        <g transform="translate(14, 13)" clip-path="url(#ecFlag)">
+          <rect x="0" y="0" width="20" height="7" fill="#FFD100"/>
+          <rect x="0" y="7" width="20" height="3.5" fill="#0033A0"/>
+          <rect x="0" y="10.5" width="20" height="3.5" fill="#EF3340"/>
+          <circle cx="10" cy="7" r="1.8" fill="#d97706"/>
+        </g>
+        <text x="138" y="24.5" fill="#ecfdf5" text-anchor="middle">Manabí, Ecuador</text>
+      </g>
+
     </g>
   </g>
 
