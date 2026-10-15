@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f141c"/>
+      <stop offset="60%" stop-color="#261a18"/>
+      <stop offset="100%" stop-color="#3d231a"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="88%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#b3613d" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0f141c" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+    <clipPath id="ecFlag">
+      <rect width="20" height="13" rx="2"/>
+    </clipPath>
+    <path id="cardPine1" d="M 0 -46 L -9 -26 L -4 -27 L -14 -10 L -7 -11 L -18 5 L 18 5 L 7 -11 L 14 -10 L 4 -27 L 9 -26 Z"/>
+    <path id="cardPine2" d="M 0 -36 L -7 -20 L -3 -21 L -11 -7 L -6 -8 L -15 5 L 15 5 L 6 -8 L 11 -7 L 3 -21 L 7 -20 Z"/>
+  </defs>
+
+  <style>
+    .csway1, .csway2 { transform-origin: 0px 0px; }
+    .csway1 { animation: cwindA 3.1s ease-in-out infinite alternate; }
+    .csway2 { animation: cwindB 3.7s ease-in-out infinite alternate; }
+    .cd1 { animation-delay: -0.4s; }
+    .cd2 { animation-delay: -1.2s; }
+    .cd3 { animation-delay: -2.1s; }
+    .cd4 { animation-delay: -2.9s; }
+    @keyframes cwindA {
+      0% { transform: rotate(-3.2deg) skewX(-1.5deg); }
+      100% { transform: rotate(3.4deg) skewX(1.8deg); }
+    }
+    @keyframes cwindB {
+      0% { transform: rotate(3.0deg) skewX(1.5deg); }
+      100% { transform: rotate(-3.4deg) skewX(-1.8deg); }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="580" height="230" fill="url(#bg)"/>
+    <rect width="580" height="230" fill="url(#sunGlow)"/>
+    
+
+    <!-- Distant Ridge -->
+    <path d="M 0 198 L 95 168 L 195 190 L 310 158 L 430 188 L 520 164 L 580 182 L 580 230 L 0 230 Z" fill="#1f1512" opacity="0.78"/>
+
+    <!-- Living Swaying Pine Trees Along Bottom of Card -->
+    <rect x="0" y="210" width="580" height="20" fill="#0e0a08"/>
+    <g fill="#0e0a08" opacity="0.92">
+      <g transform="translate(18, 218)"><use href="#cardPine1" class="csway1 cd1"/></g>
+      <g transform="translate(52, 220)"><use href="#cardPine2" class="csway2 cd2"/></g>
+      <g transform="translate(86, 216)"><use href="#cardPine1" class="csway1 cd3"/></g>
+      <g transform="translate(122, 220)"><use href="#cardPine2" class="csway2 cd4"/></g>
+      <g transform="translate(158, 217)"><use href="#cardPine1" class="csway1 cd2"/></g>
+      <g transform="translate(194, 221)"><use href="#cardPine2" class="csway2 cd1"/></g>
+      <g transform="translate(230, 218)"><use href="#cardPine1" class="csway1 cd4"/></g>
+      <g transform="translate(268, 221)"><use href="#cardPine2" class="csway2 cd3"/></g>
+      <g transform="translate(306, 217)"><use href="#cardPine1" class="csway1 cd1"/></g>
+      <g transform="translate(344, 220)"><use href="#cardPine2" class="csway2 cd2"/></g>
+      <g transform="translate(382, 216)"><use href="#cardPine1" class="csway1 cd4"/></g>
+      <g transform="translate(420, 220)"><use href="#cardPine2" class="csway2 cd3"/></g>
+      <g transform="translate(458, 217)"><use href="#cardPine1" class="csway1 cd2"/></g>
+      <g transform="translate(496, 220)"><use href="#cardPine2" class="csway2 cd1"/></g>
+      <g transform="translate(532, 216)"><use href="#cardPine1" class="csway1 cd3"/></g>
+      <g transform="translate(566, 219)"><use href="#cardPine2" class="csway2 cd4"/></g>
+    </g>
+
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule -->
+      <rect x="0" y="0" width="236" height="28" rx="14" fill="#0c0806" fill-opacity="0.82" stroke="#fb923c" stroke-width="1" stroke-opacity="0.42"/>
+      <g transform="translate(14, 7.5)" clip-path="url(#ecFlag)">
+        <rect x="0" y="0" width="20" height="6.5" fill="#FFD100"/>
+        <rect x="0" y="6.5" width="20" height="3.25" fill="#0033A0"/>
+        <rect x="0" y="9.75" width="20" height="3.25" fill="#EF3340"/>
+      </g>
+      <text x="132" y="18.5" fill="#ecfdf5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UTM · MANABÍ, ECUADOR</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#fefce8" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / College_Projects</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#e2f8ee" font-size="13.5" opacity="0.9">Repositorio central con mis tareas, laboratorios prácticos y proyectos</text>
+      <text x="0" y="112" fill="#e2f8ee" font-size="13.5" opacity="0.9">académicos en la Universidad Técnica de Manabí (UTM).</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#0c0806" fill-opacity="0.82" stroke="#fb923c" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="52" y="18" fill="#ecfdf5" text-anchor="middle">C++ / CMake</text>
+        <rect x="114" y="0" width="122" height="28" rx="14" fill="#0c0806" fill-opacity="0.82" stroke="#fb923c" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="175" y="18" fill="#ecfdf5" text-anchor="middle">Geant4 / Docker</text>
+        <rect x="246" y="0" width="102" height="28" rx="14" fill="#0c0806" fill-opacity="0.82" stroke="#fb923c" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="297" y="18" fill="#ecfdf5" text-anchor="middle">ES / EN Docs</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#0c0806" fill-opacity="0.88" stroke="#fde047" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="459" y="18" fill="#fef9c3" font-weight="700" text-anchor="middle">Abrir repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#4a2819" stroke-width="1.5"/>
+</svg>

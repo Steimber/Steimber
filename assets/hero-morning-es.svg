@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
   <defs>
-    <!-- Sunrise over Emerald Forest Sky Gradient -->
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#05160e"/>
       <stop offset="42%" stop-color="#0f3320"/>
@@ -9,7 +8,6 @@
       <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
 
-    <!-- Sun & Atmospheric Glow -->
     <radialGradient id="sunHalo" cx="50%" cy="62%" r="45%">
       <stop offset="0%" stop-color="#fef08a" stop-opacity="0.88"/>
       <stop offset="30%" stop-color="#fbbf24" stop-opacity="0.48"/>
@@ -25,10 +23,9 @@
 
     <linearGradient id="mist" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#fde68a" stop-opacity="0.24"/>
-      <stop offset="100%" stop-color="#0d2818" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b2416" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Pro UI Pill Gradients -->
     <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#092216" stop-opacity="0.88"/>
       <stop offset="100%" stop-color="#04110a" stop-opacity="0.92"/>
@@ -39,7 +36,7 @@
     </linearGradient>
 
     <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#030d07" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#020806" flood-opacity="0.9"/>
     </filter>
 
     <clipPath id="bannerClip">
@@ -49,7 +46,6 @@
       <rect width="20" height="14" rx="2.5"/>
     </clipPath>
 
-    <!-- Reusable Pine Tree Shapes (Anchored at 0,0 bottom center) -->
     <path id="pineM1" d="M 0 -95 L -14 -58 L -7 -60 L -22 -25 L -12 -28 L -28 6 L 28 6 L 12 -28 L 22 -25 L 7 -60 L 14 -58 Z"/>
     <path id="pineM2" d="M 0 -78 L -12 -46 L -6 -48 L -19 -18 L -10 -20 L -24 6 L 24 6 L 10 -20 L 19 -18 L 6 -48 L 12 -46 Z"/>
     <path id="pineF1" d="M 0 -105 L -16 -65 L -8 -67 L -25 -30 L -14 -32 L -32 6 L 32 6 L 14 -32 L 25 -30 L 8 -67 L 16 -65 Z"/>
@@ -102,12 +98,12 @@
   </style>
 
   <g clip-path="url(#bannerClip)">
-    <!-- Sky Background -->
     <rect width="1200" height="350" fill="url(#sky)"/>
     <rect width="1200" height="350" fill="url(#sunHalo)"/>
-
-    <!-- Rising Golden Sun (Breathing) -->
-    <circle cx="600" cy="215" r="102" fill="#fde047" opacity="0.14">
+    
+    
+    <!-- Rising / Setting Sun (Breathing) -->
+    <circle cx="600" cy="215" r="102" fill="#f59e0b" opacity="0.16">
       <animate attributeName="r" values="96;114;96" dur="5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.12;0.24;0.12" dur="5s" repeatCount="indefinite"/>
     </circle>
@@ -118,16 +114,16 @@
       <animate attributeName="cy" values="216;211;216" dur="6s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Distant Sunlit Mountain Range (Layer 1) -->
+    <!-- Distant Mountain Range (Layer 1) -->
     <path d="M -20 258 L 90 192 L 195 228 L 325 168 L 445 222 L 560 195 L 650 220 L 775 166 L 900 220 L 1035 172 L 1145 215 L 1220 185 L 1220 350 L -20 350 Z" fill="#1b4630" opacity="0.9"/>
 
     <!-- Mid-Distant Forest Ridge (Layer 2) -->
     <path d="M -20 274 L 65 232 L 160 260 L 285 208 L 410 258 L 520 232 L 680 235 L 815 202 L 945 252 L 1080 214 L 1220 250 L 1220 350 L -20 350 Z" fill="#133523"/>
 
-    <!-- Golden Morning Mist in the Valley (Drifting) -->
+    <!-- Valley Mist (Drifting) -->
     <rect class="mist-drift" x="-40" y="214" width="1280" height="56" fill="url(#mist)"/>
 
-    <!-- LIVING BIRDS IN THE SKY (Flapping Wings + Gliding Motion) -->
+    <!-- LIVING BIRDS IN THE SKY -->
     <g stroke="#061910" stroke-width="2.3" fill="none" stroke-linecap="round" opacity="0.85">
       <g>
         <animateTransform attributeName="transform" type="translate" values="435,148; 462,137; 486,145; 460,154; 435,148" dur="6.5s" repeatCount="indefinite"/>
@@ -237,39 +233,37 @@
       <g transform="translate(1176, 314)"><use href="#pineF1" class="sway2 d7"/></g>
     </g>
 
-    <!-- Subtle Floating Forest Fireflies / Sun Spores -->
+    <!-- Floating Forest Fireflies / Sun Spores -->
     <g fill="#fef08a">
-      <circle cx="240" cy="240" r="1.8" opacity="0.6">
+      <circle cx="240" cy="240" r="2.0" opacity="0.6">
         <animate attributeName="cy" values="245;215;245" dur="5s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.15;0.75;0.15" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="5s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="390" cy="230" r="1.5" opacity="0.5">
+      <circle cx="390" cy="230" r="1.6" opacity="0.5">
         <animate attributeName="cy" values="235;205;235" dur="6.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.1;0.75;0.1" dur="6.2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="820" cy="235" r="1.8" opacity="0.6">
+      <circle cx="820" cy="235" r="2.0" opacity="0.6">
         <animate attributeName="cy" values="240;208;240" dur="5.6s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="5.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="5.6s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="960" cy="242" r="1.6" opacity="0.5">
+      <circle cx="960" cy="242" r="1.7" opacity="0.5">
         <animate attributeName="cy" values="248;218;248" dur="4.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.15;0.65;0.15" dur="4.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.75;0.15" dur="4.8s" repeatCount="indefinite"/>
       </circle>
     </g>
 
-    <!-- Main Title (Clean over the Forest Sky) -->
+    <!-- Main Title -->
     <g filter="url(#textShadow)">
       <text x="600" y="116" fill="#fefce8" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Georgia, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="8">STEIMBER</text>
     </g>
 
     <!-- PRO VECTOR BADGE PILLS (No system emojis — 100% custom vector icons) -->
     <g transform="translate(86, 285)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" letter-spacing="0.2">
-
-      <!-- Pill 1: Mineral Studio (Co-Founder) with Custom Vector Terracotta Crystal Prism -->
+      <!-- Pill 1: Mineral Studio (Co-Founder) -->
       <g transform="translate(0, 0)">
         <rect width="256" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
         <circle cx="24" cy="20" r="13" fill="#1c1410" stroke="#b3613d" stroke-width="1" stroke-opacity="0.6"/>
-        <!-- Vector Mineral Crystal Cluster Icon -->
         <g transform="translate(24, 20)">
           <polygon points="0,-8 -4.5,-2 -2.5,7 2.5,7 4.5,-2" fill="#d97757"/>
           <polygon points="0,-8 4.5,-2 2.5,7 0,7" fill="#b3613d"/>
@@ -280,11 +274,10 @@
         <text x="142" y="24.5" fill="#ecfdf5" text-anchor="middle">Mineral Studio (Co-Founder)</text>
       </g>
 
-      <!-- Pill 2: Estudiante de la UTM with Custom Vector Academic Cap Icon -->
+      <!-- Pill 2: Student at UTM -->
       <g transform="translate(270, 0)">
         <rect width="242" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
         <circle cx="24" cy="20" r="13" fill="#0b2919" stroke="#4ade80" stroke-width="1" stroke-opacity="0.45"/>
-        <!-- Vector Mortarboard / University Icon -->
         <g transform="translate(15, 11)" fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <polygon points="9,2 1.5,6 9,10 16.5,6" fill="#4ade80" fill-opacity="0.22"/>
           <path d="M 4.5 7.8 V 12.5 C 4.5 14 6.5 15.2 9 15.2 C 11.5 15.2 13.5 14 13.5 12.5 V 7.8"/>
@@ -294,11 +287,10 @@
         <text x="138" y="24.5" fill="#ecfdf5" text-anchor="middle">Estudiante de la UTM</text>
       </g>
 
-      <!-- Pill 3: Proyectos Personales with Custom Vector Code / Terminal Icon -->
+      <!-- Pill 3: Personal Projects -->
       <g transform="translate(526, 0)">
         <rect width="246" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
         <circle cx="24" cy="20" r="13" fill="#0b2919" stroke="#4ade80" stroke-width="1" stroke-opacity="0.45"/>
-        <!-- Vector Code Brackets </> Icon -->
         <g transform="translate(15, 11)" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="5.5,5 1.8,9 5.5,13" stroke="#4ade80" stroke-width="1.8"/>
           <polyline points="12.5,5 16.2,9 12.5,13" stroke="#4ade80" stroke-width="1.8"/>
@@ -307,7 +299,7 @@
         <text x="140" y="24.5" fill="#ecfdf5" text-anchor="middle">Proyectos Personales</text>
       </g>
 
-      <!-- Pill 4: Manabí, Ecuador with Vector Flag Inside Circular Badge -->
+      <!-- Pill 4: Manabí, Ecuador -->
       <g transform="translate(786, 0)">
         <rect width="242" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
         <circle cx="24" cy="20" r="13" fill="#0b2919" stroke="#4ade80" stroke-width="1" stroke-opacity="0.45"/>
@@ -319,7 +311,6 @@
         </g>
         <text x="138" y="24.5" fill="#ecfdf5" text-anchor="middle">Manabí, Ecuador</text>
       </g>
-
     </g>
   </g>
 
