@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
+  <defs>
+    <!-- Sunrise over Emerald Forest Sky Gradient -->
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05160e"/>
+      <stop offset="42%" stop-color="#0f3320"/>
+      <stop offset="75%" stop-color="#255840"/>
+      <stop offset="93%" stop-color="#b58328"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Sun & Atmospheric Glow -->
+    <radialGradient id="sunHalo" cx="50%" cy="62%" r="45%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.88"/>
+      <stop offset="30%" stop-color="#fbbf24" stop-opacity="0.48"/>
+      <stop offset="65%" stop-color="#22c55e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#05160e" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="sunCore" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0d2818" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#030d07" flood-opacity="0.9"/>
+    </filter>
+
+    <clipPath id="bannerClip">
+      <rect width="1200" height="350" rx="18"/>
+    </clipPath>
+    <clipPath id="ecFlag">
+      <rect width="22" height="15" rx="2.5"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- Sky Background -->
+    <rect width="1200" height="350" fill="url(#sky)"/>
+    <rect width="1200" height="350" fill="url(#sunHalo)"/>
+
+    <!-- Rising Golden Sun -->
+    <circle cx="600" cy="215" r="88" fill="#fde047" opacity="0.22">
+      <animate attributeName="r" values="84;96;84" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="215" r="62" fill="url(#sunCore)"/>
+
+    <!-- Distant Sunlit Mountain Range (Layer 1) -->
+    <path d="M -20 258 L 90 192 L 195 228 L 325 168 L 445 222 L 560 195 L 650 220 L 775 166 L 900 220 L 1035 172 L 1145 215 L 1220 185 L 1220 350 L -20 350 Z" fill="#1b4630" opacity="0.9"/>
+
+    <!-- Mid-Distant Forest Ridge (Layer 2) -->
+    <path d="M -20 274 L 65 232 L 160 260 L 285 208 L 410 258 L 520 232 L 680 235 L 815 202 L 945 252 L 1080 214 L 1220 250 L 1220 350 L -20 350 Z" fill="#133523"/>
+
+    <!-- Golden Morning Mist in the Valley -->
+    <rect x="0" y="216" width="1200" height="52" fill="url(#mist)"/>
+
+    <!-- Dense Pine Forest Treeline (Layer 3) -->
+    <path d="
+      M 0 350 L 0 254
+      L 18 228 L 32 254 L 48 220 L 64 252 L 82 230 L 98 258
+      L 118 224 L 136 256 L 154 214 L 172 252 L 190 230 L 208 260
+      L 228 234 L 246 262 L 266 222 L 284 256 L 304 232 L 322 264
+      L 344 238 L 362 266 L 382 230 L 400 262 L 420 242 L 438 270
+      L 460 248 L 478 272 L 498 252 L 516 276 L 538 258 L 558 278
+      L 642 278 L 662 258 L 684 276 L 702 252 L 722 272 L 740 248
+      L 762 270 L 780 242 L 800 262 L 818 230 L 838 266 L 856 238
+      L 878 264 L 896 232 L 916 256 L 934 222 L 954 262 L 972 234
+      L 992 260 L 1010 230 L 1028 252 L 1046 214 L 1064 256 L 1082 224
+      L 1102 258 L 1118 230 L 1136 252 L 1152 220 L 1168 254 L 1182 228
+      L 1200 254 L 1200 350 Z" fill="#0b2416"/>
+
+    <!-- Foreground Dark Pine Forest Silhouette (Layer 4) -->
+    <path d="
+      M 0 350 L 0 274
+      L 24 236 L 44 276 L 68 226 L 92 274 L 114 242 L 136 280
+      L 162 234 L 186 278 L 210 246 L 232 284 L 258 252 L 280 286
+      L 308 256 L 330 290 L 356 262 L 380 292 L 408 270 L 432 294
+      L 460 276 L 486 298 L 520 284 L 555 300 L 600 294 L 645 300
+      L 680 284 L 714 298 L 740 276 L 768 294 L 792 270 L 820 292
+      L 844 262 L 870 290 L 892 256 L 920 286 L 942 252 L 968 284
+      L 990 246 L 1014 278 L 1038 234 L 1064 280 L 1086 242 L 1108 274
+      L 1132 226 L 1156 276 L 1176 236 L 1200 274 L 1200 350 Z" fill="#05130b"/>
+
+    <!-- Birds Flying in Sky -->
+    <g stroke="#061910" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.75">
+      <path d="M 445 148 Q 452 140 459 147 Q 466 140 473 148"/>
+      <path d="M 485 134 Q 490 128 495 133 Q 500 128 505 134"/>
+      <path d="M 720 142 Q 726 135 732 141 Q 738 135 744 142"/>
+    </g>
+
+    <!-- Main Title Only (Clean over the Forest Sky) -->
+    <g filter="url(#textShadow)">
+      <text x="600" y="116" fill="#fefce8" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Georgia, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="8">STEIMBER</text>
+    </g>
+
+    <!-- Bottom Pills with the Clean Dark Translucent Capsule Style -->
+    <g transform="translate(105, 286)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="700">
+      <g transform="translate(0, 0)">
+        <rect width="240" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="120" y="24" fill="#ecfdf5" text-anchor="middle">💎 Mineral Studio (Co-Founder)</text>
+      </g>
+      <g transform="translate(256, 0)">
+        <rect width="235" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="117.5" y="24" fill="#ecfdf5" text-anchor="middle">🏛️ Estudiante de la UTM</text>
+      </g>
+      <g transform="translate(507, 0)">
+        <rect width="230" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <text x="115" y="24" fill="#ecfdf5" text-anchor="middle">💻 Proyectos Personales</text>
+      </g>
+      <g transform="translate(753, 0)">
+        <rect width="235" height="38" rx="19" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+        <g transform="translate(32, 11.5)" clip-path="url(#ecFlag)">
+          <rect x="0" y="0" width="22" height="7.5" fill="#FFD100"/>
+          <rect x="0" y="7.5" width="22" height="3.75" fill="#0033A0"/>
+          <rect x="0" y="11.25" width="22" height="3.75" fill="#EF3340"/>
+          <circle cx="11" cy="7.5" r="2" fill="#d97706"/>
+        </g>
+        <text x="136" y="24" fill="#ecfdf5" text-anchor="middle">Manabí, Ecuador</text>
+      </g>
+    </g>
+  </g>
+
+  <rect width="1200" height="350" rx="18" fill="none" stroke="#1e462d" stroke-width="2"/>
+</svg>
