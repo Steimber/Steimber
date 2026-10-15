@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05160e"/>
+      <stop offset="65%" stop-color="#0e2d1c"/>
+      <stop offset="100%" stop-color="#163f28"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="88%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#fde047" stop-opacity="0.16"/>
+      <stop offset="50%" stop-color="#22c55e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#05160e" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+    <clipPath id="ecFlag">
+      <rect width="20" height="13" rx="2"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="580" height="230" fill="url(#bg)"/>
+    <rect width="580" height="230" fill="url(#sunGlow)"/>
+
+    <!-- Subtle Distant Ridge & Pine Silhouette at Bottom -->
+    <path d="M 0 198 L 95 168 L 195 190 L 310 158 L 430 188 L 520 164 L 580 182 L 580 230 L 0 230 Z" fill="#0a2114" opacity="0.75"/>
+    <path d="M 0 230 L 0 204 L 22 184 L 40 205 L 62 178 L 84 204 L 106 188 L 128 208 L 154 182 L 176 206 L 202 190 L 226 210 L 254 194 L 280 212 L 310 192 L 336 210 L 364 188 L 390 208 L 418 184 L 444 206 L 472 180 L 498 204 L 524 186 L 548 206 L 566 188 L 580 202 L 580 230 Z" fill="#05130b" opacity="0.9"/>
+
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule -->
+      <rect x="0" y="0" width="236" height="28" rx="14" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38"/>
+      <g transform="translate(14, 7.5)" clip-path="url(#ecFlag)">
+        <rect x="0" y="0" width="20" height="6.5" fill="#FFD100"/>
+        <rect x="0" y="6.5" width="20" height="3.25" fill="#0033A0"/>
+        <rect x="0" y="9.75" width="20" height="3.25" fill="#EF3340"/>
+      </g>
+      <text x="132" y="18.5" fill="#ecfdf5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UTM · MANABÍ, ECUADOR</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#fefce8" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / College_Projects</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#d1fae5" font-size="13.5" opacity="0.88">Repositorio central con mis tareas, laboratorios prácticos y proyectos</text>
+      <text x="0" y="112" fill="#d1fae5" font-size="13.5" opacity="0.88">académicos en la Universidad Técnica de Manabí (UTM).</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.35"/>
+        <text x="52" y="18" fill="#ecfdf5" text-anchor="middle">C++ / CMake</text>
+
+        <rect x="114" y="0" width="122" height="28" rx="14" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.35"/>
+        <text x="175" y="18" fill="#ecfdf5" text-anchor="middle">Geant4 / Docker</text>
+
+        <rect x="246" y="0" width="102" height="28" rx="14" fill="#05160e" fill-opacity="0.78" stroke="#4ade80" stroke-width="1" stroke-opacity="0.35"/>
+        <text x="297" y="18" fill="#ecfdf5" text-anchor="middle">ES / EN Docs</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#05160e" fill-opacity="0.85" stroke="#fde047" stroke-width="1" stroke-opacity="0.45"/>
+        <text x="459" y="18" fill="#fef9c3" font-weight="700" text-anchor="middle">Abrir repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#1e462d" stroke-width="1.5"/>
+</svg>

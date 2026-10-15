@@ -40,10 +40,10 @@
 
 <p align="center">
   <a href="https://github.com/Steimber/College_Projects">
-    <img src="./assets/utm-repo-es.svg" width="49%" alt="College_Projects UTM" />
+    <img src="./assets/card-utm-v2-es.svg" width="49%" alt="College_Projects UTM" />
   </a>
   <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
-    <img src="./assets/utm-geant4-es.svg" width="49%" alt="Proyecto Geant4" />
+    <img src="./assets/card-geant4-v2-es.svg" width="49%" alt="Proyecto Geant4" />
   </a>
 </p>
 
@@ -85,10 +85,10 @@
 
 <p align="center">
   <a href="https://github.com/Steimber/College_Projects">
-    <img src="./assets/utm-repo-en.svg" width="49%" alt="College_Projects UTM" />
+    <img src="./assets/card-utm-v2-en.svg" width="49%" alt="College_Projects UTM" />
   </a>
   <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
-    <img src="./assets/utm-geant4-en.svg" width="49%" alt="Proyecto Geant4" />
+    <img src="./assets/card-geant4-v2-en.svg" width="49%" alt="Proyecto Geant4" />
   </a>
 </p>
 
