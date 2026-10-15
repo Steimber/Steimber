@@ -1,35 +1,63 @@
 <div align="center">
 
-<!-- LANGUAGE SWITCHER BAR -->
-[![Español](https://img.shields.io/badge/🇪🇸_IDIOMA-ESPAÑOL_(ACTIVO)-0ea5e9?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/Steimber/blob/main/README.md)
-[![English](https://img.shields.io/badge/🇺🇸_LANGUAGE-ENGLISH-334155?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
-[![College_Projects](https://img.shields.io/badge/🏛️_UNIVERSIDAD-COLLEGE__PROJECTS-8b5cf6?style=for-the-badge&labelColor=0f172a)](https://github.com/Steimber/College_Projects)
+<!-- TOP NAVIGATION & LANGUAGE SWITCHER BAR (FOREST & BEAR THEME) -->
+[![Español](https://img.shields.io/badge/🇪🇸_IDIOMA-ESPAÑOL_(ACTIVO)-16a34a?style=for-the-badge&labelColor=07170e)](https://github.com/Steimber/Steimber/blob/main/README.md)
+[![English](https://img.shields.io/badge/🇺🇸_LANGUAGE-ENGLISH-14532d?style=for-the-badge&labelColor=07170e)](https://github.com/Steimber/Steimber/blob/main/README.en.md)
+[![Mineral Studio](https://img.shields.io/badge/💎_MINERAL_STUDIO-MINERAL--EC.COM-b3613d?style=for-the-badge&labelColor=1c120d)](https://mineral-ec.com/)
+[![Instagram](https://img.shields.io/badge/📸_INSTAGRAM-@MINERALSTUDIO.EC-d97706?style=for-the-badge&labelColor=1c120d)](https://www.instagram.com/mineralstudio.ec)
+[![UTM College_Projects](https://img.shields.io/badge/🇪🇨_UTM-COLLEGE__PROJECTS-22c55e?style=for-the-badge&labelColor=07170e)](https://github.com/Steimber/College_Projects)
 
 </div>
 
 <br/>
 
 <details open>
-<summary><b>🇪🇸 ESPAÑOL — Panel Principal Interactivo (Clic para contraer / desplegar)</b></summary>
+<summary><b>🌲 🇪🇸 ESPAÑOL — El Rincón del Oso · Panel Principal (Clic para contraer / desplegar) 🐻</b></summary>
 <br/>
 
 <div align="center">
-  <img src="./assets/hero-es.svg" width="100%" alt="Steimber Banner" />
+  <img src="./assets/hero-es.svg" width="100%" alt="Steimber Forest & Bear Banner" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3200&pause=1000&color=38BDF8&center=true&vCenter=true&width=780&lines=🎓+Repositorio+de+Tareas+y+Laboratorios+Universitarios;⚛️+Simulaciones+Cient%C3%ADficas+con+C%2B%2B%2C+Geant4+y+Docker;💻+Ingenier%C3%ADa+de+Software+y+Proyectos+Personales" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=3200&pause=1000&color=4ADE80&center=true&vCenter=true&width=820&lines=🐻+Co-Fundador+de+Mineral+Studio+(mineral-ec.com)+%7C+Ecuador+🇪🇨;🌲+Estudiante+en+la+Universidad+T%C3%A9cnica+de+Manab%C3%AD+(UTM);⚛️+Simulaciones+Cient%C3%ADficas+con+C%2B%2B%2C+Geant4+y+Docker;🍃+Ideas+que+se+vuelven+sistemas+%C2%B7+Software+a+Medida" alt="Typing SVG" />
 </div>
 
 ---
 
-### 🚀 Proyectos Universitarios Destacados (`College_Projects`)
+### 💎 Co-Fundador de **Mineral Studio** 🇪🇨
 
-> 💡 *Haz clic en cualquiera de las tarjetas para ir directamente al repositorio o al código fuente del proyecto:*
+<div align="center">
+  <a href="https://mineral-ec.com/">
+    <img src="./assets/mineral-card-es.svg" width="100%" alt="Mineral Studio — Ideas que se vuelven sistemas" />
+  </a>
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center" width="140">
+      <a href="https://mineral-ec.com/">
+        <img src="./assets/mineral-logo.png" width="96" alt="Mineral Studio Logo" style="border-radius: 16px;" />
+      </a>
+    </td>
+    <td align="left">
+      <b>💎 Mineral Studio — <i>"Ideas que se vuelven sistemas."</i></b><br/>
+      Estudio independiente de software en <b>Ecuador 🇪🇨</b> donde creamos sistemas a medida para negocios: facturación electrónica (SRI), gestión comercial, reservas, automatizaciones y sitios web.<br/><br/>
+      <a href="https://mineral-ec.com/"><img src="https://img.shields.io/badge/🌐_VISITAR_PÁGINA_OFICIAL-mineral--ec.com-b3613d?style=for-the-badge&labelColor=1c120d" alt="mineral-ec.com" /></a>
+      <a href="https://www.instagram.com/mineralstudio.ec"><img src="https://img.shields.io/badge/📸_SÍGUENOS_EN_INSTAGRAM-@mineralstudio.ec-16a34a?style=for-the-badge&labelColor=07170e" alt="@mineralstudio.ec" /></a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🌲 Tareas y Proyectos Universitarios — **UTM (Ecuador 🇪🇨)**
+
+> 🐾 *Todas mis tareas, laboratorios y simulaciones de la **Universidad Técnica de Manabí (UTM)** están centralizadas en el repositorio `College_Projects`:*
 
 <p align="center">
   <a href="https://github.com/Steimber/College_Projects">
-    <img src="./assets/card-college-es.svg" width="49%" alt="College_Projects Monorepo" />
+    <img src="./assets/card-college-es.svg" width="49%" alt="College_Projects Monorepo UTM" />
   </a>
   <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
     <img src="./assets/card-geant4-es.svg" width="49%" alt="Proyecto Geant4" />
@@ -38,17 +66,17 @@
 
 ---
 
-### 🖥️ Explorador del Repositorio Universitario
+### 🖥️ Terminal del Bosque (`~/College_Projects`)
 
 <div align="center">
   <a href="https://github.com/Steimber/College_Projects">
-    <img src="./assets/terminal-es.svg" width="92%" alt="Terminal College_Projects" />
+    <img src="./assets/terminal-es.svg" width="94%" alt="Terminal College_Projects" />
   </a>
 </div>
 
 ---
 
-### 🛠️ Stack Tecnológico y Herramientas
+### 🍃 Stack Tecnológico y Herramientas
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=6" alt="Tech Stack" />
@@ -59,26 +87,52 @@
 <br/>
 
 <details>
-<summary><b>🇺🇸 ENGLISH — Interactive English Dashboard (Click to expand / Switch to English inline)</b></summary>
+<summary><b>🌲 🇺🇸 ENGLISH — The Grizzly Den · Interactive Dashboard (Click to expand / Switch to English) 🐻</b></summary>
 <br/>
 
 <div align="center">
-  <img src="./assets/hero-en.svg" width="100%" alt="Steimber Banner EN" />
+  <img src="./assets/hero-en.svg" width="100%" alt="Steimber Forest & Bear Banner EN" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3200&pause=1000&color=38BDF8&center=true&vCenter=true&width=780&lines=🎓+University+Coursework+%26+Academic+Labs+Hub;⚛️+Scientific+Simulations+with+C%2B%2B%2C+Geant4+%26+Docker;💻+Software+Engineering+%26+Personal+Projects" alt="Typing SVG EN" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=3200&pause=1000&color=4ADE80&center=true&vCenter=true&width=820&lines=🐻+Co-Founder+of+Mineral+Studio+(mineral-ec.com)+%7C+Ecuador+🇪🇨;🌲+Student+at+Universidad+T%C3%A9cnica+de+Manab%C3%AD+(UTM);⚛️+Scientific+Simulations+with+C%2B%2B%2C+Geant4+%26+Docker;🍃+Ideas+that+become+systems+%C2%B7+Custom+Software+Engineering" alt="Typing SVG EN" />
 </div>
 
 ---
 
-### 🚀 Featured University Projects (`College_Projects`)
+### 💎 Co-Founder of **Mineral Studio** 🇪🇨
 
-> 💡 *Click on any card below to open the centralized university monorepo or inspect the simulation source code:*
+<div align="center">
+  <a href="https://mineral-ec.com/">
+    <img src="./assets/mineral-card-en.svg" width="100%" alt="Mineral Studio — Ideas that become systems" />
+  </a>
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center" width="140">
+      <a href="https://mineral-ec.com/">
+        <img src="./assets/mineral-logo.png" width="96" alt="Mineral Studio Logo" style="border-radius: 16px;" />
+      </a>
+    </td>
+    <td align="left">
+      <b>💎 Mineral Studio — <i>"Ideas that become systems."</i></b><br/>
+      Independent software studio in <b>Ecuador 🇪🇨</b> building tailored business systems: electronic invoicing (SRI), management platforms, booking systems, workflow automations, and custom web applications.<br/><br/>
+      <a href="https://mineral-ec.com/"><img src="https://img.shields.io/badge/🌐_OFFICIAL_WEBSITE-mineral--ec.com-b3613d?style=for-the-badge&labelColor=1c120d" alt="mineral-ec.com" /></a>
+      <a href="https://www.instagram.com/mineralstudio.ec"><img src="https://img.shields.io/badge/📸_FOLLOW_ON_INSTAGRAM-@mineralstudio.ec-16a34a?style=for-the-badge&labelColor=07170e" alt="@mineralstudio.ec" /></a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🌲 University Coursework & Projects — **UTM (Ecuador 🇪🇨)**
+
+> 🐾 *All my coursework, laboratory assignments, and simulations at **Universidad Técnica de Manabí (UTM)** are centralized in the `College_Projects` repository:*
 
 <p align="center">
   <a href="https://github.com/Steimber/College_Projects">
-    <img src="./assets/card-college-en.svg" width="49%" alt="College_Projects Monorepo" />
+    <img src="./assets/card-college-en.svg" width="49%" alt="College_Projects Monorepo UTM" />
   </a>
   <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4">
     <img src="./assets/card-geant4-en.svg" width="49%" alt="Proyecto Geant4" />
@@ -87,17 +141,17 @@
 
 ---
 
-### 🖥️ University Repository Explorer
+### 🖥️ Woodland Terminal (`~/College_Projects`)
 
 <div align="center">
   <a href="https://github.com/Steimber/College_Projects">
-    <img src="./assets/terminal-en.svg" width="92%" alt="Terminal College_Projects" />
+    <img src="./assets/terminal-en.svg" width="94%" alt="Terminal College_Projects" />
   </a>
 </div>
 
 ---
 
-### 🛠️ Tech Stack & Tools
+### 🍃 Tech Stack & Tools
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=6" alt="Tech Stack" />
@@ -106,5 +160,5 @@
 </details>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:6366f1,100:a855f7&height=110&section=footer" width="100%" alt="Footer Wave" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:064e3b,50:16a34a,100:fbbf24&height=110&section=footer" width="100%" alt="Forest Wave Footer" />
 </div>

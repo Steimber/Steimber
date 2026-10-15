@@ -1,119 +1,139 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050816"/>
-      <stop offset="50%" stop-color="#0b1120"/>
-      <stop offset="100%" stop-color="#090d16"/>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040d08"/>
+      <stop offset="50%" stop-color="#0b1f13"/>
+      <stop offset="100%" stop-color="#112a1b"/>
     </linearGradient>
     <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#c084fc"/>
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="50%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
     </linearGradient>
-    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    <linearGradient id="vineLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4ade80" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="ray1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#e0f2fe" stop-opacity="1"/>
-    </linearGradient>
-    <linearGradient id="ray2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#a855f7" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#f3e8ff" stop-opacity="1"/>
-    </linearGradient>
-    <radialGradient id="glow1" cx="20%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    <radialGradient id="canopyGlow" cx="25%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="82%" cy="75%" r="50%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    <radialGradient id="amberGlow" cx="80%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.55"/>
-    </pattern>
+    <linearGradient id="cosmicRay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#4ade80" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="ecFlagClip">
+      <rect width="24" height="16" rx="3"/>
+    </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="340" rx="18" fill="url(#bg)" stroke="#1e293b" stroke-width="2"/>
-  <rect width="1200" height="340" rx="18" fill="url(#grid)"/>
-  <rect width="1200" height="340" rx="18" fill="url(#glow1)"/>
-  <rect width="1200" height="340" rx="18" fill="url(#glow2)"/>
+  <!-- Deep Forest Night Background -->
+  <rect width="1200" height="370" rx="18" fill="url(#skyBg)" stroke="#1e462d" stroke-width="2.2"/>
+  <rect width="1200" height="370" rx="18" fill="url(#canopyGlow)"/>
+  <rect width="1200" height="370" rx="18" fill="url(#amberGlow)"/>
 
-  <!-- Cosmic Ray Shower Animation (Geant4 Inspired) -->
-  <g opacity="0.65">
-    <line x1="150" y1="-20" x2="310" y2="140" stroke="url(#ray1)" stroke-width="2" stroke-linecap="round">
-      <animate attributeName="opacity" values="0;0.9;0" dur="3.6s" repeatCount="indefinite"/>
-    </line>
-    <line x1="310" y1="140" x2="260" y2="290" stroke="url(#ray1)" stroke-width="1.3" stroke-dasharray="4 4">
-      <animate attributeName="opacity" values="0;0.75;0" dur="3.6s" begin="0.4s" repeatCount="indefinite"/>
-    </line>
-    <line x1="310" y1="140" x2="395" y2="300" stroke="url(#ray2)" stroke-width="1.5" stroke-dasharray="5 3">
-      <animate attributeName="opacity" values="0;0.85;0" dur="3.6s" begin="0.4s" repeatCount="indefinite"/>
-    </line>
-    <circle cx="310" cy="140" r="3" fill="#38bdf8">
-      <animate attributeName="r" values="1;6;1" dur="3.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;0" dur="3.6s" repeatCount="indefinite"/>
-    </circle>
+  <!-- Distant Mountain Ridges -->
+  <path d="M 0 300 L 140 230 L 290 285 L 470 205 L 650 280 L 830 215 L 1020 275 L 1140 225 L 1200 260 L 1200 370 L 0 370 Z" fill="#09180f" opacity="0.85"/>
+  <path d="M 0 320 L 95 275 L 220 310 L 380 255 L 540 315 L 720 260 L 900 310 L 1060 265 L 1200 305 L 1200 370 L 0 370 Z" fill="#0d2316" opacity="0.92"/>
 
-    <line x1="940" y1="-10" x2="1040" y2="120" stroke="url(#ray2)" stroke-width="2" stroke-linecap="round">
-      <animate attributeName="opacity" values="0;0.9;0" dur="4.2s" begin="1.2s" repeatCount="indefinite"/>
-    </line>
-    <line x1="1040" y1="120" x2="985" y2="270" stroke="url(#ray1)" stroke-width="1.3" stroke-dasharray="4 4">
-      <animate attributeName="opacity" values="0;0.7;0" dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
-    </line>
-    <line x1="1040" y1="120" x2="1125" y2="265" stroke="url(#ray2)" stroke-width="1.4" stroke-dasharray="4 4">
-      <animate attributeName="opacity" values="0;0.75;0" dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
-    </line>
-    <circle cx="1040" cy="120" r="3" fill="#c084fc">
-      <animate attributeName="r" values="1;6;1" dur="4.2s" begin="1.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;0" dur="4.2s" begin="1.2s" repeatCount="indefinite"/>
-    </circle>
+  <!-- Pine Forest Silhouette Along Edges -->
+  <g fill="#153823" opacity="0.92">
+    <polygon points="35,240 10,320 60,320"/>
+    <polygon points="35,210 16,270 54,270"/>
+    <polygon points="80,255 58,330 102,330"/>
+    <polygon points="80,230 63,280 97,280"/>
+    <polygon points="125,265 105,335 145,335"/>
+    <polygon points="1075,260 1055,335 1095,335"/>
+    <polygon points="1120,245 1096,325 1144,325"/>
+    <polygon points="1120,217 1102,273 1138,273"/>
+    <polygon points="1165,235 1140,320 1190,320"/>
+    <polygon points="1165,205 1146,265 1184,265"/>
   </g>
 
-  <!-- Top Pill Badge -->
-  <g transform="translate(415, 34)">
-    <rect width="370" height="30" rx="15" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
-    <circle cx="20" cy="15" r="4.5" fill="#22c55e">
+  <!-- Animated Fireflies & Cosmic Forest Spores -->
+  <g>
+    <circle cx="180" cy="110" r="3" fill="#fde047">
+      <animate attributeName="cy" values="110;92;110" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="175" r="2.5" fill="#86efac">
+      <animate attributeName="cy" values="175;155;175" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.95;0.3" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="95" r="3.2" fill="#fde047">
+      <animate attributeName="cy" values="95;75;95" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1030" cy="165" r="2.5" fill="#4ade80">
+      <animate attributeName="cy" values="165;145;165" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="140" y1="20" x2="270" y2="120" stroke="url(#cosmicRay)" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;0.9;0" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="920" y1="15" x2="1035" y2="110" stroke="url(#cosmicRay)" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;0.85;0" dur="4.8s" begin="1.6s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Top Bear, UTM, Mineral Studio & Ecuador Flag Badge -->
+  <g transform="translate(245, 26)">
+    <rect width="710" height="34" rx="17" fill="#091910" stroke="#22c55e" stroke-width="1.4" stroke-opacity="0.75"/>
+    <circle cx="22" cy="17" r="4.5" fill="#4ade80">
       <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="195" y="19.5" fill="#94a3b8" font-family="'Fira Code', 'Consolas', monospace" font-size="11.5" font-weight="600" text-anchor="middle" letter-spacing="1.2">ACADEMIC PORTFOLIO &amp; PERSONAL LABS</text>
+    <!-- Vector Ecuador Flag -->
+    <g transform="translate(38, 9)" clip-path="url(#ecFlagClip)">
+      <rect x="0" y="0" width="24" height="8" fill="#FFD100"/>
+      <rect x="0" y="8" width="24" height="4" fill="#0033A0"/>
+      <rect x="0" y="12" width="24" height="4" fill="#EF3340"/>
+      <circle cx="12" cy="8" r="2.3" fill="#d97706" stroke="#78350f" stroke-width="0.6"/>
+    </g>
+    <text x="380" y="21.5" fill="#bbf7d0" font-family="'Fira Code', 'Consolas', monospace" font-size="11.8" font-weight="700" text-anchor="middle" letter-spacing="0.8">CO-FOUNDER OF MINERAL STUDIO · UNIVERSIDAD TÉCNICA DE MANABÍ (UTM) 🌲</text>
   </g>
 
-  <!-- Main Title -->
-  <text x="600" y="148" fill="url(#titleGrad)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="6">STEIMBER</text>
+  <!-- Main Title with Grizzly Bear -->
+  <text x="600" y="144" fill="url(#titleGrad)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="68" font-weight="900" text-anchor="middle" letter-spacing="5">🐻 STEIMBER</text>
 
   <!-- Subtitle -->
-  <text x="600" y="190" fill="#e2e8f0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="500" text-anchor="middle" letter-spacing="0.8">
-    University Coursework · Scientific Simulations · Software Engineering
+  <text x="600" y="188" fill="#dcfce7" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="600" text-anchor="middle" letter-spacing="0.5">
+    🌲 Co-Founder @ Mineral Studio · University Coursework (UTM) · Simulations &amp; Software 🍃
   </text>
 
-  <!-- Animated Divider Line -->
-  <rect x="250" y="214" width="700" height="2" fill="url(#accentLine)">
-    <animate attributeName="x" values="200;300;200" dur="6s" repeatCount="indefinite"/>
+  <!-- Animated Forest Vine Divider -->
+  <rect x="250" y="212" width="700" height="2.5" rx="1.2" fill="url(#vineLine)">
+    <animate attributeName="x" values="210;290;210" dur="6s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Feature Pills -->
-  <g transform="translate(155, 244)" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="600">
+  <!-- Nature, Mineral Studio & UTM Feature Pills -->
+  <g transform="translate(105, 246)" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="700">
     <g transform="translate(0, 0)">
-      <rect width="210" height="38" rx="10" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.2" stroke-opacity="0.6"/>
-      <text x="105" y="24" fill="#38bdf8" text-anchor="middle">🏛️ College_Projects Repo</text>
+      <rect width="240" height="42" rx="12" fill="#1c120d" stroke="#d97706" stroke-width="1.6" stroke-opacity="0.9"/>
+      <text x="120" y="26" fill="#fed7aa" text-anchor="middle">💎 Mineral Studio (Co-Founder)</text>
     </g>
-    <g transform="translate(226, 0)">
-      <rect width="215" height="38" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.6"/>
-      <text x="107.5" y="24" fill="#818cf8" text-anchor="middle">⚛️ Physics &amp; Geant4 (C++)</text>
+    <g transform="translate(256, 0)">
+      <rect width="235" height="42" rx="12" fill="#091910" stroke="#22c55e" stroke-width="1.4" stroke-opacity="0.8"/>
+      <text x="117.5" y="26" fill="#86efac" text-anchor="middle">🏛️ UTM · College_Projects</text>
     </g>
-    <g transform="translate(457, 0)">
-      <rect width="210" height="38" rx="10" fill="#0f172a" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.6"/>
-      <text x="105" y="24" fill="#c084fc" text-anchor="middle">🐳 Docker &amp; Linux Labs</text>
+    <g transform="translate(507, 0)">
+      <rect width="230" height="42" rx="12" fill="#091910" stroke="#4ade80" stroke-width="1.4" stroke-opacity="0.8"/>
+      <text x="115" y="26" fill="#bbf7d0" text-anchor="middle">🐻 Physics &amp; Geant4 (C++)</text>
     </g>
-    <g transform="translate(683, 0)">
-      <rect width="205" height="38" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.6"/>
-      <text x="102.5" y="24" fill="#34d399" text-anchor="middle">🌐 ES / EN Bilingual Docs</text>
+    <g transform="translate(753, 0)">
+      <rect width="235" height="42" rx="12" fill="#091910" stroke="#eab308" stroke-width="1.4" stroke-opacity="0.8"/>
+      <g transform="translate(22, 13)" clip-path="url(#ecFlagClip)">
+        <rect x="0" y="0" width="24" height="8" fill="#FFD100"/>
+        <rect x="0" y="8" width="24" height="4" fill="#0033A0"/>
+        <rect x="0" y="12" width="24" height="4" fill="#EF3340"/>
+        <circle cx="12" cy="8" r="2.2" fill="#d97706"/>
+      </g>
+      <text x="132" y="26" fill="#fef08a" text-anchor="middle">Manabí, Ecuador · ES/EN</text>
     </g>
   </g>
 </svg>
