@@ -1,189 +1,153 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
   <defs>
-    <!-- Synchronized Card Background (Morning -> Afternoon -> Night) -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#05160e">
-        <animate attributeName="stop-color" values="#05160e;#05160e;#0f141c;#0f141c;#020617;#020617;#05160e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    <!-- Mineral Obsidian & Terracotta Animated Background -->
+    <linearGradient id="mineralBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0806">
+        <animate attributeName="stop-color" values="#0d0806;#140b08;#090605;#0d0806" dur="18s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="62%" stop-color="#0e2d1c">
-        <animate attributeName="stop-color" values="#0e2d1c;#0e2d1c;#261a18;#261a18;#071924;#071924;#0e2d1c" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <stop offset="55%" stop-color="#1f110c">
+        <animate attributeName="stop-color" values="#1f110c;#2b160f;#160c09;#1f110c" dur="18s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#163f28">
-        <animate attributeName="stop-color" values="#163f28;#163f28;#3d231a;#3d231a;#0c2b33;#0c2b33;#163f28" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#381d13">
+        <animate attributeName="stop-color" values="#381d13;#4a2518;#26130d;#381d13" dur="18s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <radialGradient id="sunGlow" cx="88%" cy="18%" r="58%">
-      <stop offset="0%" stop-color="#fde047" stop-opacity="0.22">
-        <animate attributeName="stop-color" values="#fde047;#fde047;#fb923c;#fb923c;#7dd3fc;#7dd3fc;#fde047" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    <radialGradient id="crystalGlow" cx="82%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#d97757" stop-opacity="0.32">
+        <animate attributeName="stop-opacity" values="0.22;0.38;0.22" dur="6s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" stop-color="#22c55e" stop-opacity="0.10">
-        <animate attributeName="stop-color" values="#22c55e;#22c55e;#b3613d;#b3613d;#14b8a6;#14b8a6;#22c55e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#05160e" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#b3613d" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0d0806" stop-opacity="0"/>
     </radialGradient>
 
     <clipPath id="cardClip">
       <rect width="580" height="230" rx="16"/>
     </clipPath>
-    <clipPath id="ecFlag">
-      <rect width="20" height="13" rx="2"/>
-    </clipPath>
-    <path id="cardPine1" d="M 0 -46 L -9 -26 L -4 -27 L -14 -10 L -7 -11 L -18 5 L 18 5 L 7 -11 L 14 -10 L 4 -27 L 9 -26 Z"/>
-    <path id="cardPine2" d="M 0 -36 L -7 -20 L -3 -21 L -11 -7 L -6 -8 L -15 5 L 15 5 L 6 -8 L 11 -7 L 3 -21 L 7 -20 Z"/>
+
+    <!-- Faceted Falling Mineral Crystal Shard -->
+    <g id="crystalShard">
+      <polygon points="0,-14 -6,-4 -3,12 3,12 6,-4" fill="#d97757"/>
+      <polygon points="0,-14 6,-4 3,12 0,12" fill="#9c4f2f"/>
+      <polygon points="0,-14 -6,-4 0,-2 6,-4" fill="#f4b196" opacity="0.9"/>
+    </g>
+
+    <g id="crystalSmall">
+      <polygon points="0,-9 -4,-2 -2,8 2,8 4,-2" fill="#e08a6b"/>
+      <polygon points="0,-9 4,-2 2,8 0,8" fill="#b3613d"/>
+      <polygon points="0,-9 -4,-2 0,-1 4,-2" fill="#fde047" opacity="0.75"/>
+    </g>
+
+    <!-- Official Mineral Studio Crystal Cluster Paths -->
+    <g id="mineralCluster">
+      <path d="M131.9 242.1c3.1-.3 3.5-.4 4.3-1l2.4-1.6c1.5-.8 9.7-8.6 9.7-9.2q0-.3.8-1l3-3.4c1-1.4 2.6-3.1 3.3-3.8 4-4.1 4.7-4.8 4.9-4.8l.5-.6c.2-.4 2.5-2.9 5.2-5.6l5.4-6 .8-.8q.4-.1 1.4-1.6t1.8-2.1q.7-.5 1.2-1.8c.2-.7.8-1.9 1.2-2.5 2-3.2.7-9.3-2.5-11.5-.6-.5-2.6-1.7-4.4-2.6s-4.2-2.2-5.2-3q-1.8-1-2.5-1.2c-.3 0-1.4-.5-2.4-1.1l-5.4-3c-2-1-3.8-2.2-4.1-2.4q-.6-.5-1.3-.6-.7-.2-1.4-1l-1.7-1q-1-.1-2-1l-2.6-1.3c-.8-.4-2-1-2.6-1.5q1-.8-2-1-1-.3-1.7-1c-.3-.3-1.3-1-2.1-1.4-4.2-2.2-7.4-3.8-8.6-4.2q-1.4-.5-2-1c-.5-.2-1.3-.3-4.2-.3-4 0-3.4-.1-7 2q-2.3 1.1-3.3 2.8l-2.1 3.4c-.8 1.2-2 3.4-2.5 4.8l-2 4.5-1 2.2-.8 1.6c-.5.7-1 1.8-1.1 2.3q-.3 1-.9 1.7-.5.6-.9 1.7-.3 1-.7 1.6-.5.7-1.2 2.2c-.3.9-1 2.3-1.5 3q-.8 1.4-1 2.5l-1 2-.6 1.2-.8 1.4c-.4.6-1 1.8-1.2 2.6q-.8 2.4-2.1 4.2-.7.9-.7 1.5t-.7 1.4-1.2 2l-.5 1.6c-.7 1-3.6 6.8-3.8 7.8l-.6 1.8c-1 1.8-1.2 6.2-.5 7.8.3.5 1 1.6 1.7 2.4 1.4 1.7 3.4 2.7 8.3 4l4.2 1 2.4.6 2.3.4q7.5 2.3 9.8 2.4c1 .1 2.2.4 2.7.7s1.8.6 3 .8l4.8 1c1.5.3 4.2.8 6 .9l3.4.4c.1.1-.2.2 3.9-.3"/>
+      <path d="M190.4 446.6c1-.6 2.2-2.6 2.3-3.7q.3-2.5-5.3-20.1c-.4-1-.7-2.2-.7-2.5s-.3-1.4-.7-2.4c-.8-2.1-2.2-6.7-2.2-7.3l-.7-1.6-.6-1.6c0-.8-.9-3.9-2.2-8-.7-2-1.4-4.2-1.4-4.8l-.7-2-.8-2.4-1-2.8-.9-3.6-.7-2.7c-.4-.8-2.5-7.2-2.7-8.2q-.2-1-.6-1.8-.5-.7-.5-1.3l-.6-2-1.2-3.4q-.4-1.8-.7-2.3c-.2-.2-.6-1.6-1-3.2l-1.5-5-1.2-3.5-.9-2.5-.8-2.9-.8-3c-.3-.4-.7-1.7-1-2.6l-1.2-4.5-1-3.7c0-.5-.7-2.3-1.4-4-.7-1.6-1.4-3.6-1.6-4.4q-1.1-4.8-1.9-6.7l-.4-1.8q0-.5-1-2.3c-.4-1-1-2.8-1.2-3.9-.5-2.5-.9-3.9-1.6-5.6-.8-1.9-1.5-4.5-1.5-5.2q0-.7-.6-2-.6-1-.6-1.8l-1.4-4.7-1.5-5q-.2-.6-.7-1.3l-.4-1.2c0-.6-1.2-4.4-2.7-9l-1-3.4c0-.6-.5-1.9-.8-2.9l-1.7-4.9-1.1-3.8-1-1.7-1.4-2c-.7-1-3.9-3.6-5.7-4.6l-2.2-1.2c-.9-.6-1.6-.8-4-1.2-1.7-.2-3.8-.6-4.6-.9-.8-.2-2.4-.6-3.5-.7l-3.2-.6c-1.6-.5-10.5-2.5-12.5-3-.9 0-3.4-.6-5.7-1.2-4.5-1-9.5-1.6-10.7-1.2-1.3.4-3 2-3.7 3.4-.9 1.9-.7 3.8.7 8.3l1.5 5 .9 2.2.6 1.8c.2 1.4 1.9 6.2 2.4 7q.4.5.7 2l1 2.2.4 1 1.6 4.7c1 2.4 1.7 4.5 1.7 4.7l.5 1.4q.6 1.2.8 2l.7 1.8c.2.5 1 2.4 1.5 4.3l1.8 4.7q.7 1.2.7 1.8c0 .7.6 2.7 1.5 4.8.4.8.9 2.2 1.1 3 .2 1 .7 2.2 1 2.6.3.5.7 1.7 1 2.7.1 1 .6 2.4 1 3.2l1.5 4.1c.5 1.4 1 2.9 1.2 3.1q.3.6.5 1.6c.1.5.5 1.6 1 2.4l1.2 3.1 1.2 2.6c.3.4.7 1.6.9 2.6.3 1.9.6 2.8 1.2 4s2.1 5.4 2.6 7l.8 2.1.8 2c.4 1.4 2 5.3 3 7.3l.4 1.6.6 1.8c.4.7.9 2 1.2 2.9 2.4 6.9 3.1 8.9 3.4 9.2l.7 2c.2 1 .7 2.3 1 3 .5.8 1.3 2.8 1.9 4.6l1.3 3.5.7 2.1c.2 1 1 3 1.5 4.4s1.3 3.1 1.5 3.9l1.1 2.4q.7 1 .7 1.7c0 .5 1.4 4.4 2.3 6.5.2.4.5 1.4.6 2.2q.3 1.5 1 2.1.5.7.6 1.3l.7 2.5 1.3 3.5c.4 1.4 1.4 4.2 2 5.4l.4 1.6q.3 1 1 2c.3.4.8 1.5 1 2.3q1.1 2.7 2 3.9.5.5.9 1.4c1 2.3 5.3 5.2 9.8 6.6l3.3.9 1.4.3 2.9.8 3.3.9 3.8 1c1.3.2 2.7.6 3 .8q.6.4 1.3.4l3.9.7c1.7.4 4 .9 5.2 1l2.2.4c.3.3 3.1-.1 3.7-.5"/>
+      <path d="m211.8 446.1 4-.8c.5-.4 5-1.8 8-2.4q6.2-1.5 9.4-6.3 1.9-3.1-.4-14.6c-.2-.6-.4-2-.5-3.1l-.7-3.4-.7-3.6-1.3-6.9c-1-4.7-2-9.5-2.2-12l-.7-3.2-.6-3.7q0-1.6-.4-2.4l-1.2-6c-.5-3.1-1-5.9-1.2-6.3q-.3-.7-.3-2.4c0-1-.3-2.7-.6-4.2-.4-1.3-.8-3.4-1-4.6l-.8-4-.7-3.7-.8-3.8-.5-2.6q-.3-.6-.5-2.5c0-1-.4-3.2-.7-4.6-.4-1.5-.7-3.1-.7-3.6s-.2-2-.6-3.4l-1-5.3-.8-4.5c-.3-1-.6-2.3-.6-2.8 0-1-.3-3-1-5l-.6-3.4c0-1-.3-2.4-.5-3l-.7-3.5-.8-4-.3-2.6q0-.9-.6-2.1c-.2-.8-.4-2-.4-2.7s-.4-2.9-.8-4.6-.9-4.1-1-5.4l-.8-4.1-.8-4.7c-.3-1.6-.6-3.4-.9-4-.2-.7-.5-2.1-.6-3.3s-.3-2.9-.6-3.7l-.6-3.3c-.3-2.5-.8-5-1.8-9l-.9-4-.4-1.8-.3-2.1c0-.5-.4-1.8-.8-3-.4-1.3-1-3.3-1.2-4.6s-.5-2.7-.7-3c-.3-.3-.6-1.3-.7-2.2-.4-2-1.2-5-1.8-7.1q-.9-2.7-1.2-5.2l-.7-2.8-1-3.9c-1.5-7.3-2.3-8.5-6-9.5-1.8-.5-2.5-.2-4.4 1.5-5 4.4-6 5.4-6.6 6.3l-4 4.4c-6.2 6.4-12 12.5-14.6 15.5l-2.7 3-2.8 3.3-2.3 2.7q-1 1-1.5 1.8l-1.7 2.2q-2.3 3-2.3 4.3l-.5 2.6c-.8 4-.2 9 2.1 15.8.4 1 1 3.1 1.3 4.6l1.9 6 1.4 5q.3 2 1 2.5c.2 0 .4.9.5 1.8s.7 3 1.2 4.5l1.3 4q.4 1.4.9 2.3t.6 1.4c0 .7.8 3.6 1.7 6.5.5 1.3.8 2.5.8 2.7l.5 1.2c.3.4.6 1.5.8 2.4q.2 1.7.7 2.6l1 2.7 1 3.2 1 3.5 1.5 4.6c.6 1.4 1.2 3.3 1.4 4.2l.8 2.7q.5 1 .6 1.8c0 .8 2.7 9.4 3.4 10.7.2.4.6 1.7.8 2.9s.8 3 1.2 3.9l1 3.1q.1 1.4.7 2.5c.3.6.6 1.7.7 2.4s.7 2.9 1.4 5l1.3 4 .4 1.7.7 2.3 1.3 4.2 1.2 4.3q.2 1 .6 1.7.5.8.7 2l.9 2.6.7 1.8.8 3c.5 1.4 1.2 3.4 1.4 4.4l1.6 5c.6 1.8 1.3 3.8 1.4 4.6q.3 1.4.8 2l.4 1.3c0 .4.7 2.6 1.4 4.9l2 6.4q1 3.6 2.2 6.7l.9 3.3.8 2.9q.5.9.5 1.6t.5 1.5q.6 1 1.1 2.6.7 1.6 1.2 2l1.8 1.5c1.3 1.2 1.8 1.4 3.5 2s2.3.7 6.7 0"/>
+      <path d="M284.1 438.7c3-.3 3-.3 3.8-1.2l1.8-1.9c1.8-1.8 2.3-4 2.5-13.3l.1-8.6.2-6 .4-13 .3-18 .8-35.8.4-19.8.2-9.1.6-16c.2-2.5.4-8.2.4-12.5.3-18.7.7-36.3.9-38.4l.4-9c0-3.8.2-7 .2-7.3l.4-16.7c.1-9 .4-17.1.5-18.2l.4-14c.3-15.4.2-16.5-2-21.3l-1-2.3-2.7-1.5c-1.4-.9-2.9-1.6-3.2-1.6q-.6 0-1.6-.5c-.5-.4-1.5-.7-2-.8-.7 0-2-.5-3-.8-2.2-.7-5-1.3-6.3-1.3q-.7 0-1.6-.7-.8-.6-1.7-.6c-.5 0-2-.3-3.4-.7l-4.7-1c-1.2 0-2.5-.4-3-.7s-1.4-.6-2-.7-2-.4-3-.8l-4.3-.9q-2.4-.2-3.2-.7t-2.4-.7l-4.2-1c-1.5-.5-3.3-.9-4-1q-1.4 0-2-.4c-.7-.5-8.3-2.4-10.8-2.8q-.9 0-1.8-.6l-2.2-.6c-.8 0-2.6-.4-4-.7q-2.6-.7-5.3-.7h-2.6l-2.4 1.1c-3 1.6-3.8 2.6-4.5 5.8-.7 2.7-.6 7.2.1 27.5l.3 7.7c0 2.2.3 4.5.5 5.2.3.9.9 18.6.7 20.2l.2 4 .3 8.4c0 2.6.3 5 .4 5.5.1.3.3 1.9.3 3.4 0 1.6 0 5 .2 7.4l.4 11c.2 10.8 1 19.8 2.2 23 .3.9.7 2.4.8 3.3q.1 1.5.4 2.5l1.4 8.4.8 3.7q.3.7.5 2.8c.2 2.1.5 3.3.8 4.7l.7 3 .4 2.7 1.1 6.2.8 4.7q0 .6.4 1.4c.2.4.5 1.8.6 3.1s.4 3.3.7 4.3l.8 4.6c.1 1.5.5 3.7.8 4.8s.8 3.2 1 4.7.6 3.3.8 3.9.4 2 .4 3.3l.7 4.2c.6 2.3.9 4 1.3 7.3l.8 4.5.8 3.7q.1 1.4.5 2.5l.5 2.8c0 .8.4 2.7.7 4 .5 2.3 1 4.9 1.6 10 .2 1.6.7 3.7 1.6 7.3l.6 3.5c.3 2.5.6 3.5 1.3 5.6l.3 1.9.3 2.4c.3.9.7 3.3 1 5.4l1 5.5 2 9.7 1.4 8 1.5 6c.9 3.1 1 3.3 2.3 4.6q1.4 1.4 2.9 2.2l1.5.7 7.7.1c15.6.3 26.5.3 29.5 0"/>
+      <path d="m301.2 148 2.6-.6 2.9-.9c1-.3 2.3-1 3-1.5q1.3-1 1.7-1t1.4-.9q.9-.8 1.3-.8.4-.1 1.4-1l2.1-1.4c.6-.2 1.7-1 2.4-1.5l3-1.9c2-1 4.7-3.7 5.5-5.2.6-1 .6-1.5.6-4 0-2.6 0-2.7-.8-4l-1.6-2.7c-.4-.8-1.3-2-2-2.6l-1.4-1.7-3.6-4-2-2.4c-1-1.3-3.6-4.2-4-4.2l-.6-.8-2.2-2.7-3.6-3.8-2.8-3-1.4-1.8q-.5-.7-1.2-1l-1-1.1q-.1-.7-.9-1.3c-.8-.8-5.7-6-6.6-7.2-1-1.4-6.1-6.8-6.7-7.1l-1-1c-.4-.7-3.4-3.3-5.7-5q-1-.7-1.8-1.5l-1.5-.8q-.8-.1-1.5-.8c-1.1-1-6-1.4-8.7-.6l-2.4.6c-1.2.3-4.1 2.3-4.7 3.2q-.5.7-1.6 1.6c-.7.5-1.9 1.6-2.6 2.4s-2.2 2.3-3.4 3.3-2 2-2 2.1q-.1.4-.8.9l-2.3 2.2-3.3 3.4-2.4 2.5c-.3.5-1.2 1.3-1.8 1.7l-1.7 1.7-1.3 1.5c-.5.3-2.3 2.2-4 4-4 4.3-6.2 6.7-8.7 9L221 109l-2.7 2.9q-5 5.2-5 5.6t-.5 1.1q-1.8 2.1-1 6.2.8 3.4 5.7 4.6l2.7.8 2 .6c1.5.2 4.2.8 6.3 1.5l4.5 1 4.1 1.2 2.8.6 2.3.4 4 1.1c1.7.5 3.5 1 4 1.3l1.5.3 3.3.8c1.5.4 3.6 1 4.7 1.1s2.4.5 2.7.7q.6.4 2 .5c.8.1 2.5.5 3.8 1l4.1 1q1.7.1 2.3.4c.2.2 1.3.4 2.3.5 1 .2 2.5.5 3.2.8s2.4.7 3.8 1l3.8.8c3.8 1.1 10.6 1.7 13.6 1.2"/>
+      <path d="M300.7 430c1-2.6 1.5-4.1 1.7-5.8 0-.8.4-2.3.7-3.3l.9-3.4q.3-1.7.7-2.8c.3-.6.6-1.9.8-3q.2-1.6.6-2.4l.5-1.7q.4-2.4 1.3-5.5l.7-3.4q.2-1.2.6-2l.7-2.8.8-3.4c.3-.6.7-2.1 1-3.3.2-1.1.5-2.6.8-3.2l.6-2.5c0-.8.4-2.2.8-3.3l1-3.8.7-3 .7-2.8c.1-1 .5-2.7.8-3.6s.8-2.5 1-3.6c0-1.1.4-2.4.7-2.8l.6-2.1c0-.8.5-2.4.9-3.7l1-4.2q.2-1.7.7-2.3.4-.8.8-2.8l1-4.5c.4-1.2.7-2.7.7-3.1q0-.7.5-1.8c.6-1 .9-2.2 2.2-8.4l1.2-4.4q.3-.9.6-5.9c.1-2.7.4-5.8.6-6.8.4-1.8.9-10.8 1-19.2.1-7 .6-17.2.9-19 .1-.8.4-6.3.5-12.1l.5-14.8.3-6.7c0-1.4 0-3.6.2-5 .1-1.5.4-8.7.5-16 .3-16 .4-20 .8-21.8.6-4.2 1.3-48.2.7-49.8-.4-1-2.2-3.4-2.9-3.8-1.6-1.1-4.8-.7-7.3 1q-1.6.9-2 1.5-.4.4-2 1.1l-4 2.6-2.8 1.9-1.7 1.3c-.8.8-1.9 1.6-2.4 2s-1.3 1.1-1.8 1.9l-1.7 2.2c-.7 1-.8 1.3-1.6 5.3q-1.4 6.2-1.7 40.6c-.2 16.7-.2 17.2-.5 17.7s-.6 10-.7 17.1c-.2 20-.8 41.5-1.1 45.4-.3 2.5-.4 7.9-.8 35.6l-.4 20.1-.2 10.4-.5 17c-.2 5.3-.4 13.9-.4 19.1l-.2 15c-.8 16.7-1.1 27.9-.9 29.8.2 1.5 1 2.8 2 2.8q.6.2 1.3-1.9"/>
+      <path d="M322.8 441.4q2.3-1 2.8-1.8l1.4-1.6q.7-.8.9-1.5 0-.7.6-1.3l2.1-4.8 2-5 3.4-8.9c.4-1.1 1-2.6 1.5-3.4s.8-1.7.9-2.2q0-1 .6-1.9l.6-1.6.9-2.3c.9-1.9 2.2-5.5 2.5-6.6q.2-.9.9-2.1l1.6-4 1.8-4.1 1-2.8 1.4-3.2 1.7-4.2 1.5-3.5c.4-.7 1-2.1 1.2-3.2l1.6-4.4 1.5-3.6q.4-1.2 1-2.1l1-2.7 1.1-3 .9-2.2 1.2-2.8q.8-1.7 1.1-2.9c.1-.6.5-1.6.9-2l.6-1.4q0-.5.7-1.7l1.2-3 1.6-4.2c.6-1.4 1.3-3 1.5-3.8q1-2.9 2.6-6.4c.5-1 1-2.2 1-2.7l.8-1.9c.3-.5 1-2 1.4-3.4s1.3-3.4 2-4.8c1.1-2.3 2.9-6.8 4.7-11.5l1.3-3.4 1.1-3.1q.6-1.7 1-2.3.3-.4.7-1.9l1.4-3.2q1-1.7 1-2.3l1.3-4.4c.8-2.2 1.7-5 2-6.4l1.2-3.7q.5-1 .5-1.6l.5-1.5 1-2.5q.2-1.2.7-2l.7-2.7c.1-1 .5-2.2.7-2.5l1.1-3.3 1.8-5c1.7-4.4 2.7-8 3.4-12.4.2-1-.8-3.6-1.5-4-1.5-1.1-3.7-.4-8.8 2.8l-3 1.6-1.9 1.2q-1 .8-2 1.2c-.5.1-2.4 1.2-4.3 2.3-3.7 2.3-4.9 3-5.3 3q-.4 0-.9.7t-1.6 1.1l-2.2 1.3-4 2.3c-1.5.7-3.5 1.9-4.4 2.5l-2.7 1.7q-1.2.6-1.8 1.4l-1.3 1.2c-.9.4-2.8 2.6-4.7 5.4-2 3-2.4 4-2.7 5.9q-.3 1.4-.8 2.2l-1 2.5c-.2 1-.7 2.7-1.1 3.6l-1.2 3.8c-.7 3.2-1.4 5.6-1.6 6-.2 0-.6 1-1 2.1l-1 3.3q-.6 1.2-.6 2 0 .7-.4 1.3c-.2.3-.6 1.4-.8 2.4l-1.5 4.8-1.2 3.7q0 1-.6 2l-3 10.1-2.9 10.9c-.5 1.9-1.1 3.8-1.4 4.3l-.6 2c0 .8-.5 2.5-.9 4l-1 4.2q-.1 1.5-.7 2.6l-.5 1.5-.7 2.9c-1 3.2-2.6 9.3-2.6 10.2q0 .8-.7 2.6c-.4 1-.9 2.5-1 3.3-.6 3.1-2.9 11.4-3.8 14.1q-.4 1.1-.4 1.7l-.8 3-1 4.2-.7 3.1-1 4.6-1.6 6.6-1.2 5.1c-.1.9-.6 2.7-1 4l-1.4 5.2-.9 3.5-.5 2.2-.8 3.5c-.4 1-.8 3.2-1 4.6l-.5 3c-.2.6 1.2 3.6 2 4.4 1.6 1.4 4.6 2.6 7.5 2.8l2.1.2c.4.5 3.8-.2 5.8-1"/>
+      <path d="m340.6 442.3 9.5-2 2.6-.6 5.2-1 5.6-1.3c3.7-.8 4.3-1 6.7-1.8 2.3-1 2.5-1 5.8-4.2q1-1 1.8-2.6t1.6-2.8 1.5-3.2c.3-1 1-2.6 1.5-3.4l1.4-3.1 1.4-3.6c1.7-3.2 3.8-7.8 4-8.6 0-.4.6-1.6 1.3-2.7.6-1.1 1.3-2.4 1.4-3q.1-.7.8-1.8l.6-1.4q0-.5.8-1.7c.5-.7 1-2 1.3-2.9.2-.7.8-2 1.3-2.8s1-1.9 1-2.4l.7-1.4.6-1.4 1.2-2.6 1.6-3.2 1.1-2.4 1.1-2.8c.4-1.2 1.5-3.8 2.5-5.7s1.9-4 2.1-4.8l1.2-2.5.8-1.9q.2-.6.7-1.2l1-2.3 1.4-3q.7-1.6.8-2.2 0-.7.6-1.5.6-.7 1-1.9l1-2q.8-1 1.4-2.6l1.4-3.2.9-2c0-.2.3-1 .7-1.5l.8-1.5c0-.4.3-1.2 3.1-7l1.1-2.5c0-.3.8-2.1 4.3-9.2l1.4-3.2.4-1 1-2 1.4-4q2.4-6.6.7-14.5l-.7-3.6q-.2-1.2-.7-2-.5-.6-.7-1.6c0-.4-.6-1.7-1.1-2.7-1.1-2.1-2.4-5.4-3.4-8.5-.3-1.2-.9-2.6-1.2-3.2q-.6-1-1-2.4l-1.1-2.6-1-2.4q-.1-1-.7-2-.5-.8-.9-2l-.6-1.6c-.4-.6-1.5-3.3-3.6-9.2-2-5.3-2.8-6.7-4.7-7.2q-3.1-1-5.4 2.8c-1 2-1.5 3-2.4 6.6-.3 1-1 3.3-1.7 5l-1.6 4.7c-.1.8-.5 2.2-.9 3l-1 3.7-1 2.8c-.3.4-.7 1.4-.8 2.2q-.3 1.4-.8 2.3l-.4 1.4-1.3 4-1.6 5-.9 2.2-1 2.8-1.6 4.1-1.3 3.9q-.4 1.4-.8 2t-.7 1.5c-.1.9-.5 1.8-2.5 6.6-1.4 3.4-2 4.7-2.4 6.1-.3.8-1 3-1.7 4.6l-2.3 5.8c-.8 2.3-2.2 5.7-3 7.5l-.9 1.4q-.5 1-.7 2t-.7 2.3q-.6 1-.6 1.5l-.6 1.3-1.2 2.9c-1.7 4.7-2.6 6.8-4.1 9.9l-.9 2-1.2 3c-.6 1.2-1 2.5-1.2 3q-.1 1-.6 1.6t-.9 2.2q-.4 1.7-.8 2.5l-1 2.2-1 2.4-1 2c0 .5-.7 2.3-1.5 4l-1.3 3.3c0 .3-1.6 4.3-2.6 6.4-.5 1-1.3 2.8-1.7 4.1l-1.4 3.4-1 2.5c-.4 1.8-1.4 4.4-2 5.6l-1 2.3c-.1.8-.8 2.5-1.4 3.8-1.7 3.6-2.1 4.6-2.1 4.9l-2.8 6.6c-.7 1.5-1.2 3.1-1.2 3.4q-.1.6-.8 1.7t-.9 2c-.2.8-1.9 4.8-2.9 6.7q-.6 1.4-.7 2l-.6 1.9c-1 2.1-.8 3.7.7 5.8 1.3 1.8 2.7 2.2 6 1.7"/>
+    </g>
   </defs>
 
   <style>
-    .csway1, .csway2 { transform-origin: 0px 0px; }
-    .csway1 { animation: cwindA 3.1s ease-in-out infinite alternate; }
-    .csway2 { animation: cwindB 3.7s ease-in-out infinite alternate; }
-    .cd1 { animation-delay: -0.4s; }
-    .cd2 { animation-delay: -1.2s; }
-    .cd3 { animation-delay: -2.1s; }
-    .cd4 { animation-delay: -2.9s; }
-    @keyframes cwindA {
-      0% { transform: rotate(-3.2deg) skewX(-1.5deg); }
-      100% { transform: rotate(3.4deg) skewX(1.8deg); }
+    .fall1 { animation: cfall1 6.5s linear infinite; }
+    .fall2 { animation: cfall2 8.2s linear infinite; }
+    .fall3 { animation: cfall1 7.4s linear infinite -2.5s; }
+    .fall4 { animation: cfall2 9.1s linear infinite -4.1s; }
+    .fall5 { animation: cfall1 5.8s linear infinite -1.3s; }
+    .fall6 { animation: cfall2 7.9s linear infinite -5.2s; }
+    .clusterFloat { animation: cfloat 5s ease-in-out infinite alternate; }
+    @keyframes cfall1 {
+      0% { transform: translate(0px, -30px) rotate(-12deg); opacity: 0; }
+      15% { opacity: 0.75; }
+      85% { opacity: 0.75; }
+      100% { transform: translate(-18px, 260px) rotate(24deg); opacity: 0; }
     }
-    @keyframes cwindB {
-      0% { transform: rotate(3.0deg) skewX(1.5deg); }
-      100% { transform: rotate(-3.4deg) skewX(-1.8deg); }
+    @keyframes cfall2 {
+      0% { transform: translate(0px, -30px) rotate(15deg); opacity: 0; }
+      15% { opacity: 0.6; }
+      85% { opacity: 0.6; }
+      100% { transform: translate(16px, 260px) rotate(-22deg); opacity: 0; }
+    }
+    @keyframes cfloat {
+      0% { transform: translate(375px, 6px) scale(0.46) rotate(-1.5deg); }
+      100% { transform: translate(375px, -4px) scale(0.475) rotate(1.5deg); }
     }
   </style>
 
   <g clip-path="url(#cardClip)">
-    <rect width="580" height="230" fill="url(#bg)"/>
-    <rect width="580" height="230" fill="url(#sunGlow)"/>
+    <rect width="580" height="230" fill="url(#mineralBg)"/>
+    <rect width="580" height="230" fill="url(#crystalGlow)"/>
 
-    <!-- Night Stars in Top Right of Card -->
-    <g fill="#f8fafc" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.1;0.1;0.85;0.85;0" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-      <circle cx="420" cy="36" r="1.3"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
-      <circle cx="485" cy="28" r="1.5"><animate attributeName="opacity" values="0.85;0.2;0.85" dur="2.4s" repeatCount="indefinite"/></circle>
-      <circle cx="535" cy="52" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.3s" repeatCount="indefinite"/></circle>
+    <!-- Crystalline Cavern Ridge Along Bottom -->
+    <path d="M 0 202 L 75 178 L 155 196 L 260 172 L 365 195 L 470 166 L 580 186 L 580 230 L 0 230 Z" fill="#170c08" opacity="0.88"/>
+    <path d="M 0 214 L 110 194 L 220 212 L 340 190 L 450 208 L 580 192 L 580 230 L 0 230 Z" fill="#0d0604" opacity="0.95"/>
+
+    <!-- Falling Animated Mineral Crystals Across Background -->
+    <g>
+      <g transform="translate(88, 0)"><g class="fall1"><use href="#crystalSmall"/></g></g>
+      <g transform="translate(195, 0)"><g class="fall2"><use href="#crystalShard"/></g></g>
+      <g transform="translate(310, 0)"><g class="fall3"><use href="#crystalSmall"/></g></g>
+      <g transform="translate(415, 0)"><g class="fall4"><use href="#crystalShard"/></g></g>
+      <g transform="translate(495, 0)"><g class="fall5"><use href="#crystalSmall"/></g></g>
+      <g transform="translate(548, 0)"><g class="fall6"><use href="#crystalShard"/></g></g>
     </g>
 
-    <!-- Distant Ridge -->
-    <path d="M 0 198 L 95 168 L 195 190 L 310 158 L 430 188 L 520 164 L 580 182 L 580 230 L 0 230 Z" fill="#0a2114" opacity="0.78">
-      <animate attributeName="fill" values="#0a2114;#0a2114;#1f1512;#1f1512;#071820;#071820;#0a2114" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-    </path>
-
-    <!-- Living Swaying Pine Trees Along Bottom of Card -->
-    <g fill="#05130b" opacity="0.92">
-      <animate attributeName="fill" values="#05130b;#05130b;#0e0a08;#0e0a08;#030b0e;#030b0e;#05130b" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-      <rect x="0" y="210" width="580" height="20"/>
-      <g transform="translate(18, 218)"><use href="#cardPine1" class="csway1 cd1"/></g>
-      <g transform="translate(52, 220)"><use href="#cardPine2" class="csway2 cd2"/></g>
-      <g transform="translate(86, 216)"><use href="#cardPine1" class="csway1 cd3"/></g>
-      <g transform="translate(122, 220)"><use href="#cardPine2" class="csway2 cd4"/></g>
-      <g transform="translate(158, 217)"><use href="#cardPine1" class="csway1 cd2"/></g>
-      <g transform="translate(194, 221)"><use href="#cardPine2" class="csway2 cd1"/></g>
-      <g transform="translate(230, 218)"><use href="#cardPine1" class="csway1 cd4"/></g>
-      <g transform="translate(268, 221)"><use href="#cardPine2" class="csway2 cd3"/></g>
-      <g transform="translate(306, 217)"><use href="#cardPine1" class="csway1 cd1"/></g>
-      <g transform="translate(344, 220)"><use href="#cardPine2" class="csway2 cd2"/></g>
-      <g transform="translate(382, 216)"><use href="#cardPine1" class="csway1 cd4"/></g>
-      <g transform="translate(420, 220)"><use href="#cardPine2" class="csway2 cd3"/></g>
-      <g transform="translate(458, 217)"><use href="#cardPine1" class="csway1 cd2"/></g>
-      <g transform="translate(496, 220)"><use href="#cardPine2" class="csway2 cd1"/></g>
-      <g transform="translate(532, 216)"><use href="#cardPine1" class="csway1 cd3"/></g>
-      <g transform="translate(566, 219)"><use href="#cardPine2" class="csway2 cd4"/></g>
+    <!-- Official Mineral Studio Crystal Cluster + Academic Cap Emblem in Background Right -->
+    <g class="clusterFloat" opacity="0.34">
+      <use href="#mineralCluster" fill="#d97757" stroke="#f4b196" stroke-width="2"/>
+      <!-- Academic Mortarboard Cap Perched on Crystal Cluster -->
+      <polygon points="270,12 385,50 270,88 155,50" fill="#fef3c7" stroke="#b3613d" stroke-width="4"/>
+      <path d="M 220 70 L 320 70 L 314 114 Q 270 128 226 114 Z" fill="#fde68a"/>
+      <path d="M 366 56 L 370 116" stroke="#facc15" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="370" cy="120" r="6" fill="#facc15"/>
     </g>
 
+    <!-- Foreground Card Content -->
     <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
-      <!-- Top Translucent Capsule -->
-      <rect x="0" y="0" width="236" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.42">
-        <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-      </rect>
+      <!-- Top Translucent Capsule with Official Vector UTM Crest -->
+      <rect x="0" y="0" width="236" height="28" rx="14" fill="#120906" fill-opacity="0.88" stroke="#d97757" stroke-width="1.2" stroke-opacity="0.65"/>
       <g transform="translate(18, 14) scale(0.2200)">
-          <!-- Outer White & Dark Green Border -->
-          <circle cx="0" cy="0" r="49" fill="#ffffff" stroke="#0f5123" stroke-width="2.5"/>
-          <!-- Left Yellow Ring Half & Right Green Ring Half -->
-          <path d="M 0 -43 A 43 43 0 0 0 0 43" fill="none" stroke="#facc15" stroke-width="10"/>
-          <path d="M 0 -43 A 43 43 0 0 1 0 43" fill="none" stroke="#15803d" stroke-width="10"/>
-          <!-- Inner Ring Border -->
-          <circle cx="0" cy="0" r="37.5" fill="#ffffff" stroke="#15803d" stroke-width="1.8"/>
-          <!-- Ring Text Arcs Hint -->
-          <path d="M -36 -20 A 41 41 0 0 1 36 -20" fill="none" stroke="#052e16" stroke-width="2.6" stroke-dasharray="3.2 2.2" opacity="0.85"/>
-          <!-- Top Ribbon: Patria (Yellow) Tecnica (Blue) Cultura (Red) -->
-          <rect x="-24" y="-31" width="15" height="6.5" rx="1" fill="#facc15" stroke="#111827" stroke-width="1"/>
-          <rect x="-7.5" y="-31" width="15" height="6.5" rx="1" fill="#1d4ed8" stroke="#111827" stroke-width="1"/>
-          <rect x="9" y="-31" width="15" height="6.5" rx="1" fill="#dc2626" stroke="#111827" stroke-width="1"/>
-          <!-- Red Stars Arc Around Shield -->
-          <circle cx="-29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
-          <circle cx="-31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
-          <circle cx="-30.9" cy="4.2" r="2.1" fill="#dc2626"/>
-          <circle cx="-28.0" cy="12.4" r="2.1" fill="#dc2626"/>
-          <circle cx="-23.1" cy="19.4" r="2.1" fill="#dc2626"/>
-          <circle cx="-16.4" cy="24.9" r="2.1" fill="#dc2626"/>
-          <circle cx="-8.5" cy="28.3" r="2.1" fill="#dc2626"/>
-          <circle cx="0.0" cy="29.5" r="2.1" fill="#dc2626"/>
-          <circle cx="8.5" cy="28.3" r="2.1" fill="#dc2626"/>
-          <circle cx="16.4" cy="24.9" r="2.1" fill="#dc2626"/>
-          <circle cx="23.1" cy="19.4" r="2.1" fill="#dc2626"/>
-          <circle cx="28.0" cy="12.4" r="2.1" fill="#dc2626"/>
-          <circle cx="30.9" cy="4.2" r="2.1" fill="#dc2626"/>
-          <circle cx="31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
-          <circle cx="29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
-          <!-- 4-Quadrant Shield -->
-          <!-- Top-Left: Sky + Hills + Green Tree -->
-          <path d="M -21 -21 L 0 -21 L 0 0 L -21 0 Z" fill="#7dd3fc" stroke="#111827" stroke-width="2"/>
-          <path d="M -20 0 L -13 -6 L -7 -1 L -1 -6 L 0 0 Z" fill="#b45309"/>
-          <rect x="-11.5" y="-10" width="3" height="9" fill="#15803d"/>
-          <circle cx="-10" cy="-13" r="6" fill="#166534"/>
-          <circle cx="-13" cy="-12" r="4" fill="#22c55e"/>
-          <circle cx="-7" cy="-12" r="4" fill="#15803d"/>
-          <!-- Top-Right: Red + Book & Quill -->
-          <path d="M 0 -21 L 21 -21 L 21 0 L 0 0 Z" fill="#dc2626" stroke="#111827" stroke-width="2"/>
-          <polygon points="5,-14 14,-18 18,-11 9,-7" fill="#fef08a" stroke="#111827" stroke-width="1"/>
-          <path d="M 6 -5 L 17 -17" stroke="#d97706" stroke-width="2.6" stroke-linecap="round"/>
-          <rect x="4" y="-6" width="5" height="4" rx="1" fill="#451a03"/>
-          <!-- Bottom-Left: Green & Yellow Diagonal -->
-          <path d="M -21 0 L 0 0 L 0 24 C -8 19 -21 15 -21 0 Z" fill="#facc15" stroke="#111827" stroke-width="2"/>
-          <path d="M -21 0 L 0 24 C -10 19 -21 15 -21 0 Z" fill="#15803d"/>
-          <line x1="-21" y1="0" x2="0" y2="24" stroke="#111827" stroke-width="1.8"/>
-          <!-- Bottom-Right: Green + Golden Cornucopia -->
-          <path d="M 0 0 L 21 0 C 21 15 8 19 0 24 Z" fill="#16a34a" stroke="#111827" stroke-width="2"/>
-          <path d="M 5 14 L 16 4 C 18 6 16 14 11 16 Z" fill="#b45309" stroke="#111827" stroke-width="1"/>
-          <circle cx="6" cy="14" r="1.8" fill="#facc15"/>
-          <circle cx="9" cy="15" r="1.8" fill="#fde047"/>
-          <circle cx="7.5" cy="12.5" r="1.6" fill="#facc15"/>
-          <!-- Shield Outer Frame -->
-          <path d="M -23 -21 L 23 -21 L 21 -19 L 21 2 C 21 15 8 19 0 25 C -8 19 -21 15 -21 2 L -21 -19 Z" fill="none" stroke="#111827" stroke-width="2.4" stroke-linejoin="round"/>
-          <line x1="0" y1="-21" x2="0" y2="24" stroke="#111827" stroke-width="2.2"/>
-          <line x1="-21" y1="0" x2="21" y2="0" stroke="#111827" stroke-width="2.2"/>
-        </g>
-      <text x="132" y="18.5" fill="#ecfdf5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UTM ACADEMIC ASSISTANT</text>
+        <circle cx="0" cy="0" r="49" fill="#ffffff" stroke="#0f5123" stroke-width="2.5"/>
+        <path d="M 0 -43 A 43 43 0 0 0 0 43" fill="none" stroke="#facc15" stroke-width="10"/>
+        <path d="M 0 -43 A 43 43 0 0 1 0 43" fill="none" stroke="#15803d" stroke-width="10"/>
+        <circle cx="0" cy="0" r="37.5" fill="#ffffff" stroke="#15803d" stroke-width="1.8"/>
+        <rect x="-24" y="-31" width="15" height="6.5" rx="1" fill="#facc15" stroke="#111827" stroke-width="1"/>
+        <rect x="-7.5" y="-31" width="15" height="6.5" rx="1" fill="#1d4ed8" stroke="#111827" stroke-width="1"/>
+        <rect x="9" y="-31" width="15" height="6.5" rx="1" fill="#dc2626" stroke="#111827" stroke-width="1"/>
+        <path d="M -21 -21 L 0 -21 L 0 0 L -21 0 Z" fill="#7dd3fc" stroke="#111827" stroke-width="2"/>
+        <circle cx="-10" cy="-12" r="5.5" fill="#15803d"/>
+        <path d="M 0 -21 L 21 -21 L 21 0 L 0 0 Z" fill="#dc2626" stroke="#111827" stroke-width="2"/>
+        <polygon points="5,-14 14,-18 18,-11 9,-7" fill="#fef08a"/>
+        <path d="M -21 0 L 0 0 L 0 24 C -8 19 -21 15 -21 0 Z" fill="#facc15" stroke="#111827" stroke-width="2"/>
+        <path d="M -21 0 L 0 24 C -10 19 -21 15 -21 0 Z" fill="#15803d"/>
+        <path d="M 0 0 L 21 0 C 21 15 8 19 0 24 Z" fill="#16a34a" stroke="#111827" stroke-width="2"/>
+      </g>
+      <text x="132" y="18.5" fill="#ffedd5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UTM ACADEMIC ASSISTANT</text>
 
       <!-- Title -->
-      <text x="0" y="62" fill="#fefce8" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / mineral-tareas</text>
+      <text x="0" y="62" fill="#fff7ed" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / mineral-tareas</text>
 
       <!-- Description -->
-      <text x="0" y="92" fill="#e2f8ee" font-size="13.5" opacity="0.9">Notifies you of upcoming tasks, helps track your grades,</text>
-      <text x="0" y="112" fill="#e2f8ee" font-size="13.5" opacity="0.9">and reminds you of your class schedule with push alerts.</text>
+      <text x="0" y="92" fill="#fed7aa" font-size="13.5" opacity="0.94">Notifies you of upcoming tasks, helps track your grades,</text>
+      <text x="0" y="112" fill="#fed7aa" font-size="13.5" opacity="0.94">and reminds you of your class schedule with push alerts.</text>
 
       <!-- Bottom Translucent Capsules -->
       <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
-        <rect x="0" y="0" width="112" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38">
-          <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-        </rect>
-        <text x="56" y="18" fill="#ecfdf5" text-anchor="middle">Next.js / TS</text>
-        <rect x="122" y="0" width="122" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38">
-          <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-        </rect>
-        <text x="183" y="18" fill="#ecfdf5" text-anchor="middle">Python / Push</text>
-        <rect x="254" y="0" width="96" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38">
-          <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-        </rect>
-        <text x="302" y="18" fill="#ecfdf5" text-anchor="middle">Supabase</text>
+        <rect x="0" y="0" width="112" height="28" rx="14" fill="#120906" fill-opacity="0.86" stroke="#d97757" stroke-width="1" stroke-opacity="0.55"/>
+        <text x="56" y="18" fill="#ffedd5" text-anchor="middle">Next.js / TS</text>
+        <rect x="122" y="0" width="122" height="28" rx="14" fill="#120906" fill-opacity="0.86" stroke="#d97757" stroke-width="1" stroke-opacity="0.55"/>
+        <text x="183" y="18" fill="#ffedd5" text-anchor="middle">Python / Push</text>
+        <rect x="254" y="0" width="96" height="28" rx="14" fill="#120906" fill-opacity="0.86" stroke="#d97757" stroke-width="1" stroke-opacity="0.55"/>
+        <text x="302" y="18" fill="#ffedd5" text-anchor="middle">Supabase</text>
 
-        <rect x="394" y="0" width="130" height="28" rx="14" fill="#04110a" fill-opacity="0.88" stroke="#fde047" stroke-width="1" stroke-opacity="0.5"/>
-        <text x="459" y="18" fill="#fef9c3" font-weight="700" text-anchor="middle">Open repo →</text>
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#1c0d08" fill-opacity="0.92" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.7"/>
+        <text x="459" y="18" fill="#fef3c7" font-weight="700" text-anchor="middle">Open repo →</text>
       </g>
     </g>
   </g>
 
-  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#1e462d" stroke-width="1.5">
-    <animate attributeName="stroke" values="#1e462d;#1e462d;#4a2819;#4a2819;#133b43;#133b43;#1e462d" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#b3613d" stroke-width="1.6" stroke-opacity="0.65"/>
 </svg>
