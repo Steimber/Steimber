@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <!-- Tokyo Night Linux Desktop Animated Background -->
+    <linearGradient id="tokyoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11121d">
+        <animate attributeName="stop-color" values="#11121d;#16161e;#0d0e17;#11121d" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#1a1b26">
+        <animate attributeName="stop-color" values="#1a1b26;#1f2335;#16161e;#1a1b26" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#24283b">
+        <animate attributeName="stop-color" values="#24283b;#292e42;#1f2335;#24283b" dur="16s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="tokyoGlow" cx="82%" cy="46%" r="54%">
+      <stop offset="0%" stop-color="#7dcfff" stop-opacity="0.22">
+        <animate attributeName="stop-opacity" values="0.14;0.28;0.14" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ff79c6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#11121d" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle X11 Desktop Dot Matrix Pattern -->
+    <pattern id="deskDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.9" fill="#3d59a1" fill-opacity="0.25"/>
+    </pattern>
+
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+
+    <!-- Exact 15x13 Pixel-Art Bear Extracted from bear_pet.py (75x65 at px=5) -->
+    <!-- 1. HAPPY BEAR (with #ff79c6 pink blush cheeks) -->
+    <g id="bearHappy">
+      <path fill="#3d59a1" d="M5,0h10v5h-10ZM20,0h35v5h-35ZM60,0h10v5h-10ZM0,5h5v5h-5ZM15,5h5v5h-5ZM55,5h5v5h-5ZM70,5h5v5h-5ZM0,10h5v5h-5ZM70,10h5v5h-5ZM5,15h5v5h-5ZM65,15h5v5h-5ZM5,20h5v5h-5ZM65,20h5v5h-5ZM0,25h5v5h-5ZM25,25h5v5h-5ZM45,25h5v5h-5ZM70,25h5v5h-5ZM0,30h5v5h-5ZM20,30h5v5h-5ZM30,30h5v5h-5ZM40,30h5v5h-5ZM50,30h5v5h-5ZM70,30h5v5h-5ZM0,35h5v5h-5ZM70,35h5v5h-5ZM0,40h5v5h-5ZM30,40h15v5h-15ZM70,40h5v5h-5ZM0,45h5v5h-5ZM30,45h15v5h-15ZM70,45h5v5h-5ZM5,50h5v5h-5ZM35,50h5v5h-5ZM65,50h5v5h-5ZM10,55h10v5h-10ZM35,55h5v5h-5ZM55,55h10v5h-10ZM20,60h35v5h-35Z" shape-rendering="crispEdges"/>
+      <path fill="#c0caf5" d="M5,5h10v5h-10ZM20,5h35v5h-35ZM60,5h10v5h-10ZM5,10h65v5h-65ZM10,15h55v5h-55ZM10,20h55v5h-55ZM5,25h20v5h-20ZM30,25h15v5h-15ZM50,25h20v5h-20ZM5,30h15v5h-15ZM25,30h5v5h-5ZM35,30h5v5h-5ZM45,30h5v5h-5ZM55,30h15v5h-15ZM5,35h65v5h-65ZM5,40h5v5h-5ZM20,40h10v5h-10ZM45,40h10v5h-10ZM65,40h5v5h-5ZM5,45h25v5h-25ZM45,45h25v5h-25ZM10,50h25v5h-25ZM40,50h25v5h-25ZM20,55h15v5h-15ZM40,55h15v5h-15Z" shape-rendering="crispEdges"/>
+      <path fill="#ff79c6" d="M10,40h10v5h-10ZM55,40h10v5h-10Z" shape-rendering="crispEdges"/>
+    </g>
+
+    <!-- 2. LOVE BEAR (with #ff79c6 heart eyes) -->
+    <g id="bearLove">
+      <path fill="#3d59a1" d="M5,0h10v5h-10ZM20,0h35v5h-35ZM60,0h10v5h-10ZM0,5h5v5h-5ZM15,5h5v5h-5ZM55,5h5v5h-5ZM70,5h5v5h-5ZM0,10h5v5h-5ZM70,10h5v5h-5ZM5,15h5v5h-5ZM65,15h5v5h-5ZM5,20h5v5h-5ZM65,20h5v5h-5ZM0,25h5v5h-5ZM70,25h5v5h-5ZM0,30h5v5h-5ZM70,30h5v5h-5ZM0,35h5v5h-5ZM70,35h5v5h-5ZM0,40h5v5h-5ZM30,40h15v5h-15ZM70,40h5v5h-5ZM0,45h5v5h-5ZM30,45h15v5h-15ZM70,45h5v5h-5ZM5,50h5v5h-5ZM35,50h5v5h-5ZM65,50h5v5h-5ZM10,55h10v5h-10ZM35,55h5v5h-5ZM55,55h10v5h-10ZM20,60h35v5h-35Z" shape-rendering="crispEdges"/>
+      <path fill="#c0caf5" d="M5,5h10v5h-10ZM20,5h35v5h-35ZM60,5h10v5h-10ZM5,10h65v5h-65ZM10,15h55v5h-55ZM10,20h55v5h-55ZM5,25h10v5h-10ZM20,25h5v5h-5ZM30,25h15v5h-15ZM50,25h5v5h-5ZM60,25h10v5h-10ZM5,30h10v5h-10ZM30,30h15v5h-15ZM60,30h10v5h-10ZM5,35h15v5h-15ZM25,35h25v5h-25ZM55,35h15v5h-15ZM5,40h25v5h-25ZM45,40h25v5h-25ZM5,45h25v5h-25ZM45,45h25v5h-25ZM10,50h25v5h-25ZM40,50h25v5h-25ZM20,55h15v5h-15ZM40,55h15v5h-15Z" shape-rendering="crispEdges"/>
+      <path fill="#ff79c6" d="M15,25h5v5h-5ZM25,25h5v5h-5ZM45,25h5v5h-5ZM55,25h5v5h-5ZM15,30h15v5h-15ZM45,30h15v5h-15ZM20,35h5v5h-5ZM50,35h5v5h-5Z" shape-rendering="crispEdges"/>
+    </g>
+
+    <!-- 3. COOL BEAR (with pixel sunglasses) -->
+    <g id="bearCool">
+      <path fill="#3d59a1" d="M5,0h10v5h-10ZM20,0h35v5h-35ZM60,0h10v5h-10ZM0,5h5v5h-5ZM15,5h5v5h-5ZM55,5h5v5h-5ZM70,5h5v5h-5ZM0,10h5v5h-5ZM70,10h5v5h-5ZM5,15h5v5h-5ZM65,15h5v5h-5ZM5,20h5v5h-5ZM65,20h5v5h-5ZM0,25h5v5h-5ZM10,25h55v5h-55ZM70,25h5v5h-5ZM0,30h5v5h-5ZM15,30h15v5h-15ZM45,30h15v5h-15ZM70,30h5v5h-5ZM0,35h5v5h-5ZM20,35h5v5h-5ZM50,35h5v5h-5ZM70,35h5v5h-5ZM0,40h5v5h-5ZM30,40h15v5h-15ZM70,40h5v5h-5ZM0,45h5v5h-5ZM30,45h15v5h-15ZM70,45h5v5h-5ZM5,50h5v5h-5ZM35,50h5v5h-5ZM65,50h5v5h-5ZM10,55h10v5h-10ZM35,55h5v5h-5ZM55,55h10v5h-10ZM20,60h35v5h-35Z" shape-rendering="crispEdges"/>
+      <path fill="#c0caf5" d="M5,5h10v5h-10ZM20,5h35v5h-35ZM60,5h10v5h-10ZM5,10h65v5h-65ZM10,15h55v5h-55ZM10,20h55v5h-55ZM5,25h5v5h-5ZM65,25h5v5h-5ZM5,30h10v5h-10ZM30,30h15v5h-15ZM60,30h10v5h-10ZM5,35h15v5h-15ZM25,35h25v5h-25ZM55,35h15v5h-15ZM5,40h25v5h-25ZM45,40h25v5h-25ZM5,45h25v5h-25ZM45,45h25v5h-25ZM10,50h25v5h-25ZM40,50h25v5h-25ZM20,55h15v5h-15ZM40,55h15v5h-15Z" shape-rendering="crispEdges"/>
+    </g>
+  </defs>
+
+  <style>
+    /* Bear walks in the right-side desktop zone so it never overlaps text/pills */
+    .bear-walk-x {
+      animation: walkHorizontal 12s ease-in-out infinite;
+    }
+    .bear-hop-y {
+      animation: hopBounce 0.55s ease-in-out infinite alternate;
+    }
+    .face-happy-cycle {
+      animation: showHappy 8s step-end infinite;
+    }
+    .face-love-cycle {
+      animation: showLove 8s step-end infinite;
+    }
+    .face-cool-cycle {
+      animation: showCool 8s step-end infinite;
+    }
+    .bubble-pop {
+      animation: bubblePulse 6s ease-in-out infinite;
+    }
+    @keyframes walkHorizontal {
+      0% { transform: translateX(398px); }
+      42% { transform: translateX(486px); }
+      55% { transform: translateX(486px); }
+      92% { transform: translateX(398px); }
+      100% { transform: translateX(398px); }
+    }
+    @keyframes hopBounce {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-6px); }
+    }
+    @keyframes showHappy {
+      0%, 33% { opacity: 1; }
+      34%, 100% { opacity: 0; }
+    }
+    @keyframes showLove {
+      0%, 33% { opacity: 0; }
+      34%, 66% { opacity: 1; }
+      67%, 100% { opacity: 0; }
+    }
+    @keyframes showCool {
+      0%, 66% { opacity: 0; }
+      67%, 100% { opacity: 1; }
+    }
+    @keyframes bubblePulse {
+      0%, 10% { opacity: 0; transform: translateY(3px); }
+      18%, 82% { opacity: 0.96; transform: translateY(0px); }
+      92%, 100% { opacity: 0; transform: translateY(3px); }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="580" height="230" fill="url(#tokyoBg)"/>
+    <rect width="580" height="230" fill="url(#deskDots)"/>
+    <rect width="580" height="230" fill="url(#tokyoGlow)"/>
+
+    <!-- Background Linux X11 Terminal Window (Openbox / picom) -->
+    <g transform="translate(358, 16)" opacity="0.34">
+      <rect x="0" y="0" width="204" height="122" rx="9" fill="#16161e" stroke="#3d59a1" stroke-width="1.4"/>
+      <rect x="0" y="0" width="204" height="19" rx="9" fill="#1f2335"/>
+      <circle cx="11" cy="9.5" r="3" fill="#f7768e"/>
+      <circle cx="21" cy="9.5" r="3" fill="#e0af68"/>
+      <circle cx="31" cy="9.5" r="3" fill="#9ece6a"/>
+      <text x="108" y="13" fill="#7dcfff" font-family="Consolas, monospace" font-size="8" text-anchor="middle">steimber@x11: ~/BearDesk</text>
+      <text x="11" y="36" fill="#9ece6a" font-family="Consolas, monospace" font-size="9">$ python3 bear_pet.py &amp;</text>
+      <text x="11" y="51" fill="#c0caf5" font-family="Consolas, monospace" font-size="8.5">[X11] Transparent layer: OK</text>
+      <text x="11" y="66" fill="#7dcfff" font-family="Consolas, monospace" font-size="8.5">[picom] click-through: true</text>
+    </g>
+
+    <!-- Linux Desktop Bottom Panel / Taskbar -->
+    <rect x="0" y="210" width="580" height="20" fill="#0d0e17" opacity="0.92"/>
+    <line x1="0" y1="210" x2="580" y2="210" stroke="#3d59a1" stroke-width="1" stroke-opacity="0.55"/>
+
+    <!-- Animated Walking & Hopping Pixel-Art Bear in Clear Right Zone (Cycles Happy -> Love -> Cool) -->
+    <g class="bear-walk-x">
+      <g transform="translate(0, 88)">
+        <g class="bear-hop-y">
+          <!-- Speech Bubble Above Bear -->
+          <g class="bubble-pop" transform="translate(-32, -32)">
+            <rect x="0" y="0" width="138" height="24" rx="8" fill="#1a1b26" fill-opacity="0.95" stroke="#3d59a1" stroke-width="1.8"/>
+            <text x="69" y="16" fill="#7dcfff" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="700" text-anchor="middle">chmod +x a la vida</text>
+          </g>
+          <!-- Shadow Under Bear -->
+          <ellipse cx="37.5" cy="67" rx="25" ry="3.8" fill="#090a10" opacity="0.55"/>
+          <!-- Bear Pixel Body (Cycles Happy -> Love -> Cool Sunglasses) -->
+          <g class="face-happy-cycle"><use href="#bearHappy"/></g>
+          <g class="face-love-cycle"><use href="#bearLove"/></g>
+          <g class="face-cool-cycle"><use href="#bearCool"/></g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Foreground Card Content -->
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule with Mini Pixel Bear Icon -->
+      <rect x="0" y="0" width="232" height="28" rx="14" fill="#13141f" fill-opacity="0.9" stroke="#7dcfff" stroke-width="1.2" stroke-opacity="0.65"/>
+      <g transform="translate(11, 5) scale(0.26)">
+        <use href="#bearCool"/>
+      </g>
+      <text x="128" y="18.5" fill="#c0caf5" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="0.8">LINUX X11 · DESKTOP PET</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#f8fafc" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / BearDesk</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#c0caf5" font-size="13.5" opacity="0.95">Lightweight pixel-art bear companion for Linux (X11) desktops that</text>
+      <text x="0" y="112" fill="#c0caf5" font-size="13.5" opacity="0.95">wanders with a hop, cycles through 12 moods, and drops terminal tips.</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="110" height="28" rx="14" fill="#13141f" fill-opacity="0.88" stroke="#3d59a1" stroke-width="1.2" stroke-opacity="0.8"/>
+        <text x="55" y="18" fill="#7dcfff" text-anchor="middle">Python / PyQt6</text>
+
+        <rect x="120" y="0" width="118" height="28" rx="14" fill="#13141f" fill-opacity="0.88" stroke="#ff79c6" stroke-width="1" stroke-opacity="0.55"/>
+        <text x="179" y="18" fill="#fbcfe8" text-anchor="middle">Linux X11 / picom</text>
+
+        <rect x="248" y="0" width="108" height="28" rx="14" fill="#13141f" fill-opacity="0.88" stroke="#3d59a1" stroke-width="1.2" stroke-opacity="0.8"/>
+        <text x="302" y="18" fill="#c0caf5" text-anchor="middle">12 Pixel Moods</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#1a1b26" fill-opacity="0.94" stroke="#7dcfff" stroke-width="1.2" stroke-opacity="0.85"/>
+        <text x="459" y="18" fill="#7dcfff" font-weight="700" text-anchor="middle">Open repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#3d59a1" stroke-width="1.5" stroke-opacity="0.75">
+    <animate attributeName="stroke" values="#3d59a1;#7dcfff;#ff79c6;#3d59a1" dur="10s" repeatCount="indefinite"/>
+  </rect>
+</svg>

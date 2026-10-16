@@ -1,0 +1,440 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
+  <defs>
+    <!-- Dynamic Sky Gradient (Morning -> Afternoon -> Night) -->
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#040b1e">
+        <animate attributeName="stop-color" values="#040b1e;#040b1e;#0f172a;#0f172a;#020617;#020617;#040b1e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="40%" stop-color="#0b1d48">
+        <animate attributeName="stop-color" values="#0b1d48;#0b1d48;#2a1f2d;#2a1f2d;#071426;#071426;#0b1d48" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="72%" stop-color="#163a82">
+        <animate attributeName="stop-color" values="#163a82;#163a82;#6b2d26;#6b2d26;#0b2530;#0b2530;#163a82" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="92%" stop-color="#1d63b8">
+        <animate attributeName="stop-color" values="#1d63b8;#1d63b8;#c2592b;#c2592b;#0f3538;#0f3538;#1d63b8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#f59e0b">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#f59e0b;#f59e0b;#134e4a;#134e4a;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Dynamic Atmospheric Halo -->
+    <radialGradient id="sunHalo" cx="50%" cy="62%" r="45%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.85">
+        <animate attributeName="stop-color" values="#e0f2fe;#e0f2fe;#fed7aa;#fed7aa;#bae6fd;#bae6fd;#e0f2fe" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        <animate attributeName="stop-opacity" values="0.85;0.85;0.88;0.88;0.45;0.45;0.85" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="32%" stop-color="#fbbf24" stop-opacity="0.45">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#38bdf8;#38bdf8;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        <animate attributeName="stop-opacity" values="0.45;0.45;0.50;0.50;0.20;0.20;0.45" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="68%" stop-color="#1d4ed8" stop-opacity="0.16">
+        <animate attributeName="stop-color" values="#1d4ed8;#1d4ed8;#b3613d;#b3613d;#14b8a6;#14b8a6;#1d4ed8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#040b1e" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sun Core Gradient -->
+    <linearGradient id="sunCore" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb">
+        <animate attributeName="stop-color" values="#f0f9ff;#f0f9ff;#fff7ed;#fff7ed;#f8fafc;#f8fafc;#f0f9ff" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#fde047">
+        <animate attributeName="stop-color" values="#7dd3fc;#7dd3fc;#fdba74;#fdba74;#e2e8f0;#e2e8f0;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#f59e0b">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#ea580c;#ea580c;#94a3b8;#94a3b8;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Valley Mist Gradient -->
+    <linearGradient id="mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.24">
+        <animate attributeName="stop-color" values="#7dd3fc;#7dd3fc;#fdba74;#fdba74;#5eead4;#5eead4;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        <animate attributeName="stop-opacity" values="0.24;0.24;0.26;0.26;0.16;0.16;0.24" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#040b1e" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Pro UI Pill Gradients -->
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#081638" stop-opacity="0.88">
+        <animate attributeName="stop-color" values="#081638;#081638;#1c130f;#1c130f;#071921;#071921;#081638" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#040b1e" stop-opacity="0.92">
+        <animate attributeName="stop-color" values="#040b1e;#040b1e;#0c0806;#0c0806;#030b0f;#030b0f;#040b1e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="pillStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.35">
+        <animate attributeName="stop-color" values="#1e3a8a;#1e3a8a;#5c2b16;#5c2b16;#115e59;#115e59;#1e3a8a" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#020806" flood-opacity="0.9"/>
+    </filter>
+
+    <clipPath id="bannerClip">
+      <rect width="1200" height="350" rx="18"/>
+    </clipPath>
+    <clipPath id="ecFlag">
+      <rect width="20" height="14" rx="2.5"/>
+    </clipPath>
+
+    <path id="pineM1" d="M 0 -95 L -14 -58 L -7 -60 L -22 -25 L -12 -28 L -28 6 L 28 6 L 12 -28 L 22 -25 L 7 -60 L 14 -58 Z"/>
+    <path id="pineM2" d="M 0 -78 L -12 -46 L -6 -48 L -19 -18 L -10 -20 L -24 6 L 24 6 L 10 -20 L 19 -18 L 6 -48 L 12 -46 Z"/>
+    <path id="pineF1" d="M 0 -105 L -16 -65 L -8 -67 L -25 -30 L -14 -32 L -32 6 L 32 6 L 14 -32 L 25 -30 L 8 -67 L 16 -65 Z"/>
+    <path id="pineF2" d="M 0 -86 L -14 -52 L -7 -54 L -21 -22 L -11 -24 L -27 6 L 27 6 L 11 -24 L 21 -22 L 7 -54 L 14 -52 Z"/>
+    <path id="pineF3" d="M 0 -68 L -12 -40 L -6 -42 L -18 -15 L -9 -17 L -23 6 L 23 6 L 9 -17 L 18 -15 L 6 -42 L 12 -40 Z"/>
+  </defs>
+
+  <style>
+    .sway1, .sway2, .sway3, .sway4 { transform-origin: 0px 0px; }
+    .sway1 { animation: windA 2.8s ease-in-out infinite alternate; }
+    .sway2 { animation: windB 3.4s ease-in-out infinite alternate; }
+    .sway3 { animation: windC 3.1s ease-in-out infinite alternate; }
+    .sway4 { animation: windD 3.8s ease-in-out infinite alternate; }
+
+    .d1 { animation-delay: -0.3s; }
+    .d2 { animation-delay: -0.8s; }
+    .d3 { animation-delay: -1.3s; }
+    .d4 { animation-delay: -1.9s; }
+    .d5 { animation-delay: -2.4s; }
+    .d6 { animation-delay: -3.0s; }
+    .d7 { animation-delay: -3.6s; }
+    .d8 { animation-delay: -4.2s; }
+
+    @keyframes windA {
+      0% { transform: rotate(-3.4deg) skewX(-1.8deg); }
+      100% { transform: rotate(3.8deg) skewX(2.2deg); }
+    }
+    @keyframes windB {
+      0% { transform: rotate(3.2deg) skewX(1.8deg); }
+      100% { transform: rotate(-3.8deg) skewX(-2.2deg); }
+    }
+    @keyframes windC {
+      0% { transform: rotate(-4.0deg) skewX(-2.2deg); }
+      100% { transform: rotate(3.2deg) skewX(1.8deg); }
+    }
+    @keyframes windD {
+      0% { transform: rotate(3.6deg) skewX(2.0deg); }
+      100% { transform: rotate(-3.2deg) skewX(-1.8deg); }
+    }
+
+    .mist-drift { animation: mistMove 8s ease-in-out infinite alternate; }
+    @keyframes mistMove {
+      0% { transform: translateX(-22px); opacity: 0.72; }
+      100% { transform: translateX(22px); opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#bannerClip)">
+    <rect width="1200" height="350" fill="url(#sky)"/>
+    <rect width="1200" height="350" fill="url(#sunHalo)"/>
+
+    <!-- Night Stars (Fade in smoothly at night) -->
+    <g fill="#f8fafc" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.1;0.1;1;1;0" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <circle cx="95" cy="48" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="165" cy="82" r="1.2"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.3s" repeatCount="indefinite"/></circle>
+      <circle cx="240" cy="38" r="1.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></circle>
+      <circle cx="318" cy="68" r="1.3"><animate attributeName="opacity" values="0.95;0.25;0.95" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="390" cy="42" r="1.5"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="810" cy="44" r="1.5"><animate attributeName="opacity" values="0.3;0.95;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="885" cy="74" r="1.2"><animate attributeName="opacity" values="0.85;0.2;0.85" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="960" cy="36" r="1.8"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1045" cy="78" r="1.3"><animate attributeName="opacity" values="0.8;0.15;0.8" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="1115" cy="46" r="1.6"><animate attributeName="opacity" values="0.3;0.95;0.3" dur="3.4s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Sun / Moon Celestial Body -->
+    <g>
+      <circle cx="600" cy="212" r="98" fill="#fde047" opacity="0.16">
+        <animate attributeName="r" values="92;110;92" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#bae6fd;#bae6fd;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="212" r="78" fill="#fde047" opacity="0.24">
+        <animate attributeName="r" values="74;86;74" dur="3.8s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#7dd3fc;#7dd3fc;#fdba74;#fdba74;#e0f2fe;#e0f2fe;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="212" r="58" fill="url(#sunCore)">
+        <animate attributeName="cy" values="212;212;222;222;196;196;212" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="60;60;62;62;48;48;60" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Moon Craters (Visible only during Night phase) -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;0.42;0.42;0" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        <circle cx="586" cy="184" r="7" fill="#cbd5e1"/>
+        <circle cx="614" cy="198" r="9.5" fill="#cbd5e1"/>
+        <circle cx="595" cy="208" r="5" fill="#cbd5e1"/>
+      </g>
+    </g>
+
+    <!-- Distant Mountain Range (Layer 1) -->
+    <path d="M -20 258 L 90 192 L 195 228 L 325 168 L 445 222 L 560 195 L 650 220 L 775 166 L 900 220 L 1035 172 L 1145 215 L 1220 185 L 1220 350 L -20 350 Z" fill="#102a5e" opacity="0.9">
+      <animate attributeName="fill" values="#102a5e;#102a5e;#3b2322;#3b2322;#0c272e;#0c272e;#102a5e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Mid-Distant Forest Ridge (Layer 2) -->
+    <path d="M -20 274 L 65 232 L 160 260 L 285 208 L 410 258 L 520 232 L 680 235 L 815 202 L 945 252 L 1080 214 L 1220 250 L 1220 350 L -20 350 Z" fill="#0b1e45">
+      <animate attributeName="fill" values="#0b1e45;#0b1e45;#281919;#281919;#081c22;#081c22;#0b1e45" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Valley Mist (Drifting) -->
+    <rect class="mist-drift" x="-40" y="214" width="1280" height="56" fill="url(#mist)"/>
+
+    <!-- LIVING BIRDS IN THE SKY -->
+    <g stroke="#06122e" stroke-width="2.3" fill="none" stroke-linecap="round" opacity="0.85">
+      <animate attributeName="stroke" values="#06122e;#06122e;#1a0d08;#1a0d08;#94a3b8;#94a3b8;#06122e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="435,148; 462,137; 486,145; 460,154; 435,148" dur="6.5s" repeatCount="indefinite"/>
+        <path d="M -14 2 Q -7 -7 0 0 Q 7 -7 14 2">
+          <animate attributeName="d" values="M -14 2 Q -7 -7 0 0 Q 7 -7 14 2; M -14 -5 Q -7 0 0 3.5 Q 7 0 14 -5; M -14 2 Q -7 -7 0 0 Q 7 -7 14 2" dur="0.62s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="482,134; 508,124; 528,131; 502,141; 482,134" dur="7.2s" repeatCount="indefinite"/>
+        <path d="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1">
+          <animate attributeName="d" values="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1; M -11 -4 Q -5.5 0 0 3 Q 5.5 0 11 -4; M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1" dur="0.54s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="408,162; 434,152; 452,159; 428,168; 408,162" dur="5.8s" repeatCount="indefinite"/>
+        <path d="M -10 1 Q -5 -5 0 0 Q 5 -5 10 1">
+          <animate attributeName="d" values="M -10 1 Q -5 -5 0 0 Q 5 -5 10 1; M -10 -3.5 Q -5 0 0 2.5 Q 5 0 10 -3.5; M -10 1 Q -5 -5 0 0 Q 5 -5 10 1" dur="0.58s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="715,142; 688,131; 668,139; 695,150; 715,142" dur="6.8s" repeatCount="indefinite"/>
+        <path d="M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2">
+          <animate attributeName="d" values="M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2; M -13 -4.5 Q -6.5 0 0 3 Q 6.5 0 13 -4.5; M -13 2 Q -6.5 -6.5 0 0 Q 6.5 -6.5 13 2" dur="0.66s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="756,129; 732,119; 714,127; 738,136; 756,129" dur="7.5s" repeatCount="indefinite"/>
+        <path d="M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1">
+          <animate attributeName="d" values="M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1; M -10 -3.5 Q -5 0 0 2.5 Q 5 0 10 -3.5; M -10 1 Q -5 -5.5 0 0 Q 5 -5.5 10 1" dur="0.56s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g opacity="0.72">
+        <animateTransform attributeName="transform" type="translate" values="90,175; 420,148; 780,156; 1110,138" dur="18s" repeatCount="indefinite"/>
+        <path d="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1">
+          <animate attributeName="d" values="M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1; M -11 -4 Q -5.5 0 0 2.8 Q 5.5 0 11 -4; M -11 1 Q -5.5 -6 0 0 Q 5.5 -6 11 1" dur="0.60s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g opacity="0.68">
+        <animateTransform attributeName="transform" type="translate" values="1080,158; 740,142; 460,154; 120,136" dur="20s" repeatCount="indefinite"/>
+        <path d="M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1">
+          <animate attributeName="d" values="M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1; M -9 -3.2 Q -4.5 0 0 2.2 Q 4.5 0 9 -3.2; M -9 1 Q -4.5 -5 0 0 Q 4.5 -5 9 1" dur="0.52s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+
+    <!-- LAYER 3: MIDGROUND LIVING PINE FOREST -->
+    <g fill="#071533">
+      <animate attributeName="fill" values="#071533;#071533;#1c1512;#1c1512;#061519;#061519;#071533" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <rect x="0" y="286" width="1200" height="64"/>
+      <g transform="translate(18, 296)"><use href="#pineM1" class="sway1 d1"/></g>
+      <g transform="translate(52, 294)"><use href="#pineM2" class="sway2 d2"/></g>
+      <g transform="translate(86, 298)"><use href="#pineM1" class="sway3 d3"/></g>
+      <g transform="translate(122, 295)"><use href="#pineM2" class="sway4 d4"/></g>
+      <g transform="translate(156, 292)"><use href="#pineM1" class="sway1 d5"/></g>
+      <g transform="translate(192, 298)"><use href="#pineM2" class="sway2 d6"/></g>
+      <g transform="translate(228, 296)"><use href="#pineM1" class="sway3 d7"/></g>
+      <g transform="translate(266, 294)"><use href="#pineM1" class="sway4 d8"/></g>
+      <g transform="translate(304, 300)"><use href="#pineM2" class="sway1 d2"/></g>
+      <g transform="translate(342, 298)"><use href="#pineM1" class="sway2 d4"/></g>
+      <g transform="translate(382, 296)"><use href="#pineM1" class="sway3 d6"/></g>
+      <g transform="translate(420, 302)"><use href="#pineM2" class="sway4 d1"/></g>
+      <g transform="translate(458, 304)"><use href="#pineM2" class="sway1 d3"/></g>
+      <g transform="translate(496, 308)"><use href="#pineM2" class="sway2 d5"/></g>
+      <g transform="translate(536, 312)"><use href="#pineM2" class="sway3 d7"/></g>
+      <g transform="translate(664, 312)"><use href="#pineM2" class="sway4 d2"/></g>
+      <g transform="translate(704, 308)"><use href="#pineM2" class="sway1 d4"/></g>
+      <g transform="translate(742, 304)"><use href="#pineM2" class="sway2 d6"/></g>
+      <g transform="translate(780, 302)"><use href="#pineM2" class="sway3 d8"/></g>
+      <g transform="translate(818, 296)"><use href="#pineM1" class="sway4 d1"/></g>
+      <g transform="translate(856, 298)"><use href="#pineM1" class="sway1 d3"/></g>
+      <g transform="translate(896, 300)"><use href="#pineM2" class="sway2 d5"/></g>
+      <g transform="translate(934, 294)"><use href="#pineM1" class="sway3 d7"/></g>
+      <g transform="translate(972, 296)"><use href="#pineM1" class="sway4 d2"/></g>
+      <g transform="translate(1010, 298)"><use href="#pineM2" class="sway1 d4"/></g>
+      <g transform="translate(1046, 292)"><use href="#pineM1" class="sway2 d6"/></g>
+      <g transform="translate(1082, 295)"><use href="#pineM2" class="sway3 d8"/></g>
+      <g transform="translate(1118, 298)"><use href="#pineM1" class="sway4 d1"/></g>
+      <g transform="translate(1152, 294)"><use href="#pineM2" class="sway1 d3"/></g>
+      <g transform="translate(1184, 296)"><use href="#pineM1" class="sway2 d5"/></g>
+    </g>
+
+    <!-- LAYER 4: FOREGROUND DARK PINE FOREST SILHOUETTE -->
+    <g fill="#040b1c">
+      <animate attributeName="fill" values="#040b1c;#040b1c;#0e0a08;#0e0a08;#030b0e;#030b0e;#040b1c" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <rect x="0" y="302" width="1200" height="48"/>
+      <g transform="translate(24, 314)"><use href="#pineF1" class="sway3 d2"/></g>
+      <g transform="translate(68, 308)"><use href="#pineF1" class="sway1 d4"/></g>
+      <g transform="translate(114, 316)"><use href="#pineF2" class="sway4 d6"/></g>
+      <g transform="translate(162, 310)"><use href="#pineF1" class="sway2 d8"/></g>
+      <g transform="translate(210, 318)"><use href="#pineF2" class="sway3 d1"/></g>
+      <g transform="translate(258, 320)"><use href="#pineF2" class="sway1 d3"/></g>
+      <g transform="translate(308, 322)"><use href="#pineF2" class="sway4 d5"/></g>
+      <g transform="translate(356, 324)"><use href="#pineF3" class="sway2 d7"/></g>
+      <g transform="translate(408, 326)"><use href="#pineF3" class="sway3 d2"/></g>
+      <g transform="translate(460, 328)"><use href="#pineF3" class="sway1 d4"/></g>
+      <g transform="translate(515, 332)"><use href="#pineF3" class="sway4 d6"/></g>
+      <g transform="translate(568, 336)"><use href="#pineF3" class="sway2 d8"/></g>
+      <g transform="translate(632, 336)"><use href="#pineF3" class="sway3 d1"/></g>
+      <g transform="translate(685, 332)"><use href="#pineF3" class="sway1 d3"/></g>
+      <g transform="translate(740, 328)"><use href="#pineF3" class="sway4 d5"/></g>
+      <g transform="translate(792, 326)"><use href="#pineF3" class="sway2 d7"/></g>
+      <g transform="translate(844, 324)"><use href="#pineF3" class="sway3 d2"/></g>
+      <g transform="translate(892, 322)"><use href="#pineF2" class="sway1 d4"/></g>
+      <g transform="translate(942, 320)"><use href="#pineF2" class="sway4 d6"/></g>
+      <g transform="translate(990, 318)"><use href="#pineF2" class="sway2 d8"/></g>
+      <g transform="translate(1038, 310)"><use href="#pineF1" class="sway3 d1"/></g>
+      <g transform="translate(1086, 316)"><use href="#pineF2" class="sway1 d3"/></g>
+      <g transform="translate(1132, 308)"><use href="#pineF1" class="sway4 d5"/></g>
+      <g transform="translate(1176, 314)"><use href="#pineF1" class="sway2 d7"/></g>
+    </g>
+
+    <!-- Floating Forest Fireflies / Sun Spores -->
+    <g fill="#fef08a">
+      <animate attributeName="fill" values="#7dd3fc;#7dd3fc;#fed7aa;#fed7aa;#5eead4;#5eead4;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <circle cx="240" cy="240" r="2.0" opacity="0.6">
+        <animate attributeName="cy" values="245;215;245" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="390" cy="230" r="1.6" opacity="0.5">
+        <animate attributeName="cy" values="235;205;235" dur="6.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.1;0.75;0.1" dur="6.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="820" cy="235" r="2.0" opacity="0.6">
+        <animate attributeName="cy" values="240;208;240" dur="5.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="5.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="960" cy="242" r="1.7" opacity="0.5">
+        <animate attributeName="cy" values="248;218;248" dur="4.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.75;0.15" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Main Title -->
+    <g filter="url(#textShadow)">
+      <text x="600" y="116" fill="#fefce8" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Georgia, sans-serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="8">STEIMBER</text>
+    </g>
+
+    <!-- PRO VECTOR BADGE PILLS -->
+    <g transform="translate(86, 285)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" letter-spacing="0.2">
+      <!-- Pill 1: Mineral Studio (Co-Founder) -->
+      <g transform="translate(0, 0)">
+        <rect width="256" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#1c1410" stroke="#b3613d" stroke-width="1" stroke-opacity="0.6"/>
+        <g transform="translate(24, 20)">
+          <polygon points="0,-8 -4.5,-2 -2.5,7 2.5,7 4.5,-2" fill="#d97757"/>
+          <polygon points="0,-8 4.5,-2 2.5,7 0,7" fill="#b3613d"/>
+          <polygon points="-6.5,-1 -3.5,-4.5 -1.5,6 -5,6" fill="#e08a6b" opacity="0.9"/>
+          <polygon points="6.5,0 3.5,-4 2,6 5,6" fill="#9c4f2f"/>
+          <polygon points="0,-8 -4.5,-2 0,-0.5 4.5,-2" fill="#f4b196" opacity="0.85"/>
+        </g>
+        <text x="142" y="24.5" fill="#ecfdf5" text-anchor="middle">Mineral Studio (Co-Founder)</text>
+      </g>
+
+      <!-- Pill 2: Student at UTM -->
+      <g transform="translate(270, 0)">
+        <rect width="242" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <g transform="translate(24, 20) scale(0.2700)">
+          <!-- Outer White & Dark Green Border -->
+          <circle cx="0" cy="0" r="49" fill="#ffffff" stroke="#0f5123" stroke-width="2.5"/>
+          <!-- Left Yellow Ring Half & Right Green Ring Half -->
+          <path d="M 0 -43 A 43 43 0 0 0 0 43" fill="none" stroke="#facc15" stroke-width="10"/>
+          <path d="M 0 -43 A 43 43 0 0 1 0 43" fill="none" stroke="#15803d" stroke-width="10"/>
+          <!-- Inner Ring Border -->
+          <circle cx="0" cy="0" r="37.5" fill="#ffffff" stroke="#15803d" stroke-width="1.8"/>
+          <!-- Ring Text Arcs Hint -->
+          <path d="M -36 -20 A 41 41 0 0 1 36 -20" fill="none" stroke="#052e16" stroke-width="2.6" stroke-dasharray="3.2 2.2" opacity="0.85"/>
+          <!-- Top Ribbon: Patria (Yellow) Tecnica (Blue) Cultura (Red) -->
+          <rect x="-24" y="-31" width="15" height="6.5" rx="1" fill="#facc15" stroke="#111827" stroke-width="1"/>
+          <rect x="-7.5" y="-31" width="15" height="6.5" rx="1" fill="#1d4ed8" stroke="#111827" stroke-width="1"/>
+          <rect x="9" y="-31" width="15" height="6.5" rx="1" fill="#dc2626" stroke="#111827" stroke-width="1"/>
+          <!-- Red Stars Arc Around Shield -->
+          <circle cx="-29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
+          <circle cx="-31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
+          <circle cx="-30.9" cy="4.2" r="2.1" fill="#dc2626"/>
+          <circle cx="-28.0" cy="12.4" r="2.1" fill="#dc2626"/>
+          <circle cx="-23.1" cy="19.4" r="2.1" fill="#dc2626"/>
+          <circle cx="-16.4" cy="24.9" r="2.1" fill="#dc2626"/>
+          <circle cx="-8.5" cy="28.3" r="2.1" fill="#dc2626"/>
+          <circle cx="0.0" cy="29.5" r="2.1" fill="#dc2626"/>
+          <circle cx="8.5" cy="28.3" r="2.1" fill="#dc2626"/>
+          <circle cx="16.4" cy="24.9" r="2.1" fill="#dc2626"/>
+          <circle cx="23.1" cy="19.4" r="2.1" fill="#dc2626"/>
+          <circle cx="28.0" cy="12.4" r="2.1" fill="#dc2626"/>
+          <circle cx="30.9" cy="4.2" r="2.1" fill="#dc2626"/>
+          <circle cx="31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
+          <circle cx="29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
+          <!-- 4-Quadrant Shield -->
+          <!-- Top-Left: Sky + Hills + Green Tree -->
+          <path d="M -21 -21 L 0 -21 L 0 0 L -21 0 Z" fill="#7dd3fc" stroke="#111827" stroke-width="2"/>
+          <path d="M -20 0 L -13 -6 L -7 -1 L -1 -6 L 0 0 Z" fill="#b45309"/>
+          <rect x="-11.5" y="-10" width="3" height="9" fill="#15803d"/>
+          <circle cx="-10" cy="-13" r="6" fill="#166534"/>
+          <circle cx="-13" cy="-12" r="4" fill="#22c55e"/>
+          <circle cx="-7" cy="-12" r="4" fill="#15803d"/>
+          <!-- Top-Right: Red + Book & Quill -->
+          <path d="M 0 -21 L 21 -21 L 21 0 L 0 0 Z" fill="#dc2626" stroke="#111827" stroke-width="2"/>
+          <polygon points="5,-14 14,-18 18,-11 9,-7" fill="#fef08a" stroke="#111827" stroke-width="1"/>
+          <path d="M 6 -5 L 17 -17" stroke="#d97706" stroke-width="2.6" stroke-linecap="round"/>
+          <rect x="4" y="-6" width="5" height="4" rx="1" fill="#451a03"/>
+          <!-- Bottom-Left: Green & Yellow Diagonal -->
+          <path d="M -21 0 L 0 0 L 0 24 C -8 19 -21 15 -21 0 Z" fill="#facc15" stroke="#111827" stroke-width="2"/>
+          <path d="M -21 0 L 0 24 C -10 19 -21 15 -21 0 Z" fill="#15803d"/>
+          <line x1="-21" y1="0" x2="0" y2="24" stroke="#111827" stroke-width="1.8"/>
+          <!-- Bottom-Right: Green + Golden Cornucopia -->
+          <path d="M 0 0 L 21 0 C 21 15 8 19 0 24 Z" fill="#16a34a" stroke="#111827" stroke-width="2"/>
+          <path d="M 5 14 L 16 4 C 18 6 16 14 11 16 Z" fill="#b45309" stroke="#111827" stroke-width="1"/>
+          <circle cx="6" cy="14" r="1.8" fill="#facc15"/>
+          <circle cx="9" cy="15" r="1.8" fill="#fde047"/>
+          <circle cx="7.5" cy="12.5" r="1.6" fill="#facc15"/>
+          <!-- Shield Outer Frame -->
+          <path d="M -23 -21 L 23 -21 L 21 -19 L 21 2 C 21 15 8 19 0 25 C -8 19 -21 15 -21 2 L -21 -19 Z" fill="none" stroke="#111827" stroke-width="2.4" stroke-linejoin="round"/>
+          <line x1="0" y1="-21" x2="0" y2="24" stroke="#111827" stroke-width="2.2"/>
+          <line x1="-21" y1="0" x2="21" y2="0" stroke="#111827" stroke-width="2.2"/>
+        </g>
+        <text x="138" y="24.5" fill="#ecfdf5" text-anchor="middle">Estudiante de la UTM</text>
+      </g>
+
+      <!-- Pill 3: Personal Projects -->
+      <g transform="translate(526, 0)">
+        <rect width="246" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#0b1d45" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.45"/>
+        <g transform="translate(15, 11)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="5.5,5 1.8,9 5.5,13" stroke="#38bdf8" stroke-width="1.8"/>
+          <polyline points="12.5,5 16.2,9 12.5,13" stroke="#38bdf8" stroke-width="1.8"/>
+          <line x1="10.2" y1="3.8" x2="7.8" y2="14.2" stroke="#fde047" stroke-width="1.6"/>
+        </g>
+        <text x="140" y="24.5" fill="#ecfdf5" text-anchor="middle">Proyectos Personales</text>
+      </g>
+
+      <!-- Pill 4: Manabí, Ecuador -->
+      <g transform="translate(786, 0)">
+        <rect width="242" height="40" rx="20" fill="url(#pillBg)" stroke="url(#pillStroke)" stroke-width="1.2"/>
+        <circle cx="24" cy="20" r="13" fill="#0b1d45" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.45"/>
+        <g transform="translate(14, 13)" clip-path="url(#ecFlag)">
+          <rect x="0" y="0" width="20" height="7" fill="#FFD100"/>
+          <rect x="0" y="7" width="20" height="3.5" fill="#0033A0"/>
+          <rect x="0" y="10.5" width="20" height="3.5" fill="#EF3340"/>
+          <circle cx="10" cy="7" r="1.8" fill="#d97706"/>
+        </g>
+        <text x="138" y="24.5" fill="#ecfdf5" text-anchor="middle">Manabí, Ecuador</text>
+      </g>
+    </g>
+  </g>
+
+  <rect width="1200" height="350" rx="18" fill="none" stroke="#1e3a8a" stroke-width="2">
+    <animate attributeName="stroke" values="#1e3a8a;#1e3a8a;#4a2819;#4a2819;#133b43;#133b43;#1e3a8a" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+  </rect>
+</svg>
