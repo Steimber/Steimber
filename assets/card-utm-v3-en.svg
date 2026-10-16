@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <!-- Institutional UTM Emerald & Gold Animated Background -->
+    <linearGradient id="utmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#031109">
+        <animate attributeName="stop-color" values="#031109;#051a0e;#020c06;#031109" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#092616">
+        <animate attributeName="stop-color" values="#092616;#0d331e;#061c10;#092616" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#123d24">
+        <animate attributeName="stop-color" values="#123d24;#174d2e;#0c2b19;#123d24" dur="16s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="utmAura" cx="84%" cy="44%" r="54%">
+      <stop offset="0%" stop-color="#facc15" stop-opacity="0.24">
+        <animate attributeName="stop-opacity" values="0.16;0.30;0.16" dur="5.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#031109" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Engineering Blueprint Grid Pattern -->
+    <pattern id="blueprintGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#34d399" stroke-width="0.6" stroke-opacity="0.08"/>
+      <circle cx="28" cy="28" r="0.9" fill="#fde047" fill-opacity="0.15"/>
+    </pattern>
+
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+
+    <!-- Reusable Official Vector UTM Crest -->
+    <g id="utmCrest">
+      <circle cx="0" cy="0" r="49" fill="#ffffff" stroke="#0f5123" stroke-width="2.5"/>
+      <path d="M 0 -43 A 43 43 0 0 0 0 43" fill="none" stroke="#facc15" stroke-width="10"/>
+      <path d="M 0 -43 A 43 43 0 0 1 0 43" fill="none" stroke="#15803d" stroke-width="10"/>
+      <circle cx="0" cy="0" r="37.5" fill="#ffffff" stroke="#15803d" stroke-width="1.8"/>
+      <path d="M -36 -20 A 41 41 0 0 1 36 -20" fill="none" stroke="#052e16" stroke-width="2.6" stroke-dasharray="3.2 2.2" opacity="0.85"/>
+      <rect x="-24" y="-31" width="15" height="6.5" rx="1" fill="#facc15" stroke="#111827" stroke-width="1"/>
+      <rect x="-7.5" y="-31" width="15" height="6.5" rx="1" fill="#1d4ed8" stroke="#111827" stroke-width="1"/>
+      <rect x="9" y="-31" width="15" height="6.5" rx="1" fill="#dc2626" stroke="#111827" stroke-width="1"/>
+      <circle cx="-29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
+      <circle cx="-31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
+      <circle cx="-30.9" cy="4.2" r="2.1" fill="#dc2626"/>
+      <circle cx="-28.0" cy="12.4" r="2.1" fill="#dc2626"/>
+      <circle cx="-23.1" cy="19.4" r="2.1" fill="#dc2626"/>
+      <circle cx="-16.4" cy="24.9" r="2.1" fill="#dc2626"/>
+      <circle cx="-8.5" cy="28.3" r="2.1" fill="#dc2626"/>
+      <circle cx="0.0" cy="29.5" r="2.1" fill="#dc2626"/>
+      <circle cx="8.5" cy="28.3" r="2.1" fill="#dc2626"/>
+      <circle cx="16.4" cy="24.9" r="2.1" fill="#dc2626"/>
+      <circle cx="23.1" cy="19.4" r="2.1" fill="#dc2626"/>
+      <circle cx="28.0" cy="12.4" r="2.1" fill="#dc2626"/>
+      <circle cx="30.9" cy="4.2" r="2.1" fill="#dc2626"/>
+      <circle cx="31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
+      <circle cx="29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
+      <path d="M -21 -21 L 0 -21 L 0 0 L -21 0 Z" fill="#7dd3fc" stroke="#111827" stroke-width="2"/>
+      <path d="M -20 0 L -13 -6 L -7 -1 L -1 -6 L 0 0 Z" fill="#b45309"/>
+      <rect x="-11.5" y="-10" width="3" height="9" fill="#15803d"/>
+      <circle cx="-10" cy="-13" r="6" fill="#166534"/>
+      <circle cx="-13" cy="-12" r="4" fill="#22c55e"/>
+      <circle cx="-7" cy="-12" r="4" fill="#15803d"/>
+      <path d="M 0 -21 L 21 -21 L 21 0 L 0 0 Z" fill="#dc2626" stroke="#111827" stroke-width="2"/>
+      <polygon points="5,-14 14,-18 18,-11 9,-7" fill="#fef08a" stroke="#111827" stroke-width="1"/>
+      <path d="M 6 -5 L 17 -17" stroke="#d97706" stroke-width="2.6" stroke-linecap="round"/>
+      <rect x="4" y="-6" width="5" height="4" rx="1" fill="#451a03"/>
+      <path d="M -21 0 L 0 0 L 0 24 C -8 19 -21 15 -21 0 Z" fill="#facc15" stroke="#111827" stroke-width="2"/>
+      <path d="M -21 0 L 0 24 C -10 19 -21 15 -21 0 Z" fill="#15803d"/>
+      <line x1="-21" y1="0" x2="0" y2="24" stroke="#111827" stroke-width="1.8"/>
+      <path d="M 0 0 L 21 0 C 21 15 8 19 0 24 Z" fill="#16a34a" stroke="#111827" stroke-width="2"/>
+      <path d="M 5 14 L 16 4 C 18 6 16 14 11 16 Z" fill="#b45309" stroke="#111827" stroke-width="1"/>
+      <circle cx="6" cy="14" r="1.8" fill="#facc15"/>
+      <circle cx="9" cy="15" r="1.8" fill="#fde047"/>
+      <circle cx="7.5" cy="12.5" r="1.6" fill="#facc15"/>
+      <path d="M -23 -21 L 23 -21 L 21 -19 L 21 2 C 21 15 8 19 0 25 C -8 19 -21 15 -21 2 L -21 -19 Z" fill="none" stroke="#111827" stroke-width="2.4" stroke-linejoin="round"/>
+      <line x1="0" y1="-21" x2="0" y2="24" stroke="#111827" stroke-width="2.2"/>
+      <line x1="-21" y1="0" x2="21" y2="0" stroke="#111827" stroke-width="2.2"/>
+    </g>
+  </defs>
+
+  <style>
+    .gearSpin { animation: spin360 36s linear infinite; }
+    .gearSpinRev { animation: spinRev 28s linear infinite; }
+    .crestFloat { animation: cfloat 5.5s ease-in-out infinite alternate; }
+    .glyph1 { animation: gfloat 7s ease-in-out infinite; }
+    .glyph2 { animation: gfloat 8.5s ease-in-out infinite -2.5s; }
+    .glyph3 { animation: gfloat 6.4s ease-in-out infinite -4.2s; }
+    @keyframes spin360 { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spinRev { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    @keyframes cfloat {
+      0% { transform: translate(486px, 96px) scale(1.08); }
+      100% { transform: translate(486px, 88px) scale(1.13); }
+    }
+    @keyframes gfloat {
+      0%, 100% { transform: translateY(0px); opacity: 0.22; }
+      50% { transform: translateY(-14px); opacity: 0.55; }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="580" height="230" fill="url(#utmBg)"/>
+    <rect width="580" height="230" fill="url(#blueprintGrid)"/>
+    <rect width="580" height="230" fill="url(#utmAura)"/>
+
+    <!-- Engineering Circuit & Blueprint Horizon Along Bottom -->
+    <path d="M 0 198 L 85 182 L 175 194 L 285 176 L 390 192 L 490 172 L 580 186 L 580 230 L 0 230 Z" fill="#04180d" opacity="0.88"/>
+    <path d="M 0 212 L 120 198 L 240 210 L 360 194 L 470 208 L 580 196 L 580 230 L 0 230 Z" fill="#020d07" opacity="0.96"/>
+
+    <!-- Glowing Circuit Traces Along Bottom Ridge -->
+    <g fill="none" stroke="#10b981" stroke-width="1.2" opacity="0.32">
+      <polyline points="20,218 95,218 112,204 195,204"/>
+      <polyline points="260,216 335,216 352,200 445,200"/>
+      <circle cx="195" cy="204" r="2.5" fill="#fde047"/>
+      <circle cx="445" cy="200" r="2.5" fill="#34d399"/>
+    </g>
+
+    <!-- Floating Engineering & Math Symbols in Background -->
+    <g font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#fde047">
+      <text x="362" y="46" font-size="14" class="glyph1">{ C++ }</text>
+      <text x="392" y="156" font-size="15" fill="#34d399" class="glyph2">∑ ∫ π</text>
+      <text x="332" y="112" font-size="13" fill="#a7f3d0" class="glyph3">&lt;/&gt;</text>
+    </g>
+
+    <!-- Animated Engineering Gear Rings + Official UTM Emblem on Right -->
+    <g transform="translate(486, 92)" opacity="0.28">
+      <g class="gearSpin">
+        <circle cx="0" cy="0" r="76" fill="none" stroke="#facc15" stroke-width="5" stroke-dasharray="10 8" stroke-opacity="0.7"/>
+        <circle cx="0" cy="0" r="68" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.6"/>
+      </g>
+      <g class="gearSpinRev">
+        <circle cx="0" cy="0" r="88" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="22 14" stroke-opacity="0.5"/>
+      </g>
+    </g>
+    <g class="crestFloat" opacity="0.34">
+      <use href="#utmCrest"/>
+    </g>
+
+    <!-- Foreground Card Content -->
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule -->
+      <rect x="0" y="0" width="236" height="28" rx="14" fill="#03120a" fill-opacity="0.88" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.65"/>
+      <g transform="translate(18, 14) scale(0.2200)">
+        <use href="#utmCrest"/>
+      </g>
+      <text x="132" y="18.5" fill="#ecfdf5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UTM · MANABÍ, ECUADOR</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#fefce8" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / College_Projects</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#e2f8ee" font-size="13.5" opacity="0.92">Central repository for my university coursework, practical labs, and</text>
+      <text x="0" y="112" fill="#e2f8ee" font-size="13.5" opacity="0.92">academic engineering projects at Universidad Técnica de Manabí (UTM).</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#03120a" fill-opacity="0.86" stroke="#22c55e" stroke-width="1" stroke-opacity="0.48"/>
+        <text x="52" y="18" fill="#ecfdf5" text-anchor="middle">C++ / CMake</text>
+
+        <rect x="114" y="0" width="122" height="28" rx="14" fill="#03120a" fill-opacity="0.86" stroke="#22c55e" stroke-width="1" stroke-opacity="0.48"/>
+        <text x="175" y="18" fill="#ecfdf5" text-anchor="middle">Geant4 / Docker</text>
+
+        <rect x="246" y="0" width="102" height="28" rx="14" fill="#03120a" fill-opacity="0.86" stroke="#22c55e" stroke-width="1" stroke-opacity="0.48"/>
+        <text x="297" y="18" fill="#ecfdf5" text-anchor="middle">ES / EN Docs</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#04180d" fill-opacity="0.92" stroke="#facc15" stroke-width="1.2" stroke-opacity="0.72"/>
+        <text x="459" y="18" fill="#fef08a" font-weight="700" text-anchor="middle">Open repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.5">
+    <animate attributeName="stroke" values="#10b981;#facc15;#10b981" dur="10s" repeatCount="indefinite"/>
+  </rect>
+</svg>

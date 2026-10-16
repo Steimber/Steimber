@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <!-- Deep Stratospheric Cherenkov & Cosmic Violet Animated Background -->
+    <linearGradient id="geantBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714">
+        <animate attributeName="stop-color" values="#040714;#070b1e;#03050f;#040714" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#0a1636">
+        <animate attributeName="stop-color" values="#0a1636;#111f4d;#071026;#0a1636" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#172554">
+        <animate attributeName="stop-color" values="#172554;#1e1b4b;#0f172a;#172554" dur="16s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Primary Cosmic Ray Collision Vertex Glow -->
+    <radialGradient id="vertexGlow" cx="82%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.34">
+        <animate attributeName="stop-opacity" values="0.22;0.45;0.22" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#a855f7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#040714" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .shower-muon {
+      stroke-dasharray: 18 140;
+      animation: showerPulse 2.4s linear infinite;
+    }
+    .shower-em {
+      stroke-dasharray: 14 120;
+      animation: showerPulse 1.9s linear infinite -0.7s;
+    }
+    .shower-hadron {
+      stroke-dasharray: 16 130;
+      animation: showerPulse 2.1s linear infinite -1.3s;
+    }
+    .vertex-ring {
+      transform-origin: 476px 38px;
+      animation: ringExpand 3.2s ease-out infinite;
+    }
+    .vertex-ring2 {
+      transform-origin: 476px 38px;
+      animation: ringExpand 3.2s ease-out infinite -1.6s;
+    }
+    @keyframes showerPulse {
+      from { stroke-dashoffset: 160; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes ringExpand {
+      0% { transform: scale(0.3); opacity: 0.9; }
+      100% { transform: scale(2.8); opacity: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="580" height="230" fill="url(#geantBg)"/>
+    <rect width="580" height="230" fill="url(#vertexGlow)"/>
+
+    <!-- 3D X11 Scintillator Detector Array Grid at Bottom -->
+    <g stroke="#38bdf8" stroke-width="0.8" opacity="0.24" fill="none">
+      <!-- Perspective Horizontal Detector Planes -->
+      <line x1="0" y1="184" x2="580" y2="184"/>
+      <line x1="0" y1="196" x2="580" y2="196"/>
+      <line x1="0" y1="210" x2="580" y2="210"/>
+      <line x1="0" y1="226" x2="580" y2="226"/>
+      <!-- Perspective Radial Lines -->
+      <line x1="290" y1="140" x2="-40" y2="230"/>
+      <line x1="290" y1="140" x2="70" y2="230"/>
+      <line x1="290" y1="140" x2="180" y2="230"/>
+      <line x1="290" y1="140" x2="290" y2="230"/>
+      <line x1="290" y1="140" x2="400" y2="230"/>
+      <line x1="290" y1="140" x2="510" y2="230"/>
+      <line x1="290" y1="140" x2="620" y2="230"/>
+    </g>
+
+    <!-- Geant4 Monte Carlo Cosmic Ray Air Shower Tracks (Right Side) -->
+    <!-- Static Base Tracks -->
+    <g fill="none" stroke-linecap="round" opacity="0.38">
+      <!-- Primary Proton p+ Track -->
+      <line x1="535" y1="-8" x2="476" y2="38" stroke="#fef08a" stroke-width="2.6"/>
+      <!-- Secondary Muon Tracks (Penetrating Cyan) -->
+      <path d="M 476 38 L 385 198" stroke="#38bdf8" stroke-width="1.6"/>
+      <path d="M 476 38 L 438 212" stroke="#38bdf8" stroke-width="1.8"/>
+      <path d="M 476 38 L 492 216" stroke="#22d3ee" stroke-width="1.6"/>
+      <path d="M 476 38 L 548 204" stroke="#38bdf8" stroke-width="1.5"/>
+      <!-- Secondary Hadronic Core & Sub-vertex (Amber/Rose) -->
+      <path d="M 476 38 L 448 92 L 412 192" stroke="#fb7185" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <path d="M 448 92 L 468 202" stroke="#f59e0b" stroke-width="1.4"/>
+      <path d="M 476 38 L 512 98 L 528 198" stroke="#fb7185" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <!-- Electromagnetic e+/e-/gamma Curved Tracks (Violet/Magenta) -->
+      <path d="M 476 38 Q 410 85 352 178" stroke="#c084fc" stroke-width="1.3"/>
+      <path d="M 448 92 Q 395 130 368 195" stroke="#e879f9" stroke-width="1.2"/>
+      <path d="M 512 98 Q 555 135 568 190" stroke="#c084fc" stroke-width="1.3"/>
+    </g>
+
+    <!-- Animated High-Energy Particle Packets Streaming Down Tracks -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 476 38 L 385 198" stroke="#7dd3fc" stroke-width="2.8" class="shower-muon"/>
+      <path d="M 476 38 L 438 212" stroke="#ffffff" stroke-width="2.8" class="shower-muon"/>
+      <path d="M 476 38 L 492 216" stroke="#67e8f9" stroke-width="2.8" class="shower-hadron"/>
+      <path d="M 476 38 L 548 204" stroke="#7dd3fc" stroke-width="2.6" class="shower-em"/>
+      <path d="M 476 38 Q 410 85 352 178" stroke="#f0abfc" stroke-width="2.5" class="shower-em"/>
+      <path d="M 476 38 L 448 92 L 412 192" stroke="#fda4af" stroke-width="2.5" class="shower-hadron"/>
+      <path d="M 476 38 L 512 98 L 528 198" stroke="#fde047" stroke-width="2.5" class="shower-muon"/>
+    </g>
+
+    <!-- Primary Interaction Vertex & Shockwave Rings -->
+    <circle cx="476" cy="38" r="14" fill="none" stroke="#38bdf8" stroke-width="1.5" class="vertex-ring"/>
+    <circle cx="476" cy="38" r="14" fill="none" stroke="#c084fc" stroke-width="1.2" class="vertex-ring2"/>
+    <circle cx="476" cy="38" r="4.5" fill="#fef08a">
+      <animate attributeName="r" values="3.5;6;3.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="448" cy="92" r="3" fill="#fb7185"/>
+    <circle cx="512" cy="98" r="3" fill="#c084fc"/>
+
+    <!-- Glowing Cherenkov Detector Hit Pads at Bottom -->
+    <g>
+      <ellipse cx="385" cy="198" rx="9" ry="3" fill="#38bdf8" opacity="0.7">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="438" cy="212" rx="11" ry="3.5" fill="#22d3ee" opacity="0.8">
+        <animate attributeName="opacity" values="0.85;0.2;0.85" dur="1.9s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="492" cy="216" rx="10" ry="3.2" fill="#c084fc" opacity="0.75">
+        <animate attributeName="opacity" values="0.3;0.95;0.3" dur="2.1s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="528" cy="198" rx="8" ry="2.8" fill="#fb7185" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.15;0.7" dur="2.6s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Physics Particle Labels in Background -->
+    <g font-family="Consolas, 'Courier New', monospace" font-size="11" font-weight="700" opacity="0.55">
+      <text x="502" y="24" fill="#fef08a">p⁺ (GeV)</text>
+      <text x="342" y="148" fill="#e879f9">γ / e±</text>
+      <text x="392" y="168" fill="#38bdf8">μ⁻</text>
+      <text x="502" y="172" fill="#22d3ee">μ⁺</text>
+      <text x="454" y="138" fill="#fb7185">π±</text>
+    </g>
+
+    <!-- Foreground Card Content -->
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule with Vector Atom/Shower Icon -->
+      <rect x="0" y="0" width="204" height="28" rx="14" fill="#050b1e" fill-opacity="0.88" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.68"/>
+      <g transform="translate(18, 14)" fill="none" stroke="#38bdf8" stroke-width="1.3">
+        <ellipse rx="7.5" ry="3" transform="rotate(30)"/>
+        <ellipse rx="7.5" ry="3" transform="rotate(-30)"/>
+        <circle cx="0" cy="0" r="2" fill="#fef08a" stroke="none"/>
+      </g>
+      <text x="112" y="18.5" fill="#e0f2fe" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">FEATURED SIMULATION</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#f8fafc" font-size="23" font-weight="800" letter-spacing="0.3">proyecto-geant4 · Cosmic Rays</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#cbd5e1" font-size="13.5" opacity="0.94">C++ &amp; Geant4 Monte Carlo simulation of atmospheric cosmic-ray</text>
+      <text x="0" y="112" fill="#cbd5e1" font-size="13.5" opacity="0.94">particle showers with 3D X11 visualization and Docker Hub image.</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="116" height="28" rx="14" fill="#050b1e" fill-opacity="0.86" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.48"/>
+        <text x="58" y="18" fill="#e0f2fe" text-anchor="middle">Geant4 Physics</text>
+
+        <rect x="126" y="0" width="98" height="28" rx="14" fill="#050b1e" fill-opacity="0.86" stroke="#a855f7" stroke-width="1" stroke-opacity="0.48"/>
+        <text x="175" y="18" fill="#f3e8ff" text-anchor="middle">Docker X11</text>
+
+        <rect x="234" y="0" width="76" height="28" rx="14" fill="#050b1e" fill-opacity="0.86" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.48"/>
+        <text x="272" y="18" fill="#e0f2fe" text-anchor="middle">C++17</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#081433" fill-opacity="0.92" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8"/>
+        <text x="459" y="18" fill="#7dd3fc" font-weight="700" text-anchor="middle">View code →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.52">
+    <animate attributeName="stroke" values="#38bdf8;#a855f7;#38bdf8" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>
