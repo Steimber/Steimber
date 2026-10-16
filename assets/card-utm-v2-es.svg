@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <!-- Synchronized Card Background (Morning -> Afternoon -> Night) -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05160e">
+        <animate attributeName="stop-color" values="#05160e;#05160e;#0f141c;#0f141c;#020617;#020617;#05160e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="62%" stop-color="#0e2d1c">
+        <animate attributeName="stop-color" values="#0e2d1c;#0e2d1c;#261a18;#261a18;#071924;#071924;#0e2d1c" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#163f28">
+        <animate attributeName="stop-color" values="#163f28;#163f28;#3d231a;#3d231a;#0c2b33;#0c2b33;#163f28" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="88%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#fde047" stop-opacity="0.22">
+        <animate attributeName="stop-color" values="#fde047;#fde047;#fb923c;#fb923c;#7dd3fc;#7dd3fc;#fde047" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#22c55e" stop-opacity="0.10">
+        <animate attributeName="stop-color" values="#22c55e;#22c55e;#b3613d;#b3613d;#14b8a6;#14b8a6;#22c55e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#05160e" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+    <clipPath id="ecFlag">
+      <rect width="20" height="13" rx="2"/>
+    </clipPath>
+    <path id="cardPine1" d="M 0 -46 L -9 -26 L -4 -27 L -14 -10 L -7 -11 L -18 5 L 18 5 L 7 -11 L 14 -10 L 4 -27 L 9 -26 Z"/>
+    <path id="cardPine2" d="M 0 -36 L -7 -20 L -3 -21 L -11 -7 L -6 -8 L -15 5 L 15 5 L 6 -8 L 11 -7 L 3 -21 L 7 -20 Z"/>
+  </defs>
+
+  <style>
+    .csway1, .csway2 { transform-origin: 0px 0px; }
+    .csway1 { animation: cwindA 3.1s ease-in-out infinite alternate; }
+    .csway2 { animation: cwindB 3.7s ease-in-out infinite alternate; }
+    .cd1 { animation-delay: -0.4s; }
+    .cd2 { animation-delay: -1.2s; }
+    .cd3 { animation-delay: -2.1s; }
+    .cd4 { animation-delay: -2.9s; }
+    @keyframes cwindA {
+      0% { transform: rotate(-3.2deg) skewX(-1.5deg); }
+      100% { transform: rotate(3.4deg) skewX(1.8deg); }
+    }
+    @keyframes cwindB {
+      0% { transform: rotate(3.0deg) skewX(1.5deg); }
+      100% { transform: rotate(-3.4deg) skewX(-1.8deg); }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="580" height="230" fill="url(#bg)"/>
+    <rect width="580" height="230" fill="url(#sunGlow)"/>
+
+    <!-- Night Stars in Top Right of Card -->
+    <g fill="#f8fafc" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.1;0.1;0.85;0.85;0" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <circle cx="420" cy="36" r="1.3"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="485" cy="28" r="1.5"><animate attributeName="opacity" values="0.85;0.2;0.85" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="535" cy="52" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.3s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Distant Ridge -->
+    <path d="M 0 198 L 95 168 L 195 190 L 310 158 L 430 188 L 520 164 L 580 182 L 580 230 L 0 230 Z" fill="#0a2114" opacity="0.78">
+      <animate attributeName="fill" values="#0a2114;#0a2114;#1f1512;#1f1512;#071820;#071820;#0a2114" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Living Swaying Pine Trees Along Bottom of Card -->
+    <g fill="#05130b" opacity="0.92">
+      <animate attributeName="fill" values="#05130b;#05130b;#0e0a08;#0e0a08;#030b0e;#030b0e;#05130b" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      <rect x="0" y="210" width="580" height="20"/>
+      <g transform="translate(18, 218)"><use href="#cardPine1" class="csway1 cd1"/></g>
+      <g transform="translate(52, 220)"><use href="#cardPine2" class="csway2 cd2"/></g>
+      <g transform="translate(86, 216)"><use href="#cardPine1" class="csway1 cd3"/></g>
+      <g transform="translate(122, 220)"><use href="#cardPine2" class="csway2 cd4"/></g>
+      <g transform="translate(158, 217)"><use href="#cardPine1" class="csway1 cd2"/></g>
+      <g transform="translate(194, 221)"><use href="#cardPine2" class="csway2 cd1"/></g>
+      <g transform="translate(230, 218)"><use href="#cardPine1" class="csway1 cd4"/></g>
+      <g transform="translate(268, 221)"><use href="#cardPine2" class="csway2 cd3"/></g>
+      <g transform="translate(306, 217)"><use href="#cardPine1" class="csway1 cd1"/></g>
+      <g transform="translate(344, 220)"><use href="#cardPine2" class="csway2 cd2"/></g>
+      <g transform="translate(382, 216)"><use href="#cardPine1" class="csway1 cd4"/></g>
+      <g transform="translate(420, 220)"><use href="#cardPine2" class="csway2 cd3"/></g>
+      <g transform="translate(458, 217)"><use href="#cardPine1" class="csway1 cd2"/></g>
+      <g transform="translate(496, 220)"><use href="#cardPine2" class="csway2 cd1"/></g>
+      <g transform="translate(532, 216)"><use href="#cardPine1" class="csway1 cd3"/></g>
+      <g transform="translate(566, 219)"><use href="#cardPine2" class="csway2 cd4"/></g>
+    </g>
+
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule -->
+      <rect x="0" y="0" width="236" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.42">
+        <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(18, 14) scale(0.2200)">
+          <!-- Outer White & Dark Green Border -->
+          <circle cx="0" cy="0" r="49" fill="#ffffff" stroke="#0f5123" stroke-width="2.5"/>
+          <!-- Left Yellow Ring Half & Right Green Ring Half -->
+          <path d="M 0 -43 A 43 43 0 0 0 0 43" fill="none" stroke="#facc15" stroke-width="10"/>
+          <path d="M 0 -43 A 43 43 0 0 1 0 43" fill="none" stroke="#15803d" stroke-width="10"/>
+          <!-- Inner Ring Border -->
+          <circle cx="0" cy="0" r="37.5" fill="#ffffff" stroke="#15803d" stroke-width="1.8"/>
+          <!-- Ring Text Arcs Hint -->
+          <path d="M -36 -20 A 41 41 0 0 1 36 -20" fill="none" stroke="#052e16" stroke-width="2.6" stroke-dasharray="3.2 2.2" opacity="0.85"/>
+          <!-- Top Ribbon: Patria (Yellow) Tecnica (Blue) Cultura (Red) -->
+          <rect x="-24" y="-31" width="15" height="6.5" rx="1" fill="#facc15" stroke="#111827" stroke-width="1"/>
+          <rect x="-7.5" y="-31" width="15" height="6.5" rx="1" fill="#1d4ed8" stroke="#111827" stroke-width="1"/>
+          <rect x="9" y="-31" width="15" height="6.5" rx="1" fill="#dc2626" stroke="#111827" stroke-width="1"/>
+          <!-- Red Stars Arc Around Shield -->
+          <circle cx="-29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
+          <circle cx="-31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
+          <circle cx="-30.9" cy="4.2" r="2.1" fill="#dc2626"/>
+          <circle cx="-28.0" cy="12.4" r="2.1" fill="#dc2626"/>
+          <circle cx="-23.1" cy="19.4" r="2.1" fill="#dc2626"/>
+          <circle cx="-16.4" cy="24.9" r="2.1" fill="#dc2626"/>
+          <circle cx="-8.5" cy="28.3" r="2.1" fill="#dc2626"/>
+          <circle cx="0.0" cy="29.5" r="2.1" fill="#dc2626"/>
+          <circle cx="8.5" cy="28.3" r="2.1" fill="#dc2626"/>
+          <circle cx="16.4" cy="24.9" r="2.1" fill="#dc2626"/>
+          <circle cx="23.1" cy="19.4" r="2.1" fill="#dc2626"/>
+          <circle cx="28.0" cy="12.4" r="2.1" fill="#dc2626"/>
+          <circle cx="30.9" cy="4.2" r="2.1" fill="#dc2626"/>
+          <circle cx="31.4" cy="-4.4" r="2.1" fill="#dc2626"/>
+          <circle cx="29.6" cy="-12.8" r="2.1" fill="#dc2626"/>
+          <!-- 4-Quadrant Shield -->
+          <!-- Top-Left: Sky + Hills + Green Tree -->
+          <path d="M -21 -21 L 0 -21 L 0 0 L -21 0 Z" fill="#7dd3fc" stroke="#111827" stroke-width="2"/>
+          <path d="M -20 0 L -13 -6 L -7 -1 L -1 -6 L 0 0 Z" fill="#b45309"/>
+          <rect x="-11.5" y="-10" width="3" height="9" fill="#15803d"/>
+          <circle cx="-10" cy="-13" r="6" fill="#166534"/>
+          <circle cx="-13" cy="-12" r="4" fill="#22c55e"/>
+          <circle cx="-7" cy="-12" r="4" fill="#15803d"/>
+          <!-- Top-Right: Red + Book & Quill -->
+          <path d="M 0 -21 L 21 -21 L 21 0 L 0 0 Z" fill="#dc2626" stroke="#111827" stroke-width="2"/>
+          <polygon points="5,-14 14,-18 18,-11 9,-7" fill="#fef08a" stroke="#111827" stroke-width="1"/>
+          <path d="M 6 -5 L 17 -17" stroke="#d97706" stroke-width="2.6" stroke-linecap="round"/>
+          <rect x="4" y="-6" width="5" height="4" rx="1" fill="#451a03"/>
+          <!-- Bottom-Left: Green & Yellow Diagonal -->
+          <path d="M -21 0 L 0 0 L 0 24 C -8 19 -21 15 -21 0 Z" fill="#facc15" stroke="#111827" stroke-width="2"/>
+          <path d="M -21 0 L 0 24 C -10 19 -21 15 -21 0 Z" fill="#15803d"/>
+          <line x1="-21" y1="0" x2="0" y2="24" stroke="#111827" stroke-width="1.8"/>
+          <!-- Bottom-Right: Green + Golden Cornucopia -->
+          <path d="M 0 0 L 21 0 C 21 15 8 19 0 24 Z" fill="#16a34a" stroke="#111827" stroke-width="2"/>
+          <path d="M 5 14 L 16 4 C 18 6 16 14 11 16 Z" fill="#b45309" stroke="#111827" stroke-width="1"/>
+          <circle cx="6" cy="14" r="1.8" fill="#facc15"/>
+          <circle cx="9" cy="15" r="1.8" fill="#fde047"/>
+          <circle cx="7.5" cy="12.5" r="1.6" fill="#facc15"/>
+          <!-- Shield Outer Frame -->
+          <path d="M -23 -21 L 23 -21 L 21 -19 L 21 2 C 21 15 8 19 0 25 C -8 19 -21 15 -21 2 L -21 -19 Z" fill="none" stroke="#111827" stroke-width="2.4" stroke-linejoin="round"/>
+          <line x1="0" y1="-21" x2="0" y2="24" stroke="#111827" stroke-width="2.2"/>
+          <line x1="-21" y1="0" x2="21" y2="0" stroke="#111827" stroke-width="2.2"/>
+        </g>
+      <text x="132" y="18.5" fill="#ecfdf5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">UTM · MANABÍ, ECUADOR</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#fefce8" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / College_Projects</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#e2f8ee" font-size="13.5" opacity="0.9">Repositorio central con mis tareas, laboratorios prácticos y proyectos</text>
+      <text x="0" y="112" fill="#e2f8ee" font-size="13.5" opacity="0.9">académicos en la Universidad Técnica de Manabí (UTM).</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38">
+          <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        </rect>
+        <text x="52" y="18" fill="#ecfdf5" text-anchor="middle">C++ / CMake</text>
+        <rect x="114" y="0" width="122" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38">
+          <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        </rect>
+        <text x="175" y="18" fill="#ecfdf5" text-anchor="middle">Geant4 / Docker</text>
+        <rect x="246" y="0" width="102" height="28" rx="14" fill="#04110a" fill-opacity="0.82" stroke="#4ade80" stroke-width="1" stroke-opacity="0.38">
+          <animate attributeName="stroke" values="#4ade80;#4ade80;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#4ade80" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+        </rect>
+        <text x="297" y="18" fill="#ecfdf5" text-anchor="middle">ES / EN Docs</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#04110a" fill-opacity="0.88" stroke="#fde047" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="459" y="18" fill="#fef9c3" font-weight="700" text-anchor="middle">Abrir repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#1e462d" stroke-width="1.5">
+    <animate attributeName="stroke" values="#1e462d;#1e462d;#4a2819;#4a2819;#133b43;#133b43;#1e462d" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+  </rect>
+</svg>
