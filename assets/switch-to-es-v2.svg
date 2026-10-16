@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 42" width="260" height="42">
+  <defs>
+    <!-- Synchronized 30s 3-Scene Dark Glass Background (Sapphire -> Sunset -> Midnight) -->
+    <linearGradient id="switchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050d24">
+        <animate attributeName="stop-color" values="#050d24;#050d24;#160e0b;#160e0b;#041117;#041117;#050d24" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0b1d48">
+        <animate attributeName="stop-color" values="#0b1d48;#0b1d48;#2a1712;#2a1712;#082029;#082029;#0b1d48" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Synchronized 30s Border Gradient -->
+    <linearGradient id="switchStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#1d4ed8;#1d4ed8;#9a3412;#9a3412;#0f766e;#0f766e;#1d4ed8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <clipPath id="switchClip">
+      <rect x="1.5" y="1.5" width="257" height="39" rx="19.5"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#switchClip)">
+    <rect x="1.5" y="1.5" width="257" height="39" rx="19.5" fill="url(#switchBg)"/>
+    <!-- Subtle Atmospheric Stars -->
+    <circle cx="48" cy="11" r="0.8" fill="#ffffff" opacity="0.35">
+      <animate attributeName="opacity" values="0.15;0.65;0.15" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="222" cy="12" r="0.9" fill="#ffffff" opacity="0.4">
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Mini Mountain Silhouette Along Bottom Edge -->
+    <polygon points="0,42 45,33 95,38 148,30 205,36 242,31 260,36 260,42" fill="#030712" opacity="0.42"/>
+  </g>
+
+  <!-- Pill Border -->
+  <rect x="1.5" y="1.5" width="257" height="39" rx="19.5" fill="none" stroke="url(#switchStroke)" stroke-width="1.6"/>
+
+  <!-- Vector Globe Icon (Synchronized Accent Color) -->
+  <g transform="translate(26, 13)" fill="none" stroke="#7dd3fc" stroke-width="1.4">
+    <animate attributeName="stroke" values="#7dd3fc;#7dd3fc;#fdba74;#fdba74;#5eead4;#5eead4;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    <circle cx="8" cy="8" r="7.2"/>
+    <ellipse cx="8" cy="8" rx="3.4" ry="7.2"/>
+    <line x1="1" y1="8" x2="15" y2="8"/>
+  </g>
+
+  <!-- Label Synchronized with Hero Accent -->
+  <text x="142" y="25.5" fill="#bae6fd" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" letter-spacing="0.4">
+    <animate attributeName="fill" values="#bae6fd;#bae6fd;#fed7aa;#fed7aa;#99f6e4;#99f6e4;#bae6fd" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    Cambiar a Español →
+  </text>
+</svg>

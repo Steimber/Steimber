@@ -1,10 +1,10 @@
 <div align="center">
   <a href="https://github.com/Steimber/Steimber/blob/main/README.md">
-    <img src="./assets/switch-to-es.svg" height="40" alt="Cambiar a Español" />
+    <img src="./assets/switch-to-es-v2.svg" height="40" alt="Cambiar a Español" />
   </a>
   &nbsp;
   <a href="https://github.com/Steimber/Steimber/blob/main/README.en.md">
-    <img src="./assets/switch-en-active.svg" height="40" alt="English (Current)" />
+    <img src="./assets/switch-en-active-v2.svg" height="40" alt="English (Current)" />
   </a>
 </div>
 

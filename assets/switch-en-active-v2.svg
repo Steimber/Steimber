@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 42" width="220" height="42">
+  <defs>
+    <!-- Synchronized 30s 3-Scene Background Gradient (Sapphire -> Sunset -> Midnight) -->
+    <linearGradient id="activeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d285e">
+        <animate attributeName="stop-color" values="#0d285e;#0d285e;#3b1d16;#3b1d16;#0a2733;#0a2733;#0d285e" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#08183a">
+        <animate attributeName="stop-color" values="#08183a;#08183a;#22110d;#22110d;#061720;#061720;#08183a" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#153e8a">
+        <animate attributeName="stop-color" values="#153e8a;#153e8a;#59261b;#59261b;#0d363d;#0d363d;#153e8a" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Synchronized 30s Border Gradient -->
+    <linearGradient id="activeStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color" values="#7dd3fc;#7dd3fc;#fdba74;#fdba74;#5eead4;#5eead4;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Subtle Horizon Glow Inside Pill -->
+    <radialGradient id="pillHalo" cx="80%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25">
+        <animate attributeName="stop-color" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#040b1e" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="pillClip">
+      <rect x="1.5" y="1.5" width="217" height="39" rx="19.5"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#pillClip)">
+    <rect x="1.5" y="1.5" width="217" height="39" rx="19.5" fill="url(#activeBg)"/>
+    <rect x="1.5" y="1.5" width="217" height="39" rx="19.5" fill="url(#pillHalo)"/>
+    <!-- Subtle Atmospheric Stars -->
+    <circle cx="178" cy="11" r="0.9" fill="#ffffff" opacity="0.45">
+      <animate attributeName="opacity" values="0.2;0.75;0.2" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="196" cy="29" r="0.7" fill="#ffffff" opacity="0.35">
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Mini Mountain Silhouette Along Bottom Edge -->
+    <polygon points="0,42 38,32 76,37 122,29 168,36 202,30 220,35 220,42" fill="#040814" opacity="0.38"/>
+  </g>
+
+  <!-- Pill Border -->
+  <rect x="1.5" y="1.5" width="217" height="39" rx="19.5" fill="none" stroke="url(#activeStroke)" stroke-width="1.8"/>
+
+  <!-- Pulsing Active Indicator Dot (Synchronized with Hero Scene) -->
+  <circle cx="28" cy="21" r="7.5" fill="#38bdf8" opacity="0.25">
+    <animate attributeName="fill" values="#38bdf8;#38bdf8;#fb923c;#fb923c;#2dd4bf;#2dd4bf;#38bdf8" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="6;8.5;6" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="28" cy="21" r="4.5" fill="#7dd3fc">
+    <animate attributeName="fill" values="#7dd3fc;#7dd3fc;#fdba74;#fdba74;#5eead4;#5eead4;#7dd3fc" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="30s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Label -->
+  <text x="120" y="25.5" fill="#f8fafc" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle" letter-spacing="0.4">English (Current)</text>
+</svg>
