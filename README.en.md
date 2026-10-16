@@ -68,5 +68,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=12" alt="Tech Stack" />
+  <img src="./assets/tech-carousel-v1.svg" width="100%" alt="Tech Stack Carousel" />
 </div>
