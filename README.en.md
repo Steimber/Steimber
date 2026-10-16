@@ -31,19 +31,36 @@
   </tr>
 </table>
 
-### University Coursework (UTM) & Personal Projects
+### Personal Projects
 
-<p align="center">
-  <a href="https://github.com/Steimber/mineral-tareas" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/card-mineral-tareas-cycle-en.svg?v=3" width="49%" alt="mineral-tareas" />
-  </a>
-  <a href="https://github.com/Steimber/College_Projects" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/card-utm-cycle-en.svg?v=3" width="49%" alt="College_Projects UTM" />
-  </a>
-  <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/card-geant4-cycle-en.svg" width="49%" alt="Proyecto Geant4" />
-  </a>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Steimber/mineral-tareas" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-mineral-tareas-cycle-en.svg?v=3" width="420" alt="mineral-tareas" />
+      </a><br/><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub>
+    </td>
+  </tr>
+</table>
+
+### University Coursework (UTM)
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Steimber/College_Projects" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-utm-cycle-en.svg?v=3" width="420" alt="College_Projects UTM" />
+      </a><br/><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Steimber/College_Projects/tree/main/proyecto-geant4" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-geant4-cycle-en.svg" width="420" alt="Proyecto Geant4" />
+      </a><br/><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=cpp,py,ts,js,react,nextjs,nodejs,docker,cmake,linux,git,postgres&theme=dark&perline=12" alt="Tech Stack" />
