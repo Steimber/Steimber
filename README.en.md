@@ -34,6 +34,9 @@
 ### University Coursework (UTM) & Personal Projects
 
 <p align="center">
+  <a href="https://github.com/Steimber/mineral-tareas">
+    <img src="./assets/card-mineral-tareas-cycle-en.svg" width="49%" alt="mineral-tareas" />
+  </a>
   <a href="https://github.com/Steimber/College_Projects">
     <img src="./assets/card-utm-cycle-en.svg" width="49%" alt="College_Projects UTM" />
   </a>
