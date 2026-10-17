@@ -51,7 +51,7 @@
     .claudeWalker {
       animation: patrolClaude 7.2s ease-in-out infinite;
     }
-    /* Gemini walking & hovering patrol across the right-hand deck */
+    /* Gemini walking and hovering patrol across the right-hand deck */
     .geminiWalker {
       animation: patrolGemini 6.8s ease-in-out infinite;
     }
