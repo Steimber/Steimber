@@ -47,7 +47,12 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
+    <td align="center" width="50%">
+      <a href="https://github.com/Steimber/MyMusicAnywhere" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-mymusic-v1-en.svg" width="420" alt="MyMusicAnywhere" />
+      </a>
+    </td>
+    <td align="center" width="50%">
       <a href="https://github.com/Steimber/BearDesk" target="_blank" rel="noopener noreferrer">
         <img src="./assets/card-beardesk-v3-en.svg" width="420" alt="BearDesk" />
       </a>
