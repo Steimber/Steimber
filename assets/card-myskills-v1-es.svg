@@ -13,27 +13,27 @@
       </stop>
     </linearGradient>
 
-    <!-- Dual Aura: Claude Terracotta + Gemini Cyan-Violet -->
-    <radialGradient id="agentStageAura" cx="80%" cy="54%" r="52%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28">
+    <!-- Tri-Agent Aura: Claude Terracotta + Codex Emerald + Gemini Indigo -->
+    <radialGradient id="agentStageAura" cx="82%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.28">
         <animate attributeName="stop-opacity" values="0.18;0.34;0.18" dur="5s" repeatCount="indefinite"/>
       </stop>
       <stop offset="48%" stop-color="#d97757" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#050b14" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Claude Code Coral-Terracotta Body Gradient -->
-    <linearGradient id="claudeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e7a"/>
-      <stop offset="55%" stop-color="#d97757"/>
-      <stop offset="100%" stop-color="#9a4428"/>
+    <!-- Official Google Gemini 4-Point Sparkle Gradient -->
+    <linearGradient id="geminiOfficialGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="50%" stop-color="#9B72CB"/>
+      <stop offset="100%" stop-color="#D96570"/>
     </linearGradient>
 
-    <!-- Gemini Cosmic Blue-Violet Body Gradient -->
-    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#67e8f9"/>
-      <stop offset="50%" stop-color="#60a5fa"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+    <!-- Codex Egg Pet Metallic Mint-Emerald Gradient -->
+    <linearGradient id="codexPetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="55%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
 
     <!-- Neural Grid Pattern -->
@@ -47,72 +47,89 @@
   </defs>
 
   <style>
-    /* Claude Code walking patrol across the right-hand deck */
-    .claudeWalker {
-      animation: patrolClaude 7.2s ease-in-out infinite;
+    /* 1. Claude Code official "Clawd" pixel mascot walking patrol */
+    .clawdWalker {
+      animation: patrolClawd 6.4s ease-in-out infinite;
     }
-    /* Gemini walking and hovering patrol across the right-hand deck */
-    .geminiWalker {
-      animation: patrolGemini 6.8s ease-in-out infinite;
+    .clawdBob {
+      animation: pixelStepBob 0.36s steps(2, end) infinite;
     }
-    .claudeBodyBob {
-      animation: bobStep 0.45s ease-in-out infinite alternate;
+    .clawdLegsA {
+      animation: legsToggleA 0.36s steps(2, end) infinite;
     }
-    .geminiBodyBob {
-      animation: bobStep 0.5s ease-in-out infinite alternate-reverse;
+    .clawdLegsB {
+      animation: legsToggleB 0.36s steps(2, end) infinite;
     }
-    .legLeft {
-      transform-box: fill-box;
-      transform-origin: top center;
-      animation: strideA 0.45s ease-in-out infinite alternate;
-    }
-    .legRight {
-      transform-box: fill-box;
-      transform-origin: top center;
-      animation: strideB 0.45s ease-in-out infinite alternate;
-    }
-    .geminiStarSpin {
-      transform-origin: 0px -15px;
-      animation: spinSparkle 6s linear infinite;
-    }
-    .folderFloat1 { animation: floatFolder 3.6s ease-in-out infinite; }
-    .folderFloat2 { animation: floatFolder 3.6s ease-in-out infinite -1.2s; }
-    .folderFloat3 { animation: floatFolder 3.6s ease-in-out infinite -2.4s; }
 
-    @keyframes patrolClaude {
-      0%   { transform: translate(404px, 124px); }
-      45%  { transform: translate(462px, 120px); }
-      50%  { transform: translate(465px, 122px); }
-      95%  { transform: translate(407px, 126px); }
-      100% { transform: translate(404px, 124px); }
+    /* 2. Codex official work-pet (egg.svg) + OpenAI Blossom walking patrol */
+    .codexWalker {
+      animation: patrolCodex 6.8s ease-in-out infinite;
+    }
+    .codexHop {
+      animation: hopBounce 0.48s ease-in-out infinite alternate;
+    }
+    .openaiSpin {
+      transform-origin: 0px 0px;
+      animation: spinLogo 8s linear infinite;
+    }
+
+    /* 3. Official Google Gemini Sparkle logo gliding and pulsing */
+    .geminiWalker {
+      animation: patrolGemini 5.8s ease-in-out infinite;
+    }
+    .geminiPulse {
+      transform-origin: 0px 0px;
+      animation: sparkleFloat 2.4s ease-in-out infinite alternate;
+    }
+
+    .catFloat1 { animation: floatCat 3.4s ease-in-out infinite; }
+    .catFloat2 { animation: floatCat 3.4s ease-in-out infinite -1.1s; }
+    .catFloat3 { animation: floatCat 3.4s ease-in-out infinite -2.2s; }
+
+    @keyframes patrolClawd {
+      0%   { transform: translate(414px, 128px); }
+      48%  { transform: translate(450px, 124px); }
+      52%  { transform: translate(452px, 126px); }
+      100% { transform: translate(414px, 128px); }
+    }
+    @keyframes patrolCodex {
+      0%   { transform: translate(496px, 127px); }
+      48%  { transform: translate(470px, 123px); }
+      52%  { transform: translate(468px, 125px); }
+      100% { transform: translate(496px, 127px); }
     }
     @keyframes patrolGemini {
-      0%   { transform: translate(536px, 118px); }
-      48%  { transform: translate(492px, 125px); }
-      52%  { transform: translate(489px, 123px); }
-      96%  { transform: translate(534px, 116px); }
-      100% { transform: translate(536px, 118px); }
+      0%   { transform: translate(538px, 108px); }
+      50%  { transform: translate(516px, 120px); }
+      100% { transform: translate(538px, 108px); }
     }
-    @keyframes bobStep {
+    @keyframes pixelStepBob {
       0%   { transform: translateY(0px); }
-      100% { transform: translateY(-3.2px); }
+      100% { transform: translateY(-2.5px); }
     }
-    @keyframes strideA {
-      0%   { transform: rotate(-22deg); }
-      100% { transform: rotate(22deg); }
+    @keyframes legsToggleA {
+      0%   { transform: translateY(0px); }
+      100% { transform: translateY(-2.5px); }
     }
-    @keyframes strideB {
-      0%   { transform: rotate(22deg); }
-      100% { transform: rotate(-22deg); }
+    @keyframes legsToggleB {
+      0%   { transform: translateY(-2.5px); }
+      100% { transform: translateY(0px); }
     }
-    @keyframes spinSparkle {
-      0%   { transform: rotate(0deg) scale(0.95); }
-      50%  { transform: rotate(180deg) scale(1.08); }
-      100% { transform: rotate(360deg) scale(0.95); }
+    @keyframes hopBounce {
+      0%   { transform: translateY(0px) scale(1, 1); }
+      100% { transform: translateY(-4px) scale(0.97, 1.04); }
     }
-    @keyframes floatFolder {
+    @keyframes spinLogo {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes sparkleFloat {
+      0%   { transform: translateY(2px) scale(0.92) rotate(-6deg); }
+      100% { transform: translateY(-4px) scale(1.08) rotate(6deg); }
+    }
+    @keyframes floatCat {
       0%, 100% { transform: translateY(0px); }
-      50%      { transform: translateY(-4px); }
+      50%      { transform: translateY(-3.5px); }
     }
   </style>
 
@@ -124,127 +141,134 @@
 
     <!-- Top-Right Telemetry HUD -->
     <g transform="translate(384, 15)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, monospace">
-      <rect x="0" y="0" width="174" height="22" rx="11" fill="#091526" fill-opacity="0.92" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.72"/>
-      <circle cx="13" cy="11" r="3.4" fill="#d97757">
+      <rect x="0" y="0" width="178" height="22" rx="11" fill="#091526" fill-opacity="0.92" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.72"/>
+      <circle cx="13" cy="11" r="3.2" fill="#D97757">
         <animate attributeName="opacity" values="1;0.3;1" dur="1.3s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="23" cy="11" r="3.4" fill="#38bdf8">
+      <circle cx="22" cy="11" r="3.2" fill="#10b981">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="31" cy="11" r="3.2" fill="#9B72CB">
         <animate attributeName="opacity" values="0.3;1;0.3" dur="1.3s" repeatCount="indefinite"/>
       </circle>
-      <text x="96" y="14.5" fill="#e0f2fe" font-size="9.2" font-weight="700" text-anchor="middle" letter-spacing="0.5">CLAUDE CODE × GEMINI</text>
+      <text x="104" y="14.5" fill="#e0f2fe" font-size="8.8" font-weight="700" text-anchor="middle" letter-spacing="0.4">CLAUDE × CODEX × GEMINI</text>
     </g>
 
     <!-- Categorized Skill Folder Nodes Above the Walking Stage -->
-    <g font-family="'Segoe UI', -apple-system, monospace" font-size="8.2" font-weight="700">
-      <!-- Category 1: frontend/ -->
-      <g transform="translate(390, 50)">
-        <g class="folderFloat1">
-          <rect x="0" y="0" width="54" height="24" rx="6" fill="#131f33" stroke="#d97757" stroke-width="1.1"/>
-          <path d="M 6 6 L 14 6 L 16 9 L 26 9 L 26 18 L 6 18 Z" fill="#d97757" fill-opacity="0.35" stroke="#f59e7a" stroke-width="0.9"/>
-          <text x="39" y="15" fill="#fed7aa" text-anchor="middle">UI</text>
+    <g font-family="'Segoe UI', -apple-system, monospace" font-size="7.8" font-weight="700">
+      <g transform="translate(390, 48)">
+        <g class="catFloat1">
+          <rect x="0" y="0" width="52" height="22" rx="6" fill="#131f33" stroke="#D97757" stroke-width="1.1"/>
+          <path d="M 6 6 L 13 6 L 15 8.5 L 23 8.5 L 23 16.5 L 6 16.5 Z" fill="#D97757" fill-opacity="0.38" stroke="#f59e7a" stroke-width="0.9"/>
+          <text x="37" y="14" fill="#fed7aa" text-anchor="middle">UI</text>
         </g>
       </g>
-      <!-- Category 2: architecture/ -->
-      <g transform="translate(454, 46)">
-        <g class="folderFloat2">
-          <rect x="0" y="0" width="58" height="24" rx="6" fill="#131f33" stroke="#38bdf8" stroke-width="1.1"/>
-          <circle cx="13" cy="12" r="4.5" fill="none" stroke="#67e8f9" stroke-width="1.1"/>
-          <circle cx="13" cy="12" r="1.5" fill="#38bdf8"/>
-          <text x="38" y="15" fill="#bae6fd" text-anchor="middle">ARCH</text>
+      <g transform="translate(450, 44)">
+        <g class="catFloat2">
+          <rect x="0" y="0" width="54" height="22" rx="6" fill="#131f33" stroke="#10b981" stroke-width="1.1"/>
+          <path d="M 13 5.5 L 18.5 8 L 18.5 13 C 18.5 16 16 18 13 19 C 10 18 7.5 16 7.5 13 L 7.5 8 Z" fill="#10b981" fill-opacity="0.32" stroke="#6ee7b7" stroke-width="0.9"/>
+          <text x="36" y="14" fill="#a7f3d0" text-anchor="middle">SEC</text>
         </g>
       </g>
-      <!-- Category 3: presentations/ -->
-      <g transform="translate(520, 50)">
-        <g class="folderFloat3">
-          <rect x="0" y="0" width="50" height="24" rx="6" fill="#131f33" stroke="#a855f7" stroke-width="1.1"/>
-          <rect x="6" y="7" width="12" height="10" rx="1.8" fill="#a855f7" fill-opacity="0.35" stroke="#d8b4fe" stroke-width="0.9"/>
-          <text x="34" y="15" fill="#e9d5ff" text-anchor="middle">PPTX</text>
+      <g transform="translate(512, 48)">
+        <g class="catFloat3">
+          <rect x="0" y="0" width="52" height="22" rx="6" fill="#131f33" stroke="#9B72CB" stroke-width="1.1"/>
+          <circle cx="13" cy="11" r="4.2" fill="none" stroke="#c084fc" stroke-width="1"/>
+          <circle cx="13" cy="11" r="1.4" fill="#9B72CB"/>
+          <text x="36" y="14" fill="#e9d5ff" text-anchor="middle">ARCH</text>
         </g>
       </g>
     </g>
 
-    <!-- Isometric Glowing Agent Walkway / Platform -->
-    <ellipse cx="476" cy="150" rx="88" ry="18" fill="#081526" stroke="#38bdf8" stroke-width="1.1" stroke-opacity="0.45"/>
-    <ellipse cx="476" cy="150" rx="68" ry="11" fill="none" stroke="#d97757" stroke-width="0.9" stroke-dasharray="6 5" stroke-opacity="0.55">
+    <!-- Isometric Glowing Agent Walkway / Platform (Shifted right so zero text overlap) -->
+    <ellipse cx="478" cy="148" rx="82" ry="17" fill="#081526" stroke="#38bdf8" stroke-width="1.1" stroke-opacity="0.48"/>
+    <ellipse cx="478" cy="148" rx="64" ry="10.5" fill="none" stroke="#D97757" stroke-width="0.9" stroke-dasharray="6 5" stroke-opacity="0.55">
       <animate attributeName="stroke-dashoffset" values="0;-22" dur="2.2s" repeatCount="indefinite"/>
     </ellipse>
 
-    <!-- Energy Link Between Walking Agents -->
-    <line x1="436" y1="120" x2="508" y2="120" stroke="#67e8f9" stroke-width="1.2" stroke-dasharray="3 4" stroke-opacity="0.65">
-      <animate attributeName="stroke-dashoffset" values="0;-14" dur="0.9s" repeatCount="indefinite"/>
-    </line>
-
-    <!-- ==================== CHARACTER 1: CLAUDE CODE WALKING BOT ==================== -->
-    <g class="claudeWalker">
-      <g class="claudeBodyBob">
-        <!-- Shadow on Platform -->
-        <ellipse cx="0" cy="24" rx="14" ry="4" fill="#02060d" opacity="0.65"/>
-
-        <!-- Floating CLI Tag Above Claude -->
-        <g transform="translate(-26, -42)" font-family="monospace" font-size="8" font-weight="700">
-          <rect x="0" y="0" width="52" height="14" rx="5" fill="#1f120e" stroke="#d97757" stroke-width="0.9"/>
-          <text x="26" y="10" fill="#fed7aa" text-anchor="middle">&gt;_ claude</text>
+    <!-- ==================== 1. OFFICIAL CLAUDE CODE "CLAWD" PIXEL MASCOT ==================== -->
+    <!-- Exact Claude Code CLI block mascot:
+          ▐▛███▜▌
+         ▝▜█████▛▘
+           ▘▘ ▝▝
+    -->
+    <g class="clawdWalker">
+      <ellipse cx="0" cy="19" rx="14" ry="3.6" fill="#02060d" opacity="0.7"/>
+      <g transform="translate(-22, -33)" font-family="monospace" font-size="7.5" font-weight="700">
+        <rect x="0" y="0" width="44" height="13" rx="4.5" fill="#1f120e" stroke="#D97757" stroke-width="0.9"/>
+        <text x="22" y="9.2" fill="#fed7aa" text-anchor="middle">claude</text>
+      </g>
+      <g class="clawdBob" shape-rendering="crispEdges">
+        <!-- Top Head Row (x=-13.5..13.5, y=-15..-9) -->
+        <rect x="-13.5" y="-15" width="27" height="6" fill="#D97757"/>
+        <!-- Upper & Mid Body (x=-13.5..13.5, y=-9..9) -->
+        <rect x="-13.5" y="-9" width="27" height="18" fill="#D97757"/>
+        <!-- Side Pixel Arms / Claws (▝ and ▘ on row y=-3..3) -->
+        <rect x="-19.5" y="-3" width="6" height="6" fill="#D97757"/>
+        <rect x="13.5" y="-3" width="6" height="6" fill="#D97757"/>
+        <!-- Two Iconic Dark Pixel Eye Slots -->
+        <rect x="-7.5" y="-9" width="3" height="6" fill="#140906">
+          <animate attributeName="height" values="6;6;1.2;6" keyTimes="0;0.9;0.95;1" dur="3.2s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="4.5" y="-9" width="3" height="6" fill="#140906">
+          <animate attributeName="height" values="6;6;1.2;6" keyTimes="0;0.9;0.95;1" dur="3.2s" repeatCount="indefinite"/>
+        </rect>
+        <!-- Four Pixel Legs (▘▘ ▝▝) Alternating Stride -->
+        <g class="clawdLegsA" fill="#D97757">
+          <rect x="-10.5" y="9" width="3" height="7"/>
+          <rect x="3" y="9" width="3" height="7"/>
         </g>
-
-        <!-- Walking Legs (Animated Stride) -->
-        <rect class="legLeft" x="-8" y="10" width="4.5" height="12" rx="2" fill="#9a4428" stroke="#f59e7a" stroke-width="0.7"/>
-        <rect class="legRight" x="3.5" y="10" width="4.5" height="12" rx="2" fill="#9a4428" stroke="#f59e7a" stroke-width="0.7"/>
-
-        <!-- Claude Pixel-Terminal Robot Body (Terracotta) -->
-        <rect x="-16" y="-18" width="32" height="29" rx="7" fill="url(#claudeGrad)" stroke="#ffedd5" stroke-width="1.1"/>
-        <!-- Claude Characteristic Side Ears / Antennae Nodes -->
-        <rect x="-20" y="-9" width="4" height="9" rx="1.5" fill="#d97757" stroke="#fed7aa" stroke-width="0.8"/>
-        <rect x="16" y="-9" width="4" height="9" rx="1.5" fill="#d97757" stroke="#fed7aa" stroke-width="0.8"/>
-
-        <!-- Face Visor Screen -->
-        <rect x="-11" y="-12" width="22" height="13" rx="3.5" fill="#170c08" stroke="#f59e7a" stroke-width="0.8"/>
-        <!-- Blinking Pixel Eyes -->
-        <rect x="-6.5" y="-8" width="3.5" height="5.5" rx="1" fill="#fed7aa">
-          <animate attributeName="height" values="5.5;5.5;1;5.5" keyTimes="0;0.9;0.95;1" dur="3.4s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="3" y="-8" width="3.5" height="5.5" rx="1" fill="#fed7aa">
-          <animate attributeName="height" values="5.5;5.5;1;5.5" keyTimes="0;0.9;0.95;1" dur="3.4s" repeatCount="indefinite"/>
-        </rect>
-
-        <!-- Carrying a Mini SKILL.md Badge -->
-        <rect x="8" y="1" width="14" height="9" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="0.9"/>
-        <text x="15" y="7.5" fill="#7dd3fc" font-family="monospace" font-size="5.5" font-weight="700" text-anchor="middle">.md</text>
+        <g class="clawdLegsB" fill="#B85B3C">
+          <rect x="-5.5" y="9" width="3" height="7"/>
+          <rect x="7.5" y="9" width="3" height="7"/>
+        </g>
       </g>
     </g>
 
-    <!-- ==================== CHARACTER 2: GEMINI WALKING STAR-BOT ==================== -->
+    <!-- ==================== 2. OFFICIAL CODEX PET (egg.svg) + OPENAI BLOSSOM ==================== -->
+    <g class="codexWalker">
+      <ellipse cx="0" cy="19" rx="13" ry="3.5" fill="#02060d" opacity="0.7"/>
+      <g transform="translate(-21, -36)" font-family="monospace" font-size="7.5" font-weight="700">
+        <rect x="0" y="0" width="42" height="13" rx="4.5" fill="#062119" stroke="#10b981" stroke-width="0.9"/>
+        <text x="21" y="9.2" fill="#a7f3d0" text-anchor="middle">codex</text>
+      </g>
+      <g class="codexHop">
+        <!-- Walking Feet -->
+        <rect x="-6.5" y="11" width="3.5" height="6.5" rx="1.7" fill="#059669"/>
+        <rect x="3" y="11" width="3.5" height="6.5" rx="1.7" fill="#059669"/>
+        <!-- Official Codex Work-Pets Egg Mascot Path (Centered at 0,0 from 24x24 viewBox) -->
+        <g transform="translate(-17, -21) scale(1.42)">
+          <!-- Filled Inner Egg Body -->
+          <path d="M19.5 13.9C19.5 18 16.5 21.5 12 21.5C7.5 21.5 4.5 18 4.5 13.9C4.5 10.9 5.6 8 7 5.9C8.4 3.9 10.2 2.5 12 2.5C13.8 2.5 15.6 3.9 17 5.9C18.4 8 19.5 10.9 19.5 13.9Z" fill="url(#codexPetGrad)"/>
+          <!-- Official Codex Pet Outer Contour Path -->
+          <path d="M18.5996 13.9004C18.5996 11.1307 17.6085 8.45685 16.2334 6.4834C15.5472 5.49865 14.7819 4.7122 14.0273 4.17969C13.2656 3.64217 12.5686 3.40039 12 3.40039C11.4314 3.40039 10.7344 3.64218 9.97266 4.17969C9.21806 4.7122 8.4528 5.49865 7.7666 6.4834C6.39149 8.45685 5.40039 11.1307 5.40039 13.9004C5.40057 17.5937 7.97001 20.5996 12 20.5996C16.03 20.5996 18.5994 17.5937 18.5996 13.9004ZM20.4004 13.9004C20.4002 18.4857 17.1232 22.4004 12 22.4004C6.87675 22.4004 3.5998 18.4857 3.59961 13.9004C3.59961 10.721 4.72971 7.69336 6.29004 5.4541C7.07147 4.33275 7.97761 3.3843 8.93457 2.70898C9.88439 2.03873 10.9396 1.59961 12 1.59961C13.0604 1.59961 14.1156 2.03873 15.0654 2.70898C16.0224 3.3843 16.9285 4.33275 17.71 5.4541C19.2703 7.69336 20.4004 10.721 20.4004 13.9004Z" fill="#064e3b"/>
+          <!-- Official Codex Pet Left & Right Vertical Pill Eyes -->
+          <path d="M12.8124 13.516V11.7015C12.8124 10.9836 13.3942 10.4017 14.1122 10.4017C14.8302 10.4017 15.412 10.9836 15.412 11.7015V13.516C15.4118 14.2338 14.83 14.8158 14.1122 14.8158C13.3944 14.8158 12.8126 14.2338 12.8124 13.516Z" fill="#022c22"/>
+          <path d="M8.58801 13.516V11.7015C8.58801 10.9836 9.16985 10.4017 9.88782 10.4017C10.6058 10.4017 11.1876 10.9836 11.1876 11.7015V13.516C11.1874 14.2338 10.6056 14.8158 9.88782 14.8158C9.16999 14.8158 8.58824 14.2338 8.58801 13.516Z" fill="#022c22"/>
+        </g>
+        <!-- Official Spinning OpenAI 6-Petal Knot Crest on Codex Pet -->
+        <g transform="translate(11, -13)">
+          <g class="openaiSpin">
+            <g transform="scale(0.52) translate(-12, -12)">
+              <path fill="#a7f3d0" d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- ==================== 3. OFFICIAL GOOGLE GEMINI SPARKLE LOGO ==================== -->
     <g class="geminiWalker">
-      <g class="geminiBodyBob">
-        <!-- Shadow on Platform -->
-        <ellipse cx="0" cy="24" rx="14" ry="4" fill="#02060d" opacity="0.65"/>
-
-        <!-- Floating Tag Above Gemini -->
-        <g transform="translate(-26, -44)" font-family="monospace" font-size="8" font-weight="700">
-          <rect x="0" y="0" width="52" height="14" rx="5" fill="#0c192e" stroke="#60a5fa" stroke-width="0.9"/>
-          <text x="26" y="10" fill="#bae6fd" text-anchor="middle">✦ gemini</text>
+      <ellipse cx="0" cy="34" rx="10" ry="2.8" fill="#02060d" opacity="0.55"/>
+      <g transform="translate(-22, -32)" font-family="monospace" font-size="7.5" font-weight="700">
+        <rect x="0" y="0" width="44" height="13" rx="4.5" fill="#130d26" stroke="#9B72CB" stroke-width="0.9"/>
+        <text x="22" y="9.2" fill="#e9d5ff" text-anchor="middle">gemini</text>
+      </g>
+      <g class="geminiPulse">
+        <!-- Official Google Gemini Sparkle SVG Path (296x298 viewBox scaled to ~32px) -->
+        <g transform="scale(0.112) translate(-148, -149)">
+          <path fill="url(#geminiOfficialGrad)" stroke="#e0f2fe" stroke-width="7" d="M141.201 4.886c2.282-6.17 11.042-6.071 13.184.148l5.985 17.37a184.004 184.004 0 0 0 111.257 113.049l19.304 6.997c6.143 2.227 6.156 10.91.02 13.155l-19.35 7.082a184.001 184.001 0 0 0-109.495 109.385l-7.573 20.629c-2.241 6.105-10.869 6.121-13.133.025l-7.908-21.296a184 184 0 0 0-109.02-108.658l-19.698-7.239c-6.102-2.243-6.118-10.867-.025-13.132l20.083-7.467A183.998 183.998 0 0 0 133.291 26.28l7.91-21.394Z"/>
         </g>
-
-        <!-- Walking Legs (Animated Stride) -->
-        <rect class="legRight" x="-7.5" y="10" width="4.2" height="12" rx="2" fill="#3b82f6" stroke="#bae6fd" stroke-width="0.7"/>
-        <rect class="legLeft" x="3.3" y="10" width="4.2" height="12" rx="2" fill="#7e22ce" stroke="#e9d5ff" stroke-width="0.7"/>
-
-        <!-- Gemini Rounded Cyber-Pod Body -->
-        <rect x="-15" y="-17" width="30" height="28" rx="10" fill="url(#geminiGrad)" stroke="#e0f2fe" stroke-width="1.1"/>
-
-        <!-- Rotating Gemini 4-Point Sparkle Crest on Top -->
-        <g class="geminiStarSpin">
-          <path d="M 0 -25 Q 0 -15 10 -15 Q 0 -15 0 -5 Q 0 -15 -10 -15 Q 0 -15 0 -25 Z" fill="#f0f9ff" stroke="#38bdf8" stroke-width="0.7"/>
-        </g>
-
-        <!-- Face Visor -->
-        <rect x="-10.5" y="-11" width="21" height="12" rx="4" fill="#091326" stroke="#7dd3fc" stroke-width="0.8"/>
-        <!-- Glowing Cyan Eyes -->
-        <circle cx="-4.5" cy="-5" r="2.2" fill="#67e8f9">
-          <animate attributeName="r" values="2.2;2.2;0.6;2.2" keyTimes="0;0.88;0.94;1" dur="3.8s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="4.5" cy="-5" r="2.2" fill="#c084fc">
-          <animate attributeName="r" values="2.2;2.2;0.6;2.2" keyTimes="0;0.88;0.94;1" dur="3.8s" repeatCount="indefinite"/>
-        </circle>
       </g>
     </g>
 
@@ -252,32 +276,32 @@
     <path d="M 0 208 Q 145 194 295 206 T 580 196 L 580 230 L 0 230 Z" fill="#040911" opacity="0.92"/>
     <rect x="0" y="214" width="580" height="16" fill="#02050a"/>
 
-    <!-- Foreground Card Content (Left Aligned) -->
+    <!-- Foreground Card Content (Left Aligned, cleanly separated from right stage) -->
     <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
       <!-- Top Translucent Capsule -->
       <rect x="0" y="0" width="262" height="28" rx="14" fill="#091526" fill-opacity="0.88" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.68"/>
-      <g transform="translate(18, 14)">
-        <path d="M 0 -6 Q 0 0 6 0 Q 0 0 0 6 Q 0 0 -6 0 Q 0 0 0 -6 Z" fill="#67e8f9"/>
+      <g transform="translate(18, 14) scale(0.045) translate(-148, -149)">
+        <path fill="url(#geminiOfficialGrad)" d="M141.201 4.886c2.282-6.17 11.042-6.071 13.184.148l5.985 17.37a184.004 184.004 0 0 0 111.257 113.049l19.304 6.997c6.143 2.227 6.156 10.91.02 13.155l-19.35 7.082a184.001 184.001 0 0 0-109.495 109.385l-7.573 20.629c-2.241 6.105-10.869 6.121-13.133.025l-7.908-21.296a184 184 0 0 0-109.02-108.658l-19.698-7.239c-6.102-2.243-6.118-10.867-.025-13.132l20.083-7.467A183.998 183.998 0 0 0 133.291 26.28l7.91-21.394Z"/>
       </g>
       <text x="142" y="18.5" fill="#e0f2fe" font-size="10.8" font-weight="700" text-anchor="middle" letter-spacing="0.8">AI AGENTS · MODULAR SKILLS</text>
 
       <!-- Title -->
       <text x="0" y="62" fill="#f8fafc" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / My-Skills</text>
 
-      <!-- Description -->
-      <text x="0" y="92" fill="#bae6fd" font-size="13.5" opacity="0.94">Repositorio central de Skills modulares por categoría para</text>
-      <text x="0" y="112" fill="#bae6fd" font-size="13.5" opacity="0.94">agentes de IA (Claude Code, Gemini y Antigravity) vía skills.json.</text>
+      <!-- Description (Sized so it never touches the right-hand stage) -->
+      <text x="0" y="92" fill="#bae6fd" font-size="13" opacity="0.94">Repositorio central de Skills por categoría para</text>
+      <text x="0" y="112" fill="#bae6fd" font-size="13" opacity="0.94">Claude Code, Codex, Gemini y Antigravity (skills.json).</text>
 
       <!-- Bottom Translucent Capsules -->
       <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
-        <rect x="0" y="0" width="108" height="28" rx="14" fill="#1a110d" fill-opacity="0.88" stroke="#d97757" stroke-width="1" stroke-opacity="0.72"/>
+        <rect x="0" y="0" width="108" height="28" rx="14" fill="#1a110d" fill-opacity="0.88" stroke="#D97757" stroke-width="1" stroke-opacity="0.72"/>
         <text x="54" y="18" fill="#fed7aa" text-anchor="middle">Claude Code</text>
 
-        <rect x="118" y="0" width="106" height="28" rx="14" fill="#091526" fill-opacity="0.88" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.68"/>
-        <text x="171" y="18" fill="#e0f2fe" text-anchor="middle">Gemini CLI</text>
+        <rect x="118" y="0" width="96" height="28" rx="14" fill="#062119" fill-opacity="0.88" stroke="#10b981" stroke-width="1" stroke-opacity="0.68"/>
+        <text x="166" y="18" fill="#a7f3d0" text-anchor="middle">Codex CLI</text>
 
-        <rect x="234" y="0" width="112" height="28" rx="14" fill="#130d26" fill-opacity="0.88" stroke="#a855f7" stroke-width="1" stroke-opacity="0.68"/>
-        <text x="290" y="18" fill="#f3e8ff" text-anchor="middle">Antigravity</text>
+        <rect x="224" y="0" width="118" height="28" rx="14" fill="#130d26" fill-opacity="0.88" stroke="#9B72CB" stroke-width="1" stroke-opacity="0.68"/>
+        <text x="283" y="18" fill="#f3e8ff" text-anchor="middle">Gemini &amp; AGY</text>
 
         <rect x="394" y="0" width="130" height="28" rx="14" fill="#0d223d" fill-opacity="0.94" stroke="#67e8f9" stroke-width="1.2" stroke-opacity="0.85"/>
         <text x="459" y="18" fill="#f0f9ff" font-weight="700" text-anchor="middle">Abrir repo →</text>

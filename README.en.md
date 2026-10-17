@@ -61,7 +61,7 @@
   <tr>
     <td colspan="2" align="center">
       <a href="https://github.com/Steimber/My-Skills" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/card-myskills-v1-en.svg?v=2" width="420" alt="My-Skills" />
+        <img src="./assets/card-myskills-v1-en.svg?v=3" width="420" alt="My-Skills" />
       </a>
     </td>
   </tr>
