@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <!-- AI Agent Sandbox Obsidian-Teal & Cosmic Indigo Animated Background -->
+    <linearGradient id="skillsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050b14">
+        <animate attributeName="stop-color" values="#050b14;#081220;#04080f;#050b14" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="52%" stop-color="#0c192c">
+        <animate attributeName="stop-color" values="#0c192c;#12243d;#091322;#0c192c" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#172544">
+        <animate attributeName="stop-color" values="#172544;#1e3158;#111c35;#172544" dur="16s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Dual Aura: Claude Terracotta + Gemini Cyan-Violet -->
+    <radialGradient id="agentStageAura" cx="80%" cy="54%" r="52%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28">
+        <animate attributeName="stop-opacity" values="0.18;0.34;0.18" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="48%" stop-color="#d97757" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#050b14" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Claude Code Coral-Terracotta Body Gradient -->
+    <linearGradient id="claudeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e7a"/>
+      <stop offset="55%" stop-color="#d97757"/>
+      <stop offset="100%" stop-color="#9a4428"/>
+    </linearGradient>
+
+    <!-- Gemini Cosmic Blue-Violet Body Gradient -->
+    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <!-- Neural Grid Pattern -->
+    <pattern id="agentGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.85" fill="#38bdf8" fill-opacity="0.2"/>
+    </pattern>
+
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    /* Claude Code walking patrol across the right-hand deck */
+    .claudeWalker {
+      animation: patrolClaude 7.2s ease-in-out infinite;
+    }
+    /* Gemini walking & hovering patrol across the right-hand deck */
+    .geminiWalker {
+      animation: patrolGemini 6.8s ease-in-out infinite;
+    }
+    .claudeBodyBob {
+      animation: bobStep 0.45s ease-in-out infinite alternate;
+    }
+    .geminiBodyBob {
+      animation: bobStep 0.5s ease-in-out infinite alternate-reverse;
+    }
+    .legLeft {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: strideA 0.45s ease-in-out infinite alternate;
+    }
+    .legRight {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: strideB 0.45s ease-in-out infinite alternate;
+    }
+    .geminiStarSpin {
+      transform-origin: 0px -15px;
+      animation: spinSparkle 6s linear infinite;
+    }
+    .folderFloat1 { animation: floatFolder 3.6s ease-in-out infinite; }
+    .folderFloat2 { animation: floatFolder 3.6s ease-in-out infinite -1.2s; }
+    .folderFloat3 { animation: floatFolder 3.6s ease-in-out infinite -2.4s; }
+
+    @keyframes patrolClaude {
+      0%   { transform: translate(404px, 124px); }
+      45%  { transform: translate(462px, 120px); }
+      50%  { transform: translate(465px, 122px); }
+      95%  { transform: translate(407px, 126px); }
+      100% { transform: translate(404px, 124px); }
+    }
+    @keyframes patrolGemini {
+      0%   { transform: translate(536px, 118px); }
+      48%  { transform: translate(492px, 125px); }
+      52%  { transform: translate(489px, 123px); }
+      96%  { transform: translate(534px, 116px); }
+      100% { transform: translate(536px, 118px); }
+    }
+    @keyframes bobStep {
+      0%   { transform: translateY(0px); }
+      100% { transform: translateY(-3.2px); }
+    }
+    @keyframes strideA {
+      0%   { transform: rotate(-22deg); }
+      100% { transform: rotate(22deg); }
+    }
+    @keyframes strideB {
+      0%   { transform: rotate(22deg); }
+      100% { transform: rotate(-22deg); }
+    }
+    @keyframes spinSparkle {
+      0%   { transform: rotate(0deg) scale(0.95); }
+      50%  { transform: rotate(180deg) scale(1.08); }
+      100% { transform: rotate(360deg) scale(0.95); }
+    }
+    @keyframes floatFolder {
+      0%, 100% { transform: translateY(0px); }
+      50%      { transform: translateY(-4px); }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <!-- Background Layers -->
+    <rect width="580" height="230" fill="url(#skillsBg)"/>
+    <rect width="580" height="230" fill="url(#agentGrid)"/>
+    <rect width="580" height="230" fill="url(#agentStageAura)"/>
+
+    <!-- Top-Right Telemetry HUD -->
+    <g transform="translate(384, 15)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, monospace">
+      <rect x="0" y="0" width="174" height="22" rx="11" fill="#091526" fill-opacity="0.92" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.72"/>
+      <circle cx="13" cy="11" r="3.4" fill="#d97757">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="23" cy="11" r="3.4" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="96" y="14.5" fill="#e0f2fe" font-size="9.2" font-weight="700" text-anchor="middle" letter-spacing="0.5">CLAUDE CODE × GEMINI</text>
+    </g>
+
+    <!-- Categorized Skill Folder Nodes Above the Walking Stage -->
+    <g font-family="'Segoe UI', -apple-system, monospace" font-size="8.2" font-weight="700">
+      <!-- Category 1: frontend/ -->
+      <g transform="translate(390, 50)">
+        <g class="folderFloat1">
+          <rect x="0" y="0" width="54" height="24" rx="6" fill="#131f33" stroke="#d97757" stroke-width="1.1"/>
+          <path d="M 6 6 L 14 6 L 16 9 L 26 9 L 26 18 L 6 18 Z" fill="#d97757" fill-opacity="0.35" stroke="#f59e7a" stroke-width="0.9"/>
+          <text x="39" y="15" fill="#fed7aa" text-anchor="middle">UI</text>
+        </g>
+      </g>
+      <!-- Category 2: architecture/ -->
+      <g transform="translate(454, 46)">
+        <g class="folderFloat2">
+          <rect x="0" y="0" width="58" height="24" rx="6" fill="#131f33" stroke="#38bdf8" stroke-width="1.1"/>
+          <circle cx="13" cy="12" r="4.5" fill="none" stroke="#67e8f9" stroke-width="1.1"/>
+          <circle cx="13" cy="12" r="1.5" fill="#38bdf8"/>
+          <text x="38" y="15" fill="#bae6fd" text-anchor="middle">ARCH</text>
+        </g>
+      </g>
+      <!-- Category 3: presentations/ -->
+      <g transform="translate(520, 50)">
+        <g class="folderFloat3">
+          <rect x="0" y="0" width="50" height="24" rx="6" fill="#131f33" stroke="#a855f7" stroke-width="1.1"/>
+          <rect x="6" y="7" width="12" height="10" rx="1.8" fill="#a855f7" fill-opacity="0.35" stroke="#d8b4fe" stroke-width="0.9"/>
+          <text x="34" y="15" fill="#e9d5ff" text-anchor="middle">PPTX</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Isometric Glowing Agent Walkway / Platform -->
+    <ellipse cx="476" cy="150" rx="88" ry="18" fill="#081526" stroke="#38bdf8" stroke-width="1.1" stroke-opacity="0.45"/>
+    <ellipse cx="476" cy="150" rx="68" ry="11" fill="none" stroke="#d97757" stroke-width="0.9" stroke-dasharray="6 5" stroke-opacity="0.55">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="2.2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Energy Link Between Walking Agents -->
+    <line x1="436" y1="120" x2="508" y2="120" stroke="#67e8f9" stroke-width="1.2" stroke-dasharray="3 4" stroke-opacity="0.65">
+      <animate attributeName="stroke-dashoffset" values="0;-14" dur="0.9s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- ==================== CHARACTER 1: CLAUDE CODE WALKING BOT ==================== -->
+    <g class="claudeWalker">
+      <g class="claudeBodyBob">
+        <!-- Shadow on Platform -->
+        <ellipse cx="0" cy="24" rx="14" ry="4" fill="#02060d" opacity="0.65"/>
+
+        <!-- Floating CLI Tag Above Claude -->
+        <g transform="translate(-26, -42)" font-family="monospace" font-size="8" font-weight="700">
+          <rect x="0" y="0" width="52" height="14" rx="5" fill="#1f120e" stroke="#d97757" stroke-width="0.9"/>
+          <text x="26" y="10" fill="#fed7aa" text-anchor="middle">&gt;_ claude</text>
+        </g>
+
+        <!-- Walking Legs (Animated Stride) -->
+        <rect class="legLeft" x="-8" y="10" width="4.5" height="12" rx="2" fill="#9a4428" stroke="#f59e7a" stroke-width="0.7"/>
+        <rect class="legRight" x="3.5" y="10" width="4.5" height="12" rx="2" fill="#9a4428" stroke="#f59e7a" stroke-width="0.7"/>
+
+        <!-- Claude Pixel-Terminal Robot Body (Terracotta) -->
+        <rect x="-16" y="-18" width="32" height="29" rx="7" fill="url(#claudeGrad)" stroke="#ffedd5" stroke-width="1.1"/>
+        <!-- Claude Characteristic Side Ears / Antennae Nodes -->
+        <rect x="-20" y="-9" width="4" height="9" rx="1.5" fill="#d97757" stroke="#fed7aa" stroke-width="0.8"/>
+        <rect x="16" y="-9" width="4" height="9" rx="1.5" fill="#d97757" stroke="#fed7aa" stroke-width="0.8"/>
+
+        <!-- Face Visor Screen -->
+        <rect x="-11" y="-12" width="22" height="13" rx="3.5" fill="#170c08" stroke="#f59e7a" stroke-width="0.8"/>
+        <!-- Blinking Pixel Eyes -->
+        <rect x="-6.5" y="-8" width="3.5" height="5.5" rx="1" fill="#fed7aa">
+          <animate attributeName="height" values="5.5;5.5;1;5.5" keyTimes="0;0.9;0.95;1" dur="3.4s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="3" y="-8" width="3.5" height="5.5" rx="1" fill="#fed7aa">
+          <animate attributeName="height" values="5.5;5.5;1;5.5" keyTimes="0;0.9;0.95;1" dur="3.4s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Carrying a Mini SKILL.md Badge -->
+        <rect x="8" y="1" width="14" height="9" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="0.9"/>
+        <text x="15" y="7.5" fill="#7dd3fc" font-family="monospace" font-size="5.5" font-weight="700" text-anchor="middle">.md</text>
+      </g>
+    </g>
+
+    <!-- ==================== CHARACTER 2: GEMINI WALKING STAR-BOT ==================== -->
+    <g class="geminiWalker">
+      <g class="geminiBodyBob">
+        <!-- Shadow on Platform -->
+        <ellipse cx="0" cy="24" rx="14" ry="4" fill="#02060d" opacity="0.65"/>
+
+        <!-- Floating Tag Above Gemini -->
+        <g transform="translate(-26, -44)" font-family="monospace" font-size="8" font-weight="700">
+          <rect x="0" y="0" width="52" height="14" rx="5" fill="#0c192e" stroke="#60a5fa" stroke-width="0.9"/>
+          <text x="26" y="10" fill="#bae6fd" text-anchor="middle">✦ gemini</text>
+        </g>
+
+        <!-- Walking Legs (Animated Stride) -->
+        <rect class="legRight" x="-7.5" y="10" width="4.2" height="12" rx="2" fill="#3b82f6" stroke="#bae6fd" stroke-width="0.7"/>
+        <rect class="legLeft" x="3.3" y="10" width="4.2" height="12" rx="2" fill="#7e22ce" stroke="#e9d5ff" stroke-width="0.7"/>
+
+        <!-- Gemini Rounded Cyber-Pod Body -->
+        <rect x="-15" y="-17" width="30" height="28" rx="10" fill="url(#geminiGrad)" stroke="#e0f2fe" stroke-width="1.1"/>
+
+        <!-- Rotating Gemini 4-Point Sparkle Crest on Top -->
+        <g class="geminiStarSpin">
+          <path d="M 0 -25 Q 0 -15 10 -15 Q 0 -15 0 -5 Q 0 -15 -10 -15 Q 0 -15 0 -25 Z" fill="#f0f9ff" stroke="#38bdf8" stroke-width="0.7"/>
+        </g>
+
+        <!-- Face Visor -->
+        <rect x="-10.5" y="-11" width="21" height="12" rx="4" fill="#091326" stroke="#7dd3fc" stroke-width="0.8"/>
+        <!-- Glowing Cyan Eyes -->
+        <circle cx="-4.5" cy="-5" r="2.2" fill="#67e8f9">
+          <animate attributeName="r" values="2.2;2.2;0.6;2.2" keyTimes="0;0.88;0.94;1" dur="3.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="4.5" cy="-5" r="2.2" fill="#c084fc">
+          <animate attributeName="r" values="2.2;2.2;0.6;2.2" keyTimes="0;0.88;0.94;1" dur="3.8s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+
+    <!-- Bottom Horizon Wave -->
+    <path d="M 0 208 Q 145 194 295 206 T 580 196 L 580 230 L 0 230 Z" fill="#040911" opacity="0.92"/>
+    <rect x="0" y="214" width="580" height="16" fill="#02050a"/>
+
+    <!-- Foreground Card Content (Left Aligned) -->
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule -->
+      <rect x="0" y="0" width="262" height="28" rx="14" fill="#091526" fill-opacity="0.88" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.68"/>
+      <g transform="translate(18, 14)">
+        <path d="M 0 -6 Q 0 0 6 0 Q 0 0 0 6 Q 0 0 -6 0 Q 0 0 0 -6 Z" fill="#67e8f9"/>
+      </g>
+      <text x="142" y="18.5" fill="#e0f2fe" font-size="10.8" font-weight="700" text-anchor="middle" letter-spacing="0.8">AI AGENTS · MODULAR SKILLS</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#f8fafc" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / My-Skills</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#bae6fd" font-size="13.5" opacity="0.94">Centralized repository of categorized modular Skills for AI</text>
+      <text x="0" y="112" fill="#bae6fd" font-size="13.5" opacity="0.94">coding agents (Claude Code, Gemini &amp; Antigravity) via skills.json.</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="108" height="28" rx="14" fill="#1a110d" fill-opacity="0.88" stroke="#d97757" stroke-width="1" stroke-opacity="0.72"/>
+        <text x="54" y="18" fill="#fed7aa" text-anchor="middle">Claude Code</text>
+
+        <rect x="118" y="0" width="106" height="28" rx="14" fill="#091526" fill-opacity="0.88" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.68"/>
+        <text x="171" y="18" fill="#e0f2fe" text-anchor="middle">Gemini CLI</text>
+
+        <rect x="234" y="0" width="112" height="28" rx="14" fill="#130d26" fill-opacity="0.88" stroke="#a855f7" stroke-width="1" stroke-opacity="0.68"/>
+        <text x="290" y="18" fill="#f3e8ff" text-anchor="middle">Antigravity</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#0d223d" fill-opacity="0.94" stroke="#67e8f9" stroke-width="1.2" stroke-opacity="0.85"/>
+        <text x="459" y="18" fill="#f0f9ff" font-weight="700" text-anchor="middle">Open repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#38bdf8" stroke-width="1.6" stroke-opacity="0.62"/>
+</svg>

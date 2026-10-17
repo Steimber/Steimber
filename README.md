@@ -62,6 +62,13 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <a href="https://github.com/Steimber/My-Skills" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-myskills-v1-es.svg" width="420" alt="My-Skills" />
+      </a>
+    </td>
+  </tr>
 </table>
 
 ### Tareas Universitarias (UTM)
@@ -140,6 +147,13 @@
     <td align="center" width="50%">
       <a href="https://github.com/Steimber/BearDesk" target="_blank" rel="noopener noreferrer">
         <img src="./assets/card-beardesk-v3-en.svg" width="420" alt="BearDesk" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <a href="https://github.com/Steimber/My-Skills" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-myskills-v1-en.svg" width="420" alt="My-Skills" />
       </a>
     </td>
   </tr>
