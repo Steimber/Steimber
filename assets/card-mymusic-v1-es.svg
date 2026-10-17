@@ -1,60 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
   <defs>
-    <!-- Studio Mastering Emerald & Obsidian Animated Background -->
+    <!-- Studio Mastering Crimson Red & Obsidian Animated Background -->
     <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040d0a">
-        <animate attributeName="stop-color" values="#040d0a;#071712;#030907;#040d0a" dur="16s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#0d0304">
+        <animate attributeName="stop-color" values="#0d0304;#170507;#080203;#0d0304" dur="16s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="55%" stop-color="#09221a">
-        <animate attributeName="stop-color" values="#09221a;#0d2e23;#061812;#09221a" dur="16s" repeatCount="indefinite"/>
+      <stop offset="55%" stop-color="#24070a">
+        <animate attributeName="stop-color" values="#24070a;#330a0e;#1a0507;#24070a" dur="16s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#11382b">
-        <animate attributeName="stop-color" values="#11382b;#164737;#0b261d;#11382b" dur="16s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#450c12">
+        <animate attributeName="stop-color" values="#450c12;#590f17;#30080c;#450c12" dur="16s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
     <!-- Acoustic Radial Aura Around Turntable -->
     <radialGradient id="vinylAura" cx="83%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.34">
-        <animate attributeName="stop-opacity" values="0.22;0.40;0.22" dur="4.5s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.38">
+        <animate attributeName="stop-opacity" values="0.24;0.44;0.24" dur="4.5s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="48%" stop-color="#f59e0b" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#040d0a" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#f97316" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0d0304" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Vinyl Disc Base Metallic Gradient -->
     <linearGradient id="vinylDiscGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#182220"/>
-      <stop offset="45%" stop-color="#090f0d"/>
-      <stop offset="55%" stop-color="#1f2e2a"/>
-      <stop offset="100%" stop-color="#070c0a"/>
+      <stop offset="0%" stop-color="#261416"/>
+      <stop offset="45%" stop-color="#0f0708"/>
+      <stop offset="55%" stop-color="#33181b"/>
+      <stop offset="100%" stop-color="#0a0405"/>
     </linearGradient>
 
     <!-- Anisotropic Vinyl Sheen Highlight -->
     <linearGradient id="vinylSheen" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#34d399" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#34d399" stop-opacity="0.22"/>
-      <stop offset="55%" stop-color="#fbbf24" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ef4444" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="#fb923c" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Center CoverLock Album Art Label Gradient -->
     <linearGradient id="coverLabelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34d399"/>
-      <stop offset="55%" stop-color="#059669"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="55%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
     </linearGradient>
 
     <!-- Equalizer Bar Vertical Gradient -->
     <linearGradient id="eqGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.35"/>
-      <stop offset="65%" stop-color="#34d399" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#fde68a" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#991b1b" stop-opacity="0.4"/>
+      <stop offset="65%" stop-color="#ef4444" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fecaca" stop-opacity="0.98"/>
     </linearGradient>
 
     <!-- Acoustic Grid Pattern -->
     <pattern id="studioGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="12" cy="12" r="0.8" fill="#10b981" fill-opacity="0.20"/>
+      <circle cx="12" cy="12" r="0.8" fill="#ef4444" fill-opacity="0.22"/>
     </pattern>
 
     <clipPath id="cardClip">
@@ -62,12 +62,12 @@
     </clipPath>
 
     <!-- Musical Note Shapes -->
-    <g id="noteSingle" fill="#6ee7b7">
+    <g id="noteSingle" fill="#fca5a5">
       <ellipse cx="0" cy="0" rx="3.4" ry="2.4" transform="rotate(-20)"/>
       <rect x="2" y="-10" width="1.4" height="10"/>
       <path d="M 3.4 -10 Q 8 -8 6.5 -4 Q 6 -6.5 3.4 -7.2 Z"/>
     </g>
-    <g id="noteDouble" fill="#fcd34d">
+    <g id="noteDouble" fill="#fdba74">
       <ellipse cx="-4" cy="1" rx="3" ry="2.1" transform="rotate(-18 -4 1)"/>
       <ellipse cx="4" cy="-1" rx="3" ry="2.1" transform="rotate(-18 4 -1)"/>
       <rect x="-1.8" y="-9" width="1.3" height="10"/>
@@ -123,23 +123,23 @@
     <rect width="580" height="230" fill="url(#vinylAura)"/>
 
     <!-- Expanding Acoustic Sonic Rings Behind Vinyl -->
-    <g fill="none" stroke="#34d399">
-      <circle cx="482" cy="104" r="56" stroke-width="1.2" opacity="0.35">
+    <g fill="none" stroke="#ef4444">
+      <circle cx="482" cy="104" r="56" stroke-width="1.2" opacity="0.38">
         <animate attributeName="r" values="54;78" dur="3.6s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.42;0" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0" dur="3.6s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="482" cy="104" r="56" stroke-width="1" opacity="0.25" stroke="#fbbf24">
+      <circle cx="482" cy="104" r="56" stroke-width="1" opacity="0.28" stroke="#fb923c">
         <animate attributeName="r" values="54;82" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.32;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.35;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
       </circle>
     </g>
 
     <!-- Studio Horizon & Waveform Base -->
-    <path d="M 0 208 Q 145 194 295 206 T 580 196 L 580 230 L 0 230 Z" fill="#04120d" opacity="0.92"/>
-    <rect x="0" y="214" width="580" height="16" fill="#020906"/>
+    <path d="M 0 208 Q 145 194 295 206 T 580 196 L 580 230 L 0 230 Z" fill="#140406" opacity="0.92"/>
+    <rect x="0" y="214" width="580" height="16" fill="#090203"/>
 
     <!-- Live Studio Equalizer Spectrum (Right-Side Deck) -->
-    <g fill="url(#eqGrad)" opacity="0.88">
+    <g fill="url(#eqGrad)" opacity="0.9">
       <rect x="394" y="150" width="4.5" height="24" rx="2">
         <animate attributeName="y" values="154;138;154" dur="1.1s" repeatCount="indefinite"/>
         <animate attributeName="height" values="20;36;20" dur="1.1s" repeatCount="indefinite"/>
@@ -173,34 +173,34 @@
     <!-- Spinning Hi-Res Vinyl Record + CoverLock Center Art -->
     <g class="vinylSpin">
       <!-- Outer Record Rim -->
-      <circle cx="482" cy="104" r="53" fill="url(#vinylDiscGrad)" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.5"/>
+      <circle cx="482" cy="104" r="53" fill="url(#vinylDiscGrad)" stroke="#f87171" stroke-width="1.2" stroke-opacity="0.55"/>
       <!-- Anisotropic Light Reflection Wedges -->
       <path d="M 482 104 L 442 64 A 53 53 0 0 1 522 64 Z" fill="url(#vinylSheen)"/>
       <path d="M 482 104 L 522 144 A 53 53 0 0 1 442 144 Z" fill="url(#vinylSheen)"/>
       <!-- Concentric Micro-Grooves -->
-      <circle cx="482" cy="104" r="46" fill="none" stroke="#34d399" stroke-width="0.6" stroke-opacity="0.22" stroke-dasharray="18 8"/>
-      <circle cx="482" cy="104" r="39" fill="none" stroke="#a7f3d0" stroke-width="0.6" stroke-opacity="0.18"/>
-      <circle cx="482" cy="104" r="32" fill="none" stroke="#fbbf24" stroke-width="0.7" stroke-opacity="0.28" stroke-dasharray="12 6"/>
-      <circle cx="482" cy="104" r="25" fill="none" stroke="#34d399" stroke-width="0.6" stroke-opacity="0.22"/>
+      <circle cx="482" cy="104" r="46" fill="none" stroke="#f87171" stroke-width="0.6" stroke-opacity="0.25" stroke-dasharray="18 8"/>
+      <circle cx="482" cy="104" r="39" fill="none" stroke="#fecaca" stroke-width="0.6" stroke-opacity="0.18"/>
+      <circle cx="482" cy="104" r="32" fill="none" stroke="#fb923c" stroke-width="0.7" stroke-opacity="0.28" stroke-dasharray="12 6"/>
+      <circle cx="482" cy="104" r="25" fill="none" stroke="#f87171" stroke-width="0.6" stroke-opacity="0.24"/>
       <!-- Center Album Cover Art Label (CoverLock Anchor) -->
-      <circle cx="482" cy="104" r="18.5" fill="url(#coverLabelGrad)" stroke="#fef3c7" stroke-width="1"/>
+      <circle cx="482" cy="104" r="18.5" fill="url(#coverLabelGrad)" stroke="#fee2e2" stroke-width="1"/>
       <!-- Mini Album Cover Frame Inside Vinyl Label -->
-      <rect x="473.5" y="95.5" width="17" height="17" rx="3.5" fill="#04120d" fill-opacity="0.45" stroke="#fef3c7" stroke-width="0.8" stroke-opacity="0.7"/>
+      <rect x="473.5" y="95.5" width="17" height="17" rx="3.5" fill="#140406" fill-opacity="0.45" stroke="#fee2e2" stroke-width="0.8" stroke-opacity="0.75"/>
       <!-- Center Spindle Hole -->
-      <circle cx="482" cy="104" r="3.4" fill="#040d0a" stroke="#fde68a" stroke-width="1"/>
+      <circle cx="482" cy="104" r="3.4" fill="#0d0304" stroke="#fecaca" stroke-width="1"/>
     </g>
 
     <!-- Studio Turntable Tonearm & Cartridge -->
     <g class="tonearmTrack">
       <!-- Pivot Base -->
-      <circle cx="548" cy="46" r="8" fill="#061812" stroke="#34d399" stroke-width="1.3"/>
-      <circle cx="548" cy="46" r="3.5" fill="#fbbf24"/>
+      <circle cx="548" cy="46" r="8" fill="#1c0608" stroke="#f87171" stroke-width="1.3"/>
+      <circle cx="548" cy="46" r="3.5" fill="#ef4444"/>
       <!-- Tonearm Rod -->
-      <path d="M 548 46 L 542 96 L 524 118" fill="none" stroke="#d1fae5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 548 46 L 542 96 L 524 118" fill="none" stroke="#fee2e2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
       <!-- Stylus Cartridge Head -->
-      <rect x="518" y="114" width="9" height="5.5" rx="1.5" transform="rotate(-38 522 117)" fill="#10b981" stroke="#fef3c7" stroke-width="0.8"/>
+      <rect x="518" y="114" width="9" height="5.5" rx="1.5" transform="rotate(-38 522 117)" fill="#dc2626" stroke="#fee2e2" stroke-width="0.8"/>
       <!-- Laser Lock Indicator at Needle Tip -->
-      <circle cx="519" cy="120" r="2" fill="#fde047">
+      <circle cx="519" cy="120" r="2" fill="#fef08a">
         <animate attributeName="opacity" values="0.4;1;0.4" dur="1.2s" repeatCount="indefinite"/>
       </circle>
     </g>
@@ -212,46 +212,46 @@
 
     <!-- CoverLock™ DSP Telemetry Badge (Top-Right Studio HUD) -->
     <g class="hudPulse" transform="translate(388, 16)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, monospace">
-      <rect x="0" y="0" width="168" height="22" rx="11" fill="#04140e" fill-opacity="0.92" stroke="#10b981" stroke-width="1" stroke-opacity="0.75"/>
-      <circle cx="12" cy="11" r="3.5" fill="#34d399">
-        <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
+      <rect x="0" y="0" width="168" height="22" rx="11" fill="#170406" fill-opacity="0.92" stroke="#ef4444" stroke-width="1" stroke-opacity="0.78"/>
+      <circle cx="12" cy="11" r="3.5" fill="#ef4444">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
       </circle>
-      <text x="90" y="14.5" fill="#a7f3d0" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="0.5">COVERLOCK™ · ±8s HI-RES</text>
+      <text x="90" y="14.5" fill="#fecaca" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="0.5">COVERLOCK™ · ±8s HI-RES</text>
     </g>
 
     <!-- Foreground Card Content (Left Aligned) -->
     <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
       <!-- Top Translucent Capsule with Mini Vinyl/Wave Icon -->
-      <rect x="0" y="0" width="256" height="28" rx="14" fill="#051811" fill-opacity="0.88" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.68"/>
+      <rect x="0" y="0" width="256" height="28" rx="14" fill="#190507" fill-opacity="0.88" stroke="#ef4444" stroke-width="1.2" stroke-opacity="0.68"/>
       <g transform="translate(18, 14)">
-        <circle cx="0" cy="0" r="6.5" fill="none" stroke="#34d399" stroke-width="1.5"/>
-        <circle cx="0" cy="0" r="2.2" fill="#fbbf24"/>
+        <circle cx="0" cy="0" r="6.5" fill="none" stroke="#f87171" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="2.2" fill="#ef4444"/>
       </g>
-      <text x="140" y="18.5" fill="#d1fae5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">PWA · COVERLOCK™ AUDIO DSP</text>
+      <text x="140" y="18.5" fill="#fee2e2" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.8">PWA · COVERLOCK™ AUDIO DSP</text>
 
       <!-- Title -->
-      <text x="0" y="62" fill="#ecfdf5" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / MyMusicAnywhere</text>
+      <text x="0" y="62" fill="#fef2f2" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / MyMusicAnywhere</text>
 
       <!-- Description -->
-      <text x="0" y="92" fill="#a7f3d0" font-size="13.5" opacity="0.94">Reproductor y streamer PWA offline-first con motor propio</text>
-      <text x="0" y="112" fill="#a7f3d0" font-size="13.5" opacity="0.94">CoverLock™ DSP: validación por portada y ruteo multi-fuente.</text>
+      <text x="0" y="92" fill="#fecaca" font-size="13.5" opacity="0.94">Reproductor y streamer PWA offline-first con motor propio</text>
+      <text x="0" y="112" fill="#fecaca" font-size="13.5" opacity="0.94">CoverLock™ DSP: validación por portada y ruteo multi-fuente.</text>
 
       <!-- Bottom Translucent Capsules -->
       <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
-        <rect x="0" y="0" width="104" height="28" rx="14" fill="#051811" fill-opacity="0.86" stroke="#10b981" stroke-width="1" stroke-opacity="0.52"/>
-        <text x="52" y="18" fill="#d1fae5" text-anchor="middle">Next.js PWA</text>
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#190507" fill-opacity="0.86" stroke="#ef4444" stroke-width="1" stroke-opacity="0.52"/>
+        <text x="52" y="18" fill="#fee2e2" text-anchor="middle">Next.js PWA</text>
 
-        <rect x="114" y="0" width="122" height="28" rx="14" fill="#051811" fill-opacity="0.86" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.60"/>
-        <text x="175" y="18" fill="#fef3c7" text-anchor="middle">CoverLock™ DSP</text>
+        <rect x="114" y="0" width="122" height="28" rx="14" fill="#190507" fill-opacity="0.86" stroke="#fb923c" stroke-width="1" stroke-opacity="0.65"/>
+        <text x="175" y="18" fill="#ffedd5" text-anchor="middle">CoverLock™ DSP</text>
 
-        <rect x="246" y="0" width="106" height="28" rx="14" fill="#051811" fill-opacity="0.86" stroke="#10b981" stroke-width="1" stroke-opacity="0.52"/>
-        <text x="299" y="18" fill="#d1fae5" text-anchor="middle">IndexedDB</text>
+        <rect x="246" y="0" width="106" height="28" rx="14" fill="#190507" fill-opacity="0.86" stroke="#ef4444" stroke-width="1" stroke-opacity="0.52"/>
+        <text x="299" y="18" fill="#fee2e2" text-anchor="middle">IndexedDB</text>
 
-        <rect x="394" y="0" width="130" height="28" rx="14" fill="#062419" fill-opacity="0.94" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.82"/>
-        <text x="459" y="18" fill="#ecfdf5" font-weight="700" text-anchor="middle">Abrir repo →</text>
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#2b070b" fill-opacity="0.94" stroke="#f87171" stroke-width="1.2" stroke-opacity="0.85"/>
+        <text x="459" y="18" fill="#fef2f2" font-weight="700" text-anchor="middle">Abrir repo →</text>
       </g>
     </g>
   </g>
 
-  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#10b981" stroke-width="1.6" stroke-opacity="0.6"/>
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-opacity="0.65"/>
 </svg>
