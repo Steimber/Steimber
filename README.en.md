@@ -59,9 +59,14 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
+    <td align="center" width="50%">
       <a href="https://github.com/Steimber/My-Skills" target="_blank" rel="noopener noreferrer">
         <img src="./assets/card-myskills-v1-en.svg?v=4" width="420" alt="My-Skills" />
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/Steimber/agy-pocket" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/card-agypocket-v1-en.svg" width="420" alt="agy-pocket" />
       </a>
     </td>
   </tr>

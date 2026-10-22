@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <defs>
+    <!-- Editorial Obsidian & Warm Terracotta Clay Animated Background -->
+    <linearGradient id="pocketBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0b09">
+        <animate attributeName="stop-color" values="#0c0b09;#14110e;#090807;#0c0b09" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#1c1410">
+        <animate attributeName="stop-color" values="#1c1410;#261a14;#150f0c;#1c1410" dur="16s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#331e14">
+        <animate attributeName="stop-color" values="#331e14;#422619;#26160f;#331e14" dur="16s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Warm Terracotta & Emerald Radial Aura Around Pocket Phone -->
+    <radialGradient id="pocketAura" cx="82%" cy="52%" r="50%">
+      <stop offset="0%" stop-color="#d97757" stop-opacity="0.34">
+        <animate attributeName="stop-opacity" values="0.22;0.40;0.22" dur="4.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="52%" stop-color="#4ade80" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0c0b09" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Phone Screen Gradient -->
+    <linearGradient id="phoneScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#171512"/>
+      <stop offset="100%" stop-color="#0c0b09"/>
+    </linearGradient>
+
+    <!-- Subtle Dot Grid Pattern -->
+    <pattern id="pocketGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.85" fill="#d97757" fill-opacity="0.22"/>
+    </pattern>
+
+    <clipPath id="cardClip">
+      <rect width="580" height="230" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .phoneFloat {
+      animation: floatPhone 4.6s ease-in-out infinite;
+    }
+    .pcNodeFloat {
+      animation: floatPc 4.6s ease-in-out infinite -2.3s;
+    }
+    .streamDash {
+      animation: flowStream 1.8s linear infinite;
+    }
+    .bubblePulse1 {
+      animation: msgFade 3.6s ease-in-out infinite;
+    }
+    .bubblePulse2 {
+      animation: msgFade 3.6s ease-in-out infinite 1.2s;
+    }
+
+    @keyframes floatPhone {
+      0%, 100% { transform: translateY(0px); }
+      50%      { transform: translateY(-4.5px); }
+    }
+    @keyframes floatPc {
+      0%, 100% { transform: translateY(0px); }
+      50%      { transform: translateY(3.5px); }
+    }
+    @keyframes flowStream {
+      0%   { stroke-dashoffset: 24; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes msgFade {
+      0%, 100% { opacity: 0.72; }
+      50%      { opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <!-- Background Layers -->
+    <rect width="580" height="230" fill="url(#pocketBg)"/>
+    <rect width="580" height="230" fill="url(#pocketGrid)"/>
+    <rect width="580" height="230" fill="url(#pocketAura)"/>
+
+    <!-- Top-Right Telemetry Badge -->
+    <g transform="translate(382, 15)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, monospace">
+      <rect x="0" y="0" width="180" height="22" rx="11" fill="#171310" fill-opacity="0.92" stroke="#d97757" stroke-width="1" stroke-opacity="0.78"/>
+      <circle cx="13" cy="11" r="3.4" fill="#4ade80">
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="23" cy="11" r="3.4" fill="#d97757">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="103" y="14.5" fill="#fed7aa" font-size="8.8" font-weight="700" text-anchor="middle" letter-spacing="0.4">90-DAY SESSION · CDP LIVE</text>
+    </g>
+
+    <!-- Bottom Horizon Wave -->
+    <path d="M 0 208 Q 145 194 295 206 T 580 196 L 580 230 L 0 230 Z" fill="#090806" opacity="0.92"/>
+    <rect x="0" y="214" width="580" height="16" fill="#050403"/>
+
+    <!-- ==================== RIGHT STAGE: PC NODE <-> POCKET PWA SHELL ==================== -->
+    <!-- Glowing Platform Base -->
+    <ellipse cx="482" cy="164" rx="76" ry="13" fill="#120e0b" stroke="#d97757" stroke-width="1" stroke-opacity="0.45"/>
+
+    <!-- Mini PC / Antigravity Host Node (Left of Phone on Stage) -->
+    <g class="pcNodeFloat" transform="translate(396, 86)">
+      <rect x="0" y="0" width="44" height="34" rx="6" fill="#171512" stroke="#d97757" stroke-width="1.2" stroke-opacity="0.85"/>
+      <rect x="4" y="4" width="36" height="22" rx="3" fill="#0c0b09"/>
+      <!-- Terminal Prompt Inside PC -->
+      <path d="M 9 11 L 13 14.5 L 9 18" fill="none" stroke="#d97757" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="16" y1="18" x2="25" y2="18" stroke="#4ade80" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- Stand -->
+      <path d="M 16 34 L 28 34 L 31 39 L 13 39 Z" fill="#26201b"/>
+      <text x="22" y="49" fill="#a8a29e" font-family="monospace" font-size="7.2" font-weight="700" text-anchor="middle">PC :50334</text>
+    </g>
+
+    <!-- Bidirectional Live CDP WebSocket + Transcript Stream Arc -->
+    <path class="streamDash" d="M 442 102 C 458 92, 468 92, 482 102" fill="none" stroke="#d97757" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <path class="streamDash" d="M 482 114 C 468 122, 458 122, 442 114" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+    <!-- Pocket Mobile PWA Handset (`100dvh` Claude-Style Shell) -->
+    <g class="phoneFloat" transform="translate(480, 46)">
+      <!-- Outer Phone Chassis -->
+      <rect x="0" y="0" width="68" height="114" rx="13" fill="#211d18" stroke="#d97757" stroke-width="1.6"/>
+      <!-- Inner Screen (`100dvh` Obsidian Canvas) -->
+      <rect x="4" y="5" width="60" height="104" rx="10" fill="url(#phoneScreenGrad)"/>
+
+      <!-- Top Header Pill inside Phone -->
+      <rect x="9" y="10" width="50" height="11" rx="5.5" fill="#1f1c18" stroke="#38322c" stroke-width="0.7"/>
+      <circle cx="15" cy="15.5" r="2.2" fill="#4ade80">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="20" y="14" width="26" height="3" rx="1.5" fill="#d6d1c7"/>
+
+      <!-- Thinking Trace Accordion Pill -->
+      <g class="bubblePulse1">
+        <rect x="9" y="26" width="38" height="10" rx="4" fill="#1a1714" stroke="#d97757" stroke-width="0.7" stroke-opacity="0.7"/>
+        <circle cx="14" cy="31" r="1.6" fill="#d97757"/>
+        <rect x="18" y="29.5" width="24" height="2.8" rx="1.4" fill="#a8a29e"/>
+      </g>
+
+      <!-- Assistant Prose Bubble -->
+      <g class="bubblePulse2">
+        <rect x="9" y="40" width="46" height="22" rx="5" fill="#171512" stroke="#2e2924" stroke-width="0.8"/>
+        <rect x="13" y="45" width="36" height="2.8" rx="1.4" fill="#f3efe6"/>
+        <rect x="13" y="50.5" width="28" height="2.8" rx="1.4" fill="#d97757" fill-opacity="0.85"/>
+        <rect x="13" y="56" width="32" height="2.5" rx="1.2" fill="#a8a29e"/>
+      </g>
+
+      <!-- Optimistic User Bubble (Right-aligned) -->
+      <rect x="21" y="66" width="38" height="15" rx="6" fill="#25221d" stroke="#d97757" stroke-width="0.8" stroke-opacity="0.75"/>
+      <rect x="26" y="72" width="28" height="3" rx="1.5" fill="#f3efe6"/>
+
+      <!-- Stationary Bottom Composer Dock + Clay Send Button -->
+      <rect x="8" y="88" width="52" height="15" rx="7.5" fill="#191613" stroke="#3d352e" stroke-width="0.8"/>
+      <rect x="13" y="94" width="26" height="2.8" rx="1.4" fill="#706b63"/>
+      <circle cx="52" cy="95.5" r="5" fill="#d97757"/>
+      <path d="M 52 98 L 52 93 M 49.8 95 L 52 92.8 L 54.2 95" fill="none" stroke="#14110f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- ==================== FOREGROUND CARD CONTENT (LEFT ALIGNED) ==================== -->
+    <g transform="translate(28, 28)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+      <!-- Top Translucent Capsule -->
+      <rect x="0" y="0" width="268" height="28" rx="14" fill="#171310" fill-opacity="0.88" stroke="#d97757" stroke-width="1.2" stroke-opacity="0.72"/>
+      <circle cx="17" cy="14" r="4.5" fill="#d97757"/>
+      <circle cx="17" cy="14" r="2" fill="#fed7aa"/>
+      <text x="144" y="18.5" fill="#ffedd5" font-size="10.6" font-weight="700" text-anchor="middle" letter-spacing="0.8">PWA · PERSISTENT REMOTE BRIDGE</text>
+
+      <!-- Title -->
+      <text x="0" y="62" fill="#fafaf9" font-size="23" font-weight="800" letter-spacing="0.3">Steimber / agy-pocket</text>
+
+      <!-- Description -->
+      <text x="0" y="92" fill="#fed7aa" font-size="13" opacity="0.94">PWA mobile-first estilo Claude Mobile para usar tu</text>
+      <text x="0" y="112" fill="#fed7aa" font-size="13" opacity="0.94">Antigravity Desktop desde el celu con sesión de 90 días.</text>
+
+      <!-- Bottom Translucent Capsules -->
+      <g transform="translate(0, 138)" font-size="11.5" font-weight="600">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#171310" fill-opacity="0.88" stroke="#d97757" stroke-width="1" stroke-opacity="0.65"/>
+        <text x="52" y="18" fill="#ffedd5" text-anchor="middle">Next.js PWA</text>
+
+        <rect x="114" y="0" width="106" height="28" rx="14" fill="#171310" fill-opacity="0.88" stroke="#4ade80" stroke-width="1" stroke-opacity="0.6"/>
+        <text x="167" y="18" fill="#dcfce7" text-anchor="middle">CDP Bridge</text>
+
+        <rect x="230" y="0" width="108" height="28" rx="14" fill="#171310" fill-opacity="0.88" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.6"/>
+        <text x="284" y="18" fill="#fef3c7" text-anchor="middle">90d Session</text>
+
+        <rect x="394" y="0" width="130" height="28" rx="14" fill="#291811" fill-opacity="0.94" stroke="#f59e7a" stroke-width="1.2" stroke-opacity="0.88"/>
+        <text x="459" y="18" fill="#fff7ed" font-weight="700" text-anchor="middle">Abrir repo →</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="578" height="228" rx="16" fill="none" stroke="#d97757" stroke-width="1.6" stroke-opacity="0.65"/>
+</svg>
