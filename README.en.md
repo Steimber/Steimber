@@ -66,7 +66,7 @@
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Steimber/agy-pocket" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/card-agypocket-v1-en.svg" width="420" alt="agy-pocket" />
+        <img src="./assets/card-agypocket-v1-en.svg?v=2" width="420" alt="agy-pocket" />
       </a>
     </td>
   </tr>
